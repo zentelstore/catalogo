@@ -1,0 +1,3014 @@
+[
+  {
+    "nombre": "A Plague Tale: Innocence",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "A Plague Tale: Requem",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "AEW Fight Forever PS5",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Agatha Christie - Murder on the Orient Express PS5",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Age of Empires II: Definitive Edition - Standard Edition",
+    "primario": 38000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Alan Wake 2 Ps5",
+    "primario": 31000,
+    "secundario": 24800,
+    "disponible": true
+  },
+  {
+    "nombre": "Alan Wake Remastered",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Alba",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Alien: Fireteam Elite",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Alien: Rogue Incursion",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Aliens: Dark Descent PS5",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Alone in the Dark Ps5",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Among Us",
+    "primario": 9000,
+    "secundario": 7200,
+    "disponible": true
+  },
+  {
+    "nombre": "Arizona Sunshine® 2 PS5",
+    "primario": 51000,
+    "secundario": 40800,
+    "disponible": true
+  },
+  {
+    "nombre": "Arizona Sunshine® Remake PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "ARK: Survival Ascended",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed Mirage PS5",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed Shadows PS5",
+    "primario": 43000,
+    "secundario": 34400,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin´s Creed Valhalla",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassins Creed Valhalla Gold Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Assassins Creed Valhalla Ragnarok Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Assassin's Creed Mirage y Assassin's Creed Valhalla PS5",
+    "primario": 28000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Assetto Corsa Competizione",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "ASTRO BOT",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Atari 50: The Anniversary Celebration",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Atlas Fallen PS5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Atomic Hearts Ps5",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Avatar Frontiers Of Pandora PS5",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Ayo The Clown",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Babylons Fall PS5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Back 4 Blood",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Balan Wonderworld",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Baldurs Gate PS5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Banishers: Ghosts of New Eden PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Bassmaster Fishing 22",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Battlefield 6 Standard Edition",
+    "primario": 53000,
+    "secundario": 42400,
+    "disponible": true
+  },
+  {
+    "nombre": "Battlefield 2042",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Black Myth: Wukong",
+    "primario": 46000,
+    "secundario": 36800,
+    "disponible": true
+  },
+  {
+    "nombre": "Ben 10 Power Trip",
+    "primario": 40000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Biomutant PS4 & PS5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Bob Esponja: The Cosmic Shake",
+    "primario": 27000,
+    "secundario": 21600,
+    "disponible": true
+  },
+  {
+    "nombre": "Bob Esponja: The Patrick Star Game",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Borderlands 3 Next Level Edition",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Borderlands 4 PS5",
+    "primario": 59000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Bus Simulator 21",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Call Of Duty Cold War Next Generation",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Call Of Duty Modern Warfare 2 PS5",
+    "primario": 26000,
+    "secundario": 20800,
+    "disponible": true
+  },
+  {
+    "nombre": "Call Of Duty Modern Warfare 3 PS5",
+    "primario": 26000,
+    "secundario": 20800,
+    "disponible": true
+  },
+  {
+    "nombre": "Call Of Duty Vanguard",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Call of Duty®: Black Ops 6 PS5",
+    "primario": 29000,
+    "secundario": 23200,
+    "disponible": true
+  },
+  {
+    "nombre": "Call of Duty®: Black Ops 7 PS5",
+    "primario": 43000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Captain Tsubasa",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Car Mechanic Simulator 21",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "CASE 2: Animatronics Survival",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Chivalry 2",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Chorus",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Cities Skyline",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Cities Skylines 2 PS5",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Clair Obscur: Expedition 33",
+    "primario": 43000,
+    "secundario": 34400,
+    "disponible": true
+  },
+  {
+    "nombre": "Cobra Kai 2: Dojos Rising",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Construction Simulator PS5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Control",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Crash 4 It´s About Time",
+    "primario": 18000,
+    "secundario": 14400,
+    "disponible": true
+  },
+  {
+    "nombre": "Crash Bandicoot Crashiversary",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Crash Bandicoot Quadrilogy",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Crash Team Rumble Standard Edition PS5",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Crash Team Racing",
+    "primario": 18000,
+    "secundario": 14400,
+    "disponible": true
+  },
+  {
+    "nombre": "Crazy Chicken Kart 2",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Creed: Rise to Glory",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Cris Tales",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "CRISIS CORE –FINAL FANTASY VII– REUNION PS5",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Cronos: The New Dawn",
+    "primario": 53000,
+    "secundario": 42400,
+    "disponible": true
+  },
+  {
+    "nombre": "Crown Wars PS5",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Crusader Kings III",
+    "primario": 43000,
+    "secundario": 34400,
+    "disponible": true
+  },
+  {
+    "nombre": "CUSTOM MECH WARS PS5",
+    "primario": 48000,
+    "secundario": 38400,
+    "disponible": true
+  },
+  {
+    "nombre": "Cyberpunk 2077",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Cyberpunk 2077 Phantomliberty PS5",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dakar Desert Rally",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dark Alliance",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Darksiders II Deathinitive Edition",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Days Gone Remastered PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "DC's Justice League: Cosmic Chaos",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Dead by Daylight - Special Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Dead By Dylight",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead Island 2 PS5",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead Rising Deluxe Remaster",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead Space PS5",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "DEATH STRANDING 2: ON THE BEACH PS5",
+    "primario": 56000,
+    "secundario": 44800,
+    "disponible": true
+  },
+  {
+    "nombre": "Death Stranding Director´s Cut",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Deathloop",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Demon Slayer -Kimetsu no Yaiba- Sweep the Board!",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2",
+    "primario": 47000,
+    "secundario": 37600,
+    "disponible": true
+  },
+  {
+    "nombre": "Demon Slayer Kimetsu no Yaiba",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Demon´s Souls",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Destiny 2 Beyond Light",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Devil May Cry 5 PS5 Edition",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Diablo II Resurrected",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Diablo Prime Evil Collection",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Diablo® IV - Standard Edition PS5",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Digimon Story Time Stranger",
+    "primario": 56000,
+    "secundario": 44800,
+    "disponible": true
+  },
+  {
+    "nombre": "DIRT 5",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "Disney Dreamlight Valley",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Disney Epic Mickey: Rebrushed PS5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Disney Illusion Island Starring Mickey and Friends",
+    "primario": 37000,
+    "secundario": 29600,
+    "disponible": true
+  },
+  {
+    "nombre": "Disney Speedstorm",
+    "primario": 37000,
+    "secundario": 29600,
+    "disponible": true
+  },
+  {
+    "nombre": "Disney•Pixar Up",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "DLC RESIDENT EVIL 4 SEPARATE WAYS",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Dolmen",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Doom Eternal",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "DOOM: The Dark Ages",
+    "primario": 43000,
+    "secundario": 34400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon Age™: The Veilguard",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "DRAGON BALL XENOVERSE 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon Ball Z - FighterZ",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon Ball Z: Kakarot",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon Ball Z: Kakarot - Deluxe Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "DRAGON BALL: Sparking! ZERO",
+    "primario": 43000,
+    "secundario": 34400,
+    "disponible": true
+  },
+  {
+    "nombre": "DRAGON BALL: Sparking! ZERO DELUXE EDITION",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "DRAGON BALL: Sparking! ZERO ULTIMATE EDITION",
+    "primario": 73000,
+    "secundario": 58400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon's Dogma 2",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "DreamWorks All-Star Kart Racing",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "DreamWorks Dragons: Legends of The Nine Realms",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dying Light 2 Stay Human",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dying Light: The Beast PS5",
+    "primario": 52000,
+    "secundario": 41600,
+    "disponible": true
+  },
+  {
+    "nombre": "EA FC 24 PS5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "EA FC 25 PS5",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "EA FC 26 PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "EA SPORTS™ WRC 24",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Eiyuden Chronicle: Hundred Heroes PS5",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Elden Ring PS5",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "ELDEN RING NIGHTREIGN PS5",
+    "primario": 39000,
+    "secundario": 31200,
+    "disponible": true
+  },
+  {
+    "nombre": "ELDEN RING Shadow of the Erdtree PS5",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Enotria: The Last Song Standard Edition PS5",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Evil Dead The Game",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Evil West",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "F.I.S.T Forged in Shadow Torch",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "F1 2021",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "F1 2022 Standard Edition PS5",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "F1 2023 Standard Edition PS5",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "F1 Manager 2022",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "F1 Manager 2023 PS5",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "F1® 24 Standard Edition PS5",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "F1® Manager 2024 PS5",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "F1 2025 PS5",
+    "primario": 41000,
+    "secundario": 32800,
+    "disponible": true
+  },
+  {
+    "nombre": "FALLOUT 4 PS5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Far Cry 6",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Far Cry® 6 Game of the Year Edition",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Farming Simulator 22",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Farming Simulator 25 PS5",
+    "primario": 36000,
+    "secundario": 28800,
+    "disponible": true
+  },
+  {
+    "nombre": "Fatal Frame",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "FIFA 21 Next Level Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "FIFA 22 Standard Edition PS5",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "FIFA 23 PS5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Final Fantasy Crystal Chronicles",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "FINAL FANTASY TACTICS PS5",
+    "primario": 47000,
+    "secundario": 37600,
+    "disponible": true
+  },
+  {
+    "nombre": "FINAL FANTASY VII REBIRTH Ps5",
+    "primario": 43000,
+    "secundario": 34400,
+    "disponible": true
+  },
+  {
+    "nombre": "Final Fantasy VII Remake",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Final Fantasy XIV Endwalker",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "FINAL FANTASY XVI PS5",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Fire & Water",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Five Nights at Freddy's: Help Wanted 1",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Five Nights at Freddy's: Help Wanted 2",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Five Nights at Freddy's: Into the Pit",
+    "primario": 39000,
+    "secundario": 31200,
+    "disponible": true
+  },
+  {
+    "nombre": "Five Nights at Freddy's: Secret of the Mimic PS5",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Five Nights Security",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Football Manager 2023 Console PS5",
+    "primario": 48000,
+    "secundario": 38400,
+    "disponible": true
+  },
+  {
+    "nombre": "Football Manager 2024 Console Ps5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Forza Horizon 5",
+    "primario": 41000,
+    "secundario": 32800,
+    "disponible": true
+  },
+  {
+    "nombre": "Forspoken PS5",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Funko Fusion",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Gangs of Sherwood PS5",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Garfield Lasagna Party",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Gear.Club Unlimited 2 - Ultimate Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Gears of War: Reloaded",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Ghost of Tsushima Director´s Cut",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Ghost of Yōtei",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "Ghostbusters Spirits Unleashed PS5",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Ghostbusters: Rise of the Ghost Lord Ps5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Ghostrunner 2 PS5",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Ghostwire : Tokyo",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Goat Simulator 3 PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "God Of War Ragnarok PS5",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Godfall",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "GoonyaFighter JigglyHapticEdition",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Gotham Knights",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Gran Turismo 7 PS5",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Granblue Fantasy Versus: Rising Standard Edition Ps5",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "GreedFall",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Green Hell",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Grid Legends PS5",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "GTA Trilogy Definitve",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "GTA V",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "Hades",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Hardspace Shipbreaker PS5",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Harry Potter: Quidditch Champions",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Haven",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Heliborne",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "HELLDIVERS™ 2 PS5",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Hello Neighbor 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Hello Neighbor: Search and Rescue PS5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "HIGH ON LIFE PS5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "HIGH ON LIFE PS5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Hitman 3",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "HITMAN World of Assassination",
+    "primario": 31000,
+    "secundario": 24800,
+    "disponible": true
+  },
+  {
+    "nombre": "Hogwarts Legacy Harry Potter PS5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Hollow Knight: Silksong PS5",
+    "primario": 18000,
+    "secundario": 14400,
+    "disponible": true
+  },
+  {
+    "nombre": "Hood Outlaws and Legends",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Horizon Call of the Mountain PS5",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Horizon Forbidden West PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Horizon Zero Dawn™ remasterizado PS5",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Hot Wheels Unleashed",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Hot Wheels Unleashed 2 Turbocharged PS5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Hotel Transylvania Scary Tales Adventures",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Human: Fall Flat",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Humankind PS5",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Hunting Simulator 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Ice Age: Una Aventura de Bellotas",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Immortals Fenyx Rising",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Immortals of Aveum PS5",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "In Nightmare",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Indiana Jones y el Gran Círculo",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "Infinity Strash: DRAGON QUEST The Adventure of Dai PS5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Insurgency Standstorm",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Into the Radius",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Isonzo",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "It Takes Two",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Jett The Far Shore",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "JoJo's Bizarre Adventure: All-Star Battle",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Jumanji: The Game",
+    "primario": 39000,
+    "secundario": 31200,
+    "disponible": true
+  },
+  {
+    "nombre": "Jurassic Park Classic Games Collection",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Jurassic World Aftermath Collection PS5",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Jurassic World Evolution 2",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "Just Dance 2021",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Just Dance 2022",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Just Dance 2023",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Just Dance 2024",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Just Dance 2025",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Kena Bridge of Spirits",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Killing Floor 3",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "King Arthur: Knight's Tale PS5",
+    "primario": 48000,
+    "secundario": 38400,
+    "disponible": true
+  },
+  {
+    "nombre": "L.O.L. Surprise! B.B.s BORN TO TRAVEL",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "La ascensión del Ronin™",
+    "primario": 53000,
+    "secundario": 42400,
+    "disponible": true
+  },
+  {
+    "nombre": "Las Tortugas Ninja: El destino de Splinter",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "LEGO 2K Drive Standard Edition PS5",
+    "primario": 29000,
+    "secundario": 23200,
+    "disponible": true
+  },
+  {
+    "nombre": "LEGO Party PS5",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Lego Brawls",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "LEGO Star Wars II: The Original Trilogy",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Star Wars Skywalker Saga PS5",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "LEGO® Bricktales",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "LEGO® Harry Potter™ Collection",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "LEGO® Horizon Adventures™ PS5",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Lemnis Gate",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Let's Sing 2023",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Lies of P PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Life Is Strange True Colors",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Like a Dragon Gaiden: The Man Who Erased His Name",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Like a Dragon: Ishin! PS5",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Little Nightmares 2",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Little Nightmares III PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Looney Tunes: Wacky World of Sports",
+    "primario": 29000,
+    "secundario": 23200,
+    "disponible": true
+  },
+  {
+    "nombre": "Lords of The Fallen PS5",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Los Pitufos - Village Party PS5",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Los Pitufos 2: El prisionero de la Piedra Verde",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Lost Judgment",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Madden 21 Next Level Edition",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "Madden 22 Nex Gen",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "Madden 23 Ps5",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "Madden 24 PS5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Madden 25 PS5",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Madden NFL 25  PS5",
+    "primario": 61000,
+    "secundario": 48800,
+    "disponible": true
+  },
+  {
+    "nombre": "Mafia: The old Country",
+    "primario": 43000,
+    "secundario": 34400,
+    "disponible": true
+  },
+  {
+    "nombre": "ManEater",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Marvel Avengers",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Marvel Guardians",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Marvel Midnight Suns Ps5",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Matchpoint Tennis Championships",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "METAL GEAR SOLID: MASTER COLLECTION Vol.1 PS5",
+    "primario": 52000,
+    "secundario": 41600,
+    "disponible": true
+  },
+  {
+    "nombre": "Metal Hellsinger",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Metro Awakening PS5",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Metro: Exodus",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Minecraft",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "Minecraft Legends PS5",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "MLB 22 PS5",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "MLB  23 PS5",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "MLB 21 PS5",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "MLB 24 PS5",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "MLB 25 PS5",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Energy Supercross 25 - The Official Video Game",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Energy Supercross 4 - The Official Videogame",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Energy Supercross 5 - The Official Videogame",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Hunter Rise PS5",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Hunter Wilds",
+    "primario": 46000,
+    "secundario": 36800,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Jam Showdown",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Truck Championship",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "MORTAL KOMBAT 1",
+    "primario": 18000,
+    "secundario": 14400,
+    "disponible": true
+  },
+  {
+    "nombre": "MORTAL KOMBAT 1 DEFINITIVE EDITION",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "MORTAL KOMBAT 1 Deluxe Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Mortal Kombat 11",
+    "primario": 11000,
+    "secundario": 8800,
+    "disponible": true
+  },
+  {
+    "nombre": "Mortal Kombat 11 Ultimate Edition",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Mortal Kombat Aftermath Expansion",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Mortal Kombat Pack 1",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Mortal Kombat Pack 2",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Mortal Kombat™ 1: Khaos Reigns Bundle",
+    "primario": 29000,
+    "secundario": 23200,
+    "disponible": true
+  },
+  {
+    "nombre": "Mortal Kombat™ 1: Khaos Reigns Expansion",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Moto GP 2023 PS5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Moto GP 21",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Moto GP 22 PS5",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "MotoGP™24 PS5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "MX ATV Legends",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "MX GP 2021",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "MX GP 2024",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "MOTO GP 2025",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "My Friend Peppa Pig",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS PS5",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "NASCAR 25",
+    "primario": 56000,
+    "secundario": 44800,
+    "disponible": true
+  },
+  {
+    "nombre": "NASCAR ARCADE",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Nascar Heat 21Ignition",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "NBA 2K 22 PS5",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "NBA 2K 23 PS5",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "NBA 2K21 Nueva Generacion",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "NBA 2K24 PS5",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "NBA 2K25 PS5",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "NBA 2K26",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Need For Speed Unbound PS5",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "New Tales from Borderlands PS5",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "NHL 22",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "NHL 23 PS5",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "NHL 25 PS5",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "NHL 26 PS5",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Nickelodeon All-Star Brawl",
+    "primario": 39000,
+    "secundario": 31200,
+    "disponible": true
+  },
+  {
+    "nombre": "Nickelodeon All-Star Brawl 2",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Nickelodeon Kart Racers 3: Slime Speedway Turbo Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "NINJA GAIDEN 4",
+    "primario": 56000,
+    "secundario": 44800,
+    "disponible": true
+  },
+  {
+    "nombre": "Nioh 2 Remastered Complete",
+    "primario": 54000,
+    "secundario": 43200,
+    "disponible": true
+  },
+  {
+    "nombre": "Nioh Remastered Complete",
+    "primario": 54000,
+    "secundario": 43200,
+    "disponible": true
+  },
+  {
+    "nombre": "No Man's Sky",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Observer: System Redux",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Olli Olli World PS5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "ON THE ROAD - The Truck Simulator",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "One Piece Odyssey",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Outriders",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Overcooked: All you Can Eat",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Override 2",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "PAC-MAN Mega Tunnel Battle: Chomp Champs PS5",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Pacific Drive PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "PAW Patrol Mighty Pups Save Adventure Bay",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "PAW Patrol World",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "PAW Patrol: Grand Prix",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "PAYDAY 3 PS5",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Persona 3 Reload PS5",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Persona 5 Tactica PS5",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "PGA Tour 2K23 PS5",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "PJ Masks Heroes of the Night",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Plants Vs Zombies REPLANTED",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Planet Zoo PS5",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Poppy Playtime: Chapter 1",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Poppy Playtime: Chapter 2",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Poppy Playtime: Chapter 3",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Poppy Playtime: Chapter 4",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Prince of Persia The Lost Crown PS5",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Project Cars 3",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Rainbow Six Siege Extraction",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Rainbow Six Siege",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Ratchet and Clank Rift Apart",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Ready or Not PS5",
+    "primario": 43000,
+    "secundario": 34400,
+    "disponible": true
+  },
+  {
+    "nombre": "Red Dead Redemption Remastered PS5",
+    "primario": 31000,
+    "secundario": 24800,
+    "disponible": true
+  },
+  {
+    "nombre": "Red Dead Redemption 2 PS4",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "REMATCH",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Remnant 2 PS5",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Research and Destroy",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 3",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 3 Nemesis",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Resident Evil 4 Remake PS5",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 4 PS5 GOLD EDITION",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "RESIDENT EVIL 7 biohazard",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil Village",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil REQUIM",
+    "primario": 68000,
+    "secundario": 54400,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil Village Gold Edition",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Reanimal",
+    "primario": 48000,
+    "secundario": 38400,
+    "disponible": true
+  },
+  {
+    "nombre": "Returnal",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "Ride 4",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Ride 5 PS5",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Riders Republic",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Rims Racing",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Road 96",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "RoadCraft PS5",
+    "primario": 39000,
+    "secundario": 31200,
+    "disponible": true
+  },
+  {
+    "nombre": "RoboCop: Rogue City - Standard PS5",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "RoboCop: Rogue City - Unfinished Business",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Rugby 22",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Rugby 25",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Ryan's Rescue Squad",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Sackboy",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Saints Row",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Saints Row: The Third Remastered",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "SBK 22",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Scarlet Nexus",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Sea of Thieves PS5",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Secret Neighbor",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Session Skate Sim",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Sifu",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "SILENT HILL F",
+    "primario": 52000,
+    "secundario": 41600,
+    "disponible": true
+  },
+  {
+    "nombre": "SILENT HILL 2 PS5",
+    "primario": 41000,
+    "secundario": 32800,
+    "disponible": true
+  },
+  {
+    "nombre": "SKULL AND BONES™",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Slender: The Arrival Ps5",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Slime Rancher 2 PS5",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Slime Rancher Rainbow Bundle PS5",
+    "primario": 43000,
+    "secundario": 34400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sniper Elite 5",
+    "primario": 18000,
+    "secundario": 14400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sniper Elite: Resistance PS5",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sniper Ghost Warriors Contracts 2",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "SnowRunner",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sonic Frontiers PS5",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Sonic Origins",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sonic Racing: CrossWorlds",
+    "primario": 43000,
+    "secundario": 34400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sonic Superstars PS5",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "SONIC X SHADOW GENERATIONS PS5",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "SOUTH PARK: SNOW DAY! PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Spacebase Startopia",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Spiderman 2 PS5",
+    "primario": 31000,
+    "secundario": 24800,
+    "disponible": true
+  },
+  {
+    "nombre": "Spiderman Miles Morales",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Spiderman Miles Morales Deluxe Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Spiderman Remastered PS5",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Split Fiction",
+    "primario": 41000,
+    "secundario": 32800,
+    "disponible": true
+  },
+  {
+    "nombre": "SpongeBob SquarePants™: The Patrick Star Game",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "SRX The Game",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Star Wars Jedi: Fallen Order",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "STAR WARS Jedi: Survivor PS5",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Star Wars Outlaws",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "STAR WARS™ Battlefront Classic Collection PS5",
+    "primario": 36000,
+    "secundario": 28800,
+    "disponible": true
+  },
+  {
+    "nombre": "Stellar Blade™",
+    "primario": 47000,
+    "secundario": 37600,
+    "disponible": true
+  },
+  {
+    "nombre": "Stranger of Paradise Final Fantasy Origin PS5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Stray",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Street Fighter 6 PS5",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Street Outlaws 2",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Subnautica",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Subnautica: Below Zero PS5",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Suicide Squad: Kill the Justice League PS5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Super Monkey Ball Banana",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Supermarket Simulator Manager",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Tales of Arise",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Tales of Kenzera™: ZAU Edición Estándar PS5",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Taxi Life: A City Driving Simulator",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Teenage Mutant Ninja Turtles Arcade: Wrath of the Mutants",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Teenage Mutant Ninja Turtles: Mutants Unleashed",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Teenage Mutant Ninja Turtles: The Cowabunga Collection",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "TEKKEN 8 PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Temtem",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Tennis World Tour 2",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Tennis World Tour Complete Edition",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Test Drive Unlimited Solar Crown PS5",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Callisto Protocol",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Crew Motor Fest PS5",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "The Dark Pictures Anthology: Man Of Medan",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "The Dark Pictures House of Ashes",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "The Dark Pictures The Devil in Me PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "The Elder Scrolls V: Skyrim Special Edition",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "The First Berserker: Khazan Standard Edition",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "The King of Fighters XV",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "The Last of Us Part 1",
+    "primario": 31000,
+    "secundario": 24800,
+    "disponible": true
+  },
+  {
+    "nombre": "The Last of Us™ Part II Remastered",
+    "primario": 27000,
+    "secundario": 21600,
+    "disponible": true
+  },
+  {
+    "nombre": "The Lord of the Rings: Gollum™",
+    "primario": 53000,
+    "secundario": 42400,
+    "disponible": true
+  },
+  {
+    "nombre": "The Medium",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Nioh Colelction",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "The Quarry PS5 Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "The Talos Principle 2 PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "The Witcher 3: Wild Hunt",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "TIEBREAK",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Tiny Tina's Wonderlands",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "Tom Clancy's Rainbow Six Siege",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Tom Clancy’s Rainbow Six® Extraction PS5",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Tomb Raider I-III Remastered Starring Lara Croft Ps5",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Tony Hawk´s Pro Skater 1+2",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Tony Hawk's Pro Skater™ 3 + 4 - Edición Digital",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "TopSpin 2K25 PS5",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Tormented Souls",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Train Sim World 3",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Trek To Yomi",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "TRUCK RACING CHAMPIONSHIP",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Twisted Metal PS5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "UFC 5 PS5",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "Uncharted: Legacy of Thieves Collection",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Undisputed PS5",
+    "primario": 42000,
+    "secundario": 33600,
+    "disponible": true
+  },
+  {
+    "nombre": "Until Dawn™",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Vampire: The Masquerade",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Vampire: The Masquerade - Justice Ps5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Warhammer Age of Sigmar: Realms of Ruin PS5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Watch Dogs Legion",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Winter Games 2023",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Wizard with a Gun Ps5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Wo Long: Fallen Dynasty PS5",
+    "primario": 47000,
+    "secundario": 37600,
+    "disponible": true
+  },
+  {
+    "nombre": "World of Outlaws: Dirt Racing",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "World War Z Aftermath",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Worms Rumble",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "WRC 10",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "WRC 9",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "WRC Generations PS5",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "WRC Standard Edition Ps5",
+    "primario": 48000,
+    "secundario": 38400,
+    "disponible": true
+  },
+  {
+    "nombre": "WUCHANG: Fallen Feathers",
+    "primario": 48000,
+    "secundario": 38400,
+    "disponible": true
+  },
+  {
+    "nombre": "WWE 2k22 PS5",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "WWE 2K23 PS5",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "WWE 2K24 PS5",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "WWE 2K25 PS5",
+    "primario": 26000,
+    "secundario": 20800,
+    "disponible": true
+  },
+  {
+    "nombre": "Yakuza: Like a Dragon PS4 & PS5",
+    "primario": 54000,
+    "secundario": 43200,
+    "disponible": true
+  }
+]
