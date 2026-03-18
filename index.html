@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZentelStore — Catálogo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12121a;
+      --card: #1a1a26;
+      --border: #2a2a3d;
+      --accent: #00e5ff;
+      --accent2: #7c3aed;
+      --green: #22c55e;
+      --red: #ef4444;
+      --text: #e2e8f0;
+      --muted: #64748b;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+    }
+
+    /* FONDO con grid */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,229,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,229,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--text);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+
+    /* BARRA DE BÚSQUEDA */
+    .search-wrap {
+      position: relative;
+      flex: 1;
+      max-width: 420px;
+    }
+
+    .search-wrap svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      pointer-events: none;
+    }
+
+    #buscador {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      padding: 0.55rem 1rem 0.55rem 2.5rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    #buscador::placeholder { color: var(--muted); }
+    #buscador:focus { border-color: var(--accent); }
+
+    /* FILTROS */
+    .filtros {
+      display: flex;
+      gap: 0.4rem;
+      flex-shrink: 0;
+    }
+
+    .btn-filtro {
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .btn-filtro:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-filtro.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #000;
+    }
+
+    /* MAIN */
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 2rem 4rem;
+    }
+
+    /* STATS */
+    .stats {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .stat-pill {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 0.35rem 0.9rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .stat-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+    }
+
+    .dot-green { background: var(--green); box-shadow: 0 0 6px var(--green); }
+    .dot-red { background: var(--red); box-shadow: 0 0 6px var(--red); }
+    .dot-blue { background: var(--accent); box-shadow: 0 0 6px var(--accent); }
+
+    /* GRID DE JUEGOS */
+    #catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.2rem;
+    }
+
+    /* CARD */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      animation: fadeUp 0.4s ease both;
+      cursor: default;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+      box-shadow: 0 0 20px rgba(0,229,255,0.08);
+    }
+
+    .card-img {
+      width: 100%;
+      aspect-ratio: 460/215;
+      object-fit: cover;
+      display: block;
+      background: var(--surface);
+    }
+
+    .card-body {
+      padding: 0.85rem 1rem 1rem;
+    }
+
+    .card-nombre {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: var(--text);
+      margin-bottom: 0.6rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .precio {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.22rem 0.6rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .badge-ok {
+      background: rgba(34,197,94,0.15);
+      color: var(--green);
+      border: 1px solid rgba(34,197,94,0.3);
+    }
+
+    .badge-no {
+      background: rgba(239,68,68,0.12);
+      color: var(--red);
+      border: 1px solid rgba(239,68,68,0.25);
+    }
+
+    /* NO RESULTADOS */
+    #sin-resultados {
+      display: none;
+      grid-column: 1/-1;
+      text-align: center;
+      padding: 5rem 1rem;
+      color: var(--muted);
+    }
+
+    #sin-resultados svg {
+      opacity: 0.3;
+      margin-bottom: 1rem;
+    }
+
+    #sin-resultados p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* LOADING */
+    #loading {
+      text-align: center;
+      padding: 5rem 1rem;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+
+    /* FOOTER */
+    footer {
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid var(--border);
+      padding: 1.2rem 2rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    footer strong {
+      color: var(--accent);
+    }
+
+    /* ANIMACIONES */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      .header-inner { flex-wrap: wrap; height: auto; padding: 0.75rem 0; gap: 0.75rem; }
+      .search-wrap { order: 3; max-width: 100%; width: 100%; }
+      .filtros { gap: 0.3rem; }
+      .btn-filtro { padding: 0.35rem 0.65rem; }
+      main { padding: 1.2rem 1rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">
+      <div class="logo-icon">🎮</div>
+      Zentel<span>Store</span>
+    </a>
+
+    <div class="search-wrap">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input id="buscador" type="text" placeholder="Buscar juego..." />
+    </div>
+
+    <div class="filtros">
+      <button class="btn-filtro active" data-filtro="todos">Todos</button>
+      <button class="btn-filtro" data-filtro="disponible">✅ Disponibles</button>
+      <button class="btn-filtro" data-filtro="no-disponible">❌ No disp.</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="stats" id="stats" style="display:none">
+    <div class="stat-pill"><span class="stat-dot dot-blue"></span> <span id="stat-total">0</span> juegos</div>
+    <div class="stat-pill"><span class="stat-dot dot-green"></span> <span id="stat-disp">0</span> disponibles</div>
+    <div class="stat-pill"><span class="stat-dot dot-red"></span> <span id="stat-nodisp">0</span> no disponibles</div>
+  </div>
+
+  <div id="loading">
+    <div class="spinner"></div>
+    <span>Cargando catálogo...</span>
+  </div>
+
+  <div id="catalogo"></div>
+</main>
+
+<footer>
+  <strong>ZentelStore</strong> © 2025 — Activación vía Steam
+</footer>
+
+<script>
+  let juegosOriginales = [];
+  let filtroActual = 'todos';
+
+  // ── Cargar JSON ──────────────────────────────────────────────
+  fetch('juegos.json')
+    .then(r => r.json())
+    .then(data => {
+      juegosOriginales = data;
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('stats').style.display = 'flex';
+      actualizarStats(data);
+      renderizar(data);
+    })
+    .catch(() => {
+      document.getElementById('loading').innerHTML =
+        '<p style="color:var(--red)">⚠️ No se pudo cargar juegos.json</p>';
+    });
+
+  // ── Stats ────────────────────────────────────────────────────
+  function actualizarStats(lista) {
+    document.getElementById('stat-total').textContent  = juegosOriginales.length;
+    document.getElementById('stat-disp').textContent   = juegosOriginales.filter(j => j.disponible).length;
+    document.getElementById('stat-nodisp').textContent = juegosOriginales.filter(j => !j.disponible).length;
+  }
+
+  // ── Renderizar cards ─────────────────────────────────────────
+  function renderizar(lista) {
+    const cont = document.getElementById('catalogo');
+    cont.innerHTML = '';
+
+    if (!lista.length) {
+      cont.innerHTML = `
+        <div id="sin-resultados" style="display:block">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <strong>Sin resultados</strong>
+          <p>Probá con otro término o filtro</p>
+        </div>`;
+      return;
+    }
+
+    lista.forEach((j, i) => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.style.animationDelay = `${i * 40}ms`;
+
+      const imgSrc = j.imagen || 'https://placehold.co/460x215/1a1a26/64748b?text=Sin+imagen';
+      const precioFmt = '$' + Number(j.precio).toLocaleString('es-AR');
+
+      card.innerHTML = `
+        <img class="card-img" src="${imgSrc}" alt="${j.nombre}" loading="lazy"
+             onerror="this.src='https://placehold.co/460x215/1a1a26/64748b?text=Sin+imagen'"/>
+        <div class="card-body">
+          <div class="card-nombre" title="${j.nombre}">${j.nombre}</div>
+          <div class="card-footer">
+            <span class="precio">${precioFmt}</span>
+            <span class="badge ${j.disponible ? 'badge-ok' : 'badge-no'}">
+              ${j.disponible ? 'Disponible' : 'Agotado'}
+            </span>
+          </div>
+        </div>`;
+
+      cont.appendChild(card);
+    });
+  }
+
+  // ── Filtrado combinado ───────────────────────────────────────
+  function filtrar() {
+    const texto = document.getElementById('buscador').value.toLowerCase().trim();
+
+    let resultado = juegosOriginales.filter(j => {
+      const coincideTexto = j.nombre.toLowerCase().includes(texto);
+      const coincideFiltro =
+        filtroActual === 'todos' ||
+        (filtroActual === 'disponible' && j.disponible) ||
+        (filtroActual === 'no-disponible' && !j.disponible);
+      return coincideTexto && coincideFiltro;
+    });
+
+    renderizar(resultado);
+  }
+
+  // ── Eventos ──────────────────────────────────────────────────
+  document.getElementById('buscador').addEventListener('input', filtrar);
+
+  document.querySelectorAll('.btn-filtro').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.btn-filtro').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filtroActual = btn.dataset.filtro;
+      filtrar();
+    });
+  });
+</script>
+</body>
+</html>
