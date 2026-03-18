@@ -1,0 +1,6224 @@
+[
+  {
+    "nombre": "8 Bits Hordes!",
+    "primario": 8000,
+    "secundario": 6400,
+    "disponible": true
+  },
+  {
+    "nombre": "8 Bits Invaders!",
+    "primario": 8000,
+    "secundario": 6400,
+    "disponible": true
+  },
+  {
+    "nombre": "A Plague Tale: Innocence",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "A Way Out",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Absolver",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Abzu",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Ace Combat 7",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Adam's Venture: Origins",
+    "primario": 9000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Adam's Venture: Origins - Deluxe Edition",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "AereA",
+    "primario": 9000,
+    "secundario": 7200,
+    "disponible": true
+  },
+  {
+    "nombre": "AEW Fight Forever PS4",
+    "primario": 54000,
+    "secundario": 43200,
+    "disponible": true
+  },
+  {
+    "nombre": "AFL Evolution",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "AFL Evolution 2",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Agatha Christie - Murder on the Orient Express",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Age of Wonders: Planetfall",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Agents of Mayhem",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Air Conflicts Double Pack",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "AIR HOCKEY",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "AIR MISSIONS: HIND",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Airport Simulator",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Alan Wake Remastered",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Alba",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Alien Isolation",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Alien Isolation The Collection",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Alien: Fireteam Elite",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Alienation",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Aliens: Dark Descent PS4",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "All Star Fruit Racing",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Amnesia Collection",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Amnesia Rebirth",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Among Us",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Ancestors: The Humankind Odyssey",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Anthem - Standard Edition",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "AO International Tennis",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "AO International Tennis 2",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Arizona Sunshine® Remake PS4",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Ark Park",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Ark Survival: Ultimate Survivor Edition",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "ARK: Survival Evolved",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed III Remastered",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed IV: Black Flag",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed Mirage PS4",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed Triple Pack (Unity + Black Flag + Syndicate)",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed: Chronicles - Trilogy Pack (Russia + India + China)",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed: Freedom Cry",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed: Odyssey",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed: Origins",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed: Rogue Remastered",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed: Syndicate",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed: The Ezio Collection",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassin's Creed: Unity",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassins Creed Valhalla",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassins Creed Valhalla Gold Edition",
+    "primario": 85000,
+    "secundario": 68000,
+    "disponible": true
+  },
+  {
+    "nombre": "Assassins Creed Valhalla Ragnarok Edition",
+    "primario": 85000,
+    "secundario": 68000,
+    "disponible": true
+  },
+  {
+    "nombre": "Assetto Corsa",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Assetto Corsa Competizione",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Astro Bot Rescue Mission",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Atari 50: The Anniversary Celebration",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Atomic Hearts Ps4",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Attack on Titan",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Attack on Titan 2",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "ATV Drift & Tricks",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "ATV Renegades",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Ayo The Clown",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Babylons Fall PS4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Back 4 Blood",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Baja: Edge Of Control",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Balan Wonderworld",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Bassmaster Fishing 22",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Batman: Arkham Collection",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Batman: Arkham Knight",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Batman: Return to Arkham",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Batman: The Telltale Series - Shadows Edition",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Battlefield 1",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Battlefield 1 Revolution",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Battlefield 1 Revolution + Titanfall 2",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Battlefield 2042",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Battlefield 4",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Battlefield 5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Battlefield Bundle",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Battlefield Hardline",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Battlewake",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Bayonetta",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Beach Buggy 2: Island Adventure",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Beach Buggy Racing",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Ben 10",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "BEN 10 Pack",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Ben 10 Power Trip",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Beyond: Two souls",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Big Rumble Boxing",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "BioMutant",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "BioShock 1 Remastered",
+    "primario": 15000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "BioShock 2 Remastered",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "BioShock: The Collection",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Black Book",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Black Desert - Standard Edition",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Black Mirror",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Blackwood Crossing",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Blairwitch",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Blaze Rush",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Blood and Truth",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Blood Bowl 2",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Blood Waves",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Bloodborne",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Bloodborne: The Old Hunters Dlc",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Bob Esponja: Battle For Bikini Bottom",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Bob Esponja: The Cosmic Shake",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Bob Esponja: The Patrick Star Game",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Borderlands - GOTY",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Borderlands 3",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Borderlands Legendary Collection",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Borderlands: The Handsome Collection",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Brawlout",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Brothers: A Tale of Two Sons",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Brunswick Pro Bowling",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Bubsy: The Woolies Strike Back",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Bulletstorm",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Bully",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Burger Break",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Burnout Paradise Remastered",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "BUS SIMULATOR 2023 CITY DRIVER",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "Bus Simulator 21",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Bus Simulator Driver 2024 : City Zone",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Call Of Duty Cold War",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Call Of Duty Modern Warfare (Latino)",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Call Of Duty Modern Warfare 2 PS4",
+    "primario": 26000,
+    "secundario": 20800,
+    "disponible": true
+  },
+  {
+    "nombre": "Call Of Duty Modern Warfare 3 PS4",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Call Of Duty Vanguard",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Call of Duty: Advanced Warfare Gold edition",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Call of Duty: Advanced Warfare",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Call of Duty: Black Ops III - Zombies Chronicles",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Call of Duty: Black Ops IIII",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Call of Duty: Ghosts - Gold Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Call of Duty: Infinite Warfare",
+    "primario": 27000,
+    "secundario": 21600,
+    "disponible": true
+  },
+  {
+    "nombre": "Call of Duty: Modern Warfare",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Call of Duty: Modern Warfare 2 - Campaign Remastered",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Call of Duty: Modern Warfare Remastered",
+    "primario": 27000,
+    "secundario": 21600,
+    "disponible": true
+  },
+  {
+    "nombre": "Call of Duty: WWII - Gold Edition",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Call of Duty®: Black Ops 6 PS4",
+    "primario": 29000,
+    "secundario": 23200,
+    "disponible": true
+  },
+  {
+    "nombre": "Call of Duty®: Black Ops 7 PS4",
+    "primario": 40000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "CAPCOM Arcade Pack",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "CAPCOM Fighting Collection",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Captain Tsubasa",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Car Mechanic Simulator 21",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Car X: Drift Racing Online",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Carnival Games",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Cars 3: Driven to Win",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Cartoon Network: Battle Crashers",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Castlevania - Anniversary Collection",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Chivalry 2",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Chorus",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Citadel: Forged With Fire",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Cities Skyline",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Cluster Truck",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Cobra Kai 2: Dojos Rising",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Code Vein",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Commandos 2",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Commandos 3 - HD Remaster",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Conan Exiles",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Concrete Genie",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Construction Simulator PS4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Constructor",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Contra - Anniversary Collection",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Contra: Rogue Corps",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Control",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Cook, Serve , Delicius 3?!",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Cooking Simulator",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Crash 4 It´s About Time",
+    "primario": 18000,
+    "secundario": 14400,
+    "disponible": true
+  },
+  {
+    "nombre": "Crash Bandicoot™ - Crashiversary",
+    "primario": 26000,
+    "secundario": 20800,
+    "disponible": true
+  },
+  {
+    "nombre": "Crash Bandicoot™ - Quadrilogy",
+    "primario": 26000,
+    "secundario": 20800,
+    "disponible": true
+  },
+  {
+    "nombre": "Crash Triple Pack",
+    "primario": 85000,
+    "secundario": 68000,
+    "disponible": true
+  },
+  {
+    "nombre": "Crash Pack RACING + TRILOGY",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Crash Team Racing",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Crash Team Rumble Standard Edition PS4",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Crash Trilogy",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Crazy Chicken Kart 2",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Cris Tales",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "CRISIS CORE –FINAL FANTASY VII– REUNION PS4",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Croc's World",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Crysis 2 Remastered",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Crysis 3 Remastered",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Crysis Remastered",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Cuphead",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Cuphead + DLC The Delicius Last Course",
+    "primario": 27000,
+    "secundario": 21600,
+    "disponible": true
+  },
+  {
+    "nombre": "Cuphead DLC The Delicius Last Course",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Cyberpunk 2077",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dakar 18",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dakar Desert Rally",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dakar Desert Rally PS4",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dangerous Driving",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dark Alliance",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "DARK PICTURES ANTHOLOGY LITTLE HOPE",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dark Souls II: Scholar of the First Sin",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dark Souls III",
+    "primario": 37000,
+    "secundario": 29600,
+    "disponible": true
+  },
+  {
+    "nombre": "Dark Souls: Remastered",
+    "primario": 26000,
+    "secundario": 20800,
+    "disponible": true
+  },
+  {
+    "nombre": "Darksiders II: Deathnitive Edition",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Darksiders III",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Darksiders: Fury's Collection - War and Death",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Darksiders: Genesis",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Darksiders: Warmastered Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Dawn of Man",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Daymare: 1998",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Days Gone",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "DayZ",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "DC's Justice League: Cosmic Chaos",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "DCL: The Game",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead Alliance",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead by Daylight - Special Edition",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead Island 2 PS4",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead Island Definitive Collection",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead Island Definitive Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Dead Island Riptide Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Dead Nation: Apocalypse Edition",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead or Alive 5",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead or Alive 6",
+    "primario": 55000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead by Daylight - Special Edition",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead Rising 2",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead Rising 2: Off The Record",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead Rising 4: Frank's Big Package",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dead Rising Triple Pack",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Death Stranding",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Deathloop",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Demolish and Build",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Demon Slayer -Kimetsu no Yaiba- Sweep the Board!",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Demon Slayer Kimetsu no Yaiba- The Hinokami Chronicles",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "DESCENDERS",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "Desperados III",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Destiny 2 Beyond Light",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Destiny 2 Forsaken",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Destiny: The Collection",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Destroy All Humans!",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Destroy All Humans! 2",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Detroit: Become Human",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Deus Ex: Mankind Divided",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Devil May Cry 4 Special Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Devil May Cry 5",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "DEVIL MAY CRY HD COLLECTION",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Devil May Cry: Definitive Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Diablo II Resurrected",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Diablo III: Eternal Collection",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Diablo Prime Evil Collection",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Diablo® IV - Standard Edition PS4",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dirt 4",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "DIRT 5",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dirt Rally",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Dirt Rally 2.0",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dishonored 2",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Dishonored: Complete Collection",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dishonored: Death of the Outsider",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dishonored: Definitive Edition",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Disney Classics Remastered Lion King + Aladdin",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Disney Dreamlight Valley",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Disney Epic Mickey: Rebrushed PS4",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Disney Infinity 2.0",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Disney Infinity 3.0",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Disney Speedstorm",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Disney•Pixar Up",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "DLC Mortal Kombat 11 Aftermath",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "DLC Mortal Kombat 11 Ultimate Pack",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "DLC Mortal Kombat Ultimate Pack",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "DLC RESIDENT EVIL 4 SEPARATE WAYS",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Dollhouse",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Don't Starve Together",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Doom",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Doom 3",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Doom Eternal",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon Age: Inquisition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon Ball The Breakers PS4",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon Ball Z - FighterZ",
+    "primario": 29000,
+    "secundario": 23200,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon Ball Z - Xenoverse 1",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon Ball Z - Xenoverse 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon Ball Z - Xenoverse Pack",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Dragon Ball Z: Kakarot",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon Ball Z: Kakarot - Deluxe Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Dragon Quest Heroes II",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon Quest Heroes: The World Tree's Woe and the Blight Below",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dragon's Dogma: Dark Arisen",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Dreams",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "DreamWorks All-Star Kart Racing",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "DreamWorks Dragons: Dawn of New Riders",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "DreamWorks Dragons: Legends of The Nine Realms",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Drift Master Simulator",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Ducati 90th Anniversary",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Duke Nukem 3D: 20th Anniversary World Tour",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dying Light - Essentials Edition",
+    "primario": 13000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Dying Light 2 Stay Human",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "Dying Light: The Following Enchanced Edition",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Dynasty Warriors 8: Empires",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dynasty Warriors 8: Xtreme Legends",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Dynasty Warriors 9",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "EA FC 24 PS4",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "EA FC 25 PS4",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "EA FC 26 PS4",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "EA Games Family Pack",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Earthfall",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Eiyuden Chronicle: Hundred Heroes PS4",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "ELDEN RING NIGHTREIGN PS4",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Elden Ring PS4",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "ELDEN RING Shadow of the Erdtree PS4",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Elex",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Emily wants to play 2",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Empire of Sin",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "EverSpace",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Evil Dead The Game",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Evil West",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Extinction",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "F.I.S.T Forged in Shadow Torch",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "F1 2016",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "F1 2017",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "F1 2018",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "F1 2019",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "F1 2020",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "F1 2021",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "F1 2022 Standard Edition PS4",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "F1 2023 Standard Edition PS4",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "F1 Manager 2023 PS4",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "F1® 24 Standard Edition PS4",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "F1® Manager 2024 PS4",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Fall Guys",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Fallout 4",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Fallout 4 Goty",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Fallout 76",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Far Cry 3 - Classic Edition",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Far Cry 4",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Far Cry 5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Far Cry 5 + New Dawn",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Far Cry 6",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Far Cry New Dawn",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Far Cry Primal",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Far Cry® 6 Game of the Year Edition",
+    "primario": 121000,
+    "secundario": 96800,
+    "disponible": true
+  },
+  {
+    "nombre": "Farming Simulator 17",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Farming Simulator 19",
+    "primario": 27000,
+    "secundario": 21600,
+    "disponible": true
+  },
+  {
+    "nombre": "Farming Simulator 22",
+    "primario": 29000,
+    "secundario": 23200,
+    "disponible": true
+  },
+  {
+    "nombre": "Farn Manager 2022",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Fast and Furious Crossroad",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Fatal Frame",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Fayri Tail",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "FIFA 21",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "FIFA 22 Standard Edition",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "FIFA 23 PS4",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Final Fantasy Crystal Chronicles",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "FINAL FANTASY TACTICS PS4",
+    "primario": 47000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Final Fantasy Type-0 HD",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "FINAL FANTASY VII REMAKE",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Final Fantasy VIII - Remastered",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "FINAL FANTASY X | X-2 HD Remaster",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Final Fantasy XIV Endwalker",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Final Fantasy XIV: SHADOWBRINGERS",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Final Fantasy XV - Royal Edition",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Fishing Sim World",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Fist of the North Star: Lost Paradise",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Five Nights at Freddy's 1",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Five Nights at Freddy's 2",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Five Nights at Freddy's 3",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Five Nights at Freddy's 4",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Five Nights at Freddy's Sister Location",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Five Nights at Freddy's: Help Wanted",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Five Nights Security",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Flatout 4: Total Insanity",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "For Honor",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Frantics",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Friday the 13th: The Game",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Funko Fusion",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Fuser",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "G.I Joe Operation Blackout",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Gang Beasts",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Garfield Kart",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Garfield Lasagna Party",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Gear.Club Unlimited 2 - Ultimate Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Generation Zero",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Ghost of Tsushima Director´s Cut",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Ghost Runner",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Ghostrunner 2 PS4",
+    "primario": 40000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Ghostbusters Spirits Unleashed PS4",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Goat Simulator",
+    "primario": 13000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Goat Simulator 3 PS4",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "GOD EATER 2: RAGE BURST",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "God Eater 3",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "GOD EATER: RESURRECTION",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "God of War",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "God of War 3 Remastered",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "God Of War Ragnarok PS4",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Golf PGA Tour 2K21",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Gran Turismo 7",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Gran Turismo Spec II",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Gran Turismo Sport",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Granblue Fantasy Versus: Rising Standard Edition Ps4",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Gravel",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "GreedFall",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Green Hell",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Grid - Launch Edition",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Grid Legends PS4",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "GTA Double Pack",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "GTA III",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "GTA Trilogy Definitve",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "GTA V",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "GTA Vice City",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Guilty Gear",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Hades",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Hasbro Family Pack",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Heavy Fire: Red Shadow",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Heavy Rain",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Heliborne",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Hellblade: Senua's Sacrifice",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Hello Neighbor",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Harry Potter: Quidditch Champions",
+    "primario": 16000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Hello Neighbor - Hide and Seek",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Hello Neighbor 2",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Hello Neighbor Bundle",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Hello Neighbor Secret",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Hello Neighbor: Search and Rescue PS4",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "HIGH ON LIFE PS4",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Hitman - HD Enhanced Collection",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "HITMAN - Lote Legado: Game of the Year",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Hitman 2",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Hitman 3",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "HITMAN World of Assassination",
+    "primario": 31000,
+    "secundario": 24800,
+    "disponible": true
+  },
+  {
+    "nombre": "Hogwarts Legacy Harry Potter PS4",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Hollow Knight",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Homefront: The Revolution",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Hood Outlaws and Legends",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Hora de Aventuras: Piratas del Enchiridion",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Horizon Chase Turbo",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Horizon Forbidden Deluxe PS4",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Horizon Forbidden West",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Horizon Zero Dawn - Complete Edition",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Hot Wheels Unleashed",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Hot Wheels Monster Trucks: Stunt Mayhem",
+    "primario": 20000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Hot Wheels Unleashed 2 Turbocharged PS4",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Hotel Transylvania 3: Monsters Overboard",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Hotel Transylvania Scary Tales Adventures",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Human: Fall Flat",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Humankind PS4",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Hunt: Showdown",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Hunting Simulator 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "ICE AGE: SCRAT'S NUTTY ADVENTURE",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Immortal Legacy: The Jade Cipher Console Edition",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Immortal: Unchained",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Immortals Fenyx Rising",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "In Nightmare",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Infamous: First Light",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Infamous: Second Son",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Infinity Strash: DRAGON QUEST The Adventure of Dai PS4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Injustice 2 - Legendary Edition",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Injustice 2 - Standard Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Injustice: Gods Among Us - Ultimate Edition",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Instant Sport Paradise",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Insurgency Standstorm",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "Iron Man VR",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Isonzo",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "It Takes Two",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Jak 2",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Jak 3",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Jett The Far Shore",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "John Wick Hex",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "JoJo's Bizarre Adventure: All-Star Battle",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Journey to the Savage Planet",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Jumanji: The Game",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Jump Force",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Jurassic Park Classic Games Collection",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Jurassic World Aftermath Collection PS4",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Jurassic World Evolution 2",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Jurassic World: Evolution",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Just Cause 3: XXL Edition",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Just Cause 4: Reloaded",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Just Dance 2020",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Just Dance 2021",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Kena Bridge of Spirits",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Killing Floor 2",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Killzone Shadow Fall",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Killzone Shadow Fall: Intercept",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "King´s Bounty 2",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Kingdom Hearts - All in One Package",
+    "primario": 47000,
+    "secundario": 37600,
+    "disponible": true
+  },
+  {
+    "nombre": "Kingdom Hearts Melody of Memory",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Knack 1",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Knack 2",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Knack Pack",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Knockout City",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "L.A. Noire",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "L.O.L. Surprise! B.B.s BORN TO TRAVEL",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Lara Croft and the Temple of Osiris",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Las Tortugas Ninja: El destino de Splinter",
+    "primario": 33000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Layers of Fear",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Layers of Fear 2",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Left Alive - Day One Edition",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Legend of Kay: Anniversary",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Legend Of Mana",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "LEGO 2K Drive Standard Edition PS4",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Batman 3: Beyond Gotham",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Brawls",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Builders Journey",
+    "primario": 25000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego City Undercover",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego DC Super-Villans",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Harry Potter Collection",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Hobbit",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Jurassic World",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Los Increíbles",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "LEGO MARVEL COLLECTION",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Marvel Super Heroes",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Marvel Super Heroes 2",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Marvel's Avengers",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Movie Videogame",
+    "primario": 11000,
+    "secundario": 8800,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Movie Videogame 2",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego NinjaGo Movie",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Star Wars",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "LEGO Star Wars II: The Original Trilogy",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Star Wars Skywalker Saga PS4",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "Lego Worlds",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "LEGO® Bricktales",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Lemnis Gate",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Let's Sing 2023",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Lets Sing 2021",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Liberated: Enhanced Edition",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Lies of P PS4",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Life is Strange - Complete Season",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Life is Strange Remastered Collection",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Life Is Strange True Colors",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Like a Dragon Gaiden: The Man Who Erased His Name",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Like a Dragon: Ishin! PS4",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Little Big Planet 3",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Little Big WorkShop",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Little Nightmares",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Little Nightmares 2",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Little Nightmares III PS4",
+    "primario": 43000,
+    "secundario": 34400,
+    "disponible": true
+  },
+  {
+    "nombre": "Looney Tunes: Wacky World of Sports",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Lords of the Fallen",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Los Pitufos - Village Party PS4",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Los Pitufos 2: El prisionero de la Piedra Verde",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Lost Judgment",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Mad Max",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Madden 21",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Madden 22",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Madden 23 Ps4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Madden 24 PS4",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "Madden 25 PS4",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Madden NFL 20",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Mafia : Definitive Edition",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Mafia II: Definitive Edition",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Mafia III: Definitive Edition",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Mafia Trilogy",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "ManEater",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Marvel Avengers",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Marvel Guardians",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Marvel Spiderman : Miles Morales",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Marvel vs. Capcom Infinite - Standard Edition",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Marvel's Midnight Suns",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Marvel's Spiderman: GOTY Edition",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Mass Effect Legendary",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Mass Effect: Andromeda",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Matchpoint Tennis Championships",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Max Payne",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Medievil",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Mega Man 11",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Mega Man Battle Network Legacy Collection PS4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Mega Man X: Legacy Collection 1+2",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Meow Motors",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Metal Gear Solid V: Ground Zeroes",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Metal Gear Solid V: The Definitive Experience",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Metal Gear Solid V: The Phantom Pain",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "METAL GEAR SOLID: MASTER COLLECTION Vol.1 PS5",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Metal Gear Survive",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Metal Slug XX",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Metro 2033: Redux",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Metro: Exodus",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Metro: Last Light Redux",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Metro: Redux",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Micro Machines: World Series",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Middle-earth: Shadow of Mordor",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Middle-earth: Shadow of War",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Mighty Fight Federation",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Mighty No. 9",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Minecraft",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "Minecraft Dungeons",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Minecraft Legends PS4",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Minecraft Starter Collection",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Mini Motor Racing X",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Mirror's Edge Catalyst",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "MLB 21",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "MLB 22 PS4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "MLB The Show 22",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "MLB The Show 23 Ps4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "MOBILE SUIT GUNDAM EXTREME VS. MAXIBOOST ON",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Monopoly Plus",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Energy Supercross 2- The Official Videogame",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Energy Supercross - The Official Videogame",
+    "primario": 8000,
+    "secundario": 6400,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Energy Supercross - The Official Videogame 4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Energy Supercross - The Official Videogame 6 PS4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Energy Supercross 5 - The Official Videogame",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Hunter Rise PS4",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Hunter Stories 2: Wings of Ruin",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Hunter World: Iceborne",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Hunter: World",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Jam 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Jam Showdown",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Jam Steel Titans",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Monster Truck Championship",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Mortal Kombat 11",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Mortal Kombat 11 Ultimate",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Mortal Kombat X",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Mortal Kombat XL",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Mortal Shell",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Moto GP 18",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Moto GP 19",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Moto GP 20",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Moto GP 2023 PS4",
+    "primario": 10000,
+    "secundario": 8000,
+    "disponible": true
+  },
+  {
+    "nombre": "Moto GP 21",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Moto GP 22 PS4",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Moto Racer 4",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "MotoGP™24 PS4",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "MotoGP™25 PS4",
+    "primario": 43000,
+    "secundario": 34400,
+    "disponible": true
+  },
+  {
+    "nombre": "Motorcycle Club",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Moving Out",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Mud Runner",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Mutant Year Zero: Road to Eden",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "MX ATV Legends",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "MX GP 2020",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "MX GP 2021",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "MX vs. ATV all out",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "MX vs. ATV Supercross Encore",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "MXGP 2019 - The Official Motocross Videogame",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "MXGP PRO",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "MXGP2 - The Official Motocross Videogame",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "MXGP3 - The Official Motocross Videogame",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "My Friend Peppa Pig",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "My Hero Injustice",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "My Hero One Injustice 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "My Singing Monsters Playground",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "My Universe: Interior Designer",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "My Universe: Puppies and Kittens",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Namco Museum Volumen 1",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Namco Museum Volumen 2",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Narcos: Rise of the Cartels",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Naruto Shippuden: Ultimate Legacy Collection",
+    "primario": 36000,
+    "secundario": 28800,
+    "disponible": true
+  },
+  {
+    "nombre": "Naruto Shippuden: Ultimate Ninja Storm 1",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Naruto Shippuden: Ultimate Ninja Storm 2",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Naruto Shippuden: Ultimate Ninja Storm 3",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Naruto Shippuden: Ultimate Ninja Storm 4",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "Naruto Shippuden: Ultimate Ninja Storm 4 - Road to Boruto",
+    "primario": 29000,
+    "secundario": 23200,
+    "disponible": true
+  },
+  {
+    "nombre": "Naruto Shippuden: Ultimate Ninja Storm Trilogy",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Naruto to Boruto: Shinobi Striker",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS PS4",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "NASCAR ARCADE",
+    "primario": 63000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Nascar Heat 21Ignition",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Nascar Heat 3",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Nascar Heat 4",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Nascar Heat 5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "NBA 2K 21",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "NBA 2K 22",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "NBA 2K 23 PS4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "NBA 2K Playgrounds 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "NBA 2k19",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "NBA 2K20",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "NBA 2K24 PS4",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "NBA 2K25 PS4",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "NBA 2K26",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Need for Speed",
+    "primario": 11000,
+    "secundario": 8800,
+    "disponible": true
+  },
+  {
+    "nombre": "Need For Speed Hot Pursuit + Plantas vs Zombies Neighborville",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Need for Speed Hot Pursuit Remastered",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Need for Speed Ultimate Bundle",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Need for Speed: Heat",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Need for Speed: Payback",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Need for Speed: Rivals",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "New Super Luckys Tale",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "New Tales from Borderlands PS4",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "NFL 26 PS4",
+    "primario": 41000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "NFL PRO ERA",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "NFL Pro Era",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "NHL 21",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "NHL 22",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "NHL 23 PS4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Ni No Kuni II: Revenant Kingdom",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Nickelodeon All-Star Brawl",
+    "primario": 40000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Nickelodeon All-Star Brawl 2",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "NICKELODEON KART RACERS",
+    "primario": 11000,
+    "secundario": 8800,
+    "disponible": true
+  },
+  {
+    "nombre": "Nickelodeon Kart Racers 3: Slime Speedway Turbo Edition",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Nickelodeon Karts 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Nier Replicant",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Nioh",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Nioh 2",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "No Man's Sky",
+    "primario": 29000,
+    "secundario": 23200,
+    "disponible": true
+  },
+  {
+    "nombre": "Offroad Racing - Buggy X ATV X Moto",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Olli Olli World PS4",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Olympic Games Tokio 2020",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "ON THE ROAD - The Truck Simulator",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "One Piece Odyssey",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "One Piece: Burning Blood",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "One Piece: Pirate Warriors 3",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "One Piece: Pirate Warriors 4",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "One Piece: Unlimited World Red",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "One Piece: World Seeker",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "ONE PUNCH MAN: A HERO NOBODY KNOWS",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "ONRush - Standard Digital Edition",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Outcast - Second Contact",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Outriders",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Overcooked",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Overcooked + Overcooked 2",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Overcooked Holiday Edition",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Overcooked: All you Can Eat",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "OVERCOOKED: GOURMET EDITION",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Overcooked! 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Overwatch - Legendary Edition",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "PAC-MAN Mega Tunnel Battle: Chomp Champs PS4",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Paranormal Activity: The Lost Soul",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Party Panic",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Pathless",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "PAW Patrol Mighty Pups Save Adventure Bay",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Paw Patrol Pack",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Paw Patrol The Movie",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "PAW Patrol World",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "PAW Patrol: Grand Prix",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Paw Patrol: On A Roll",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Payday 2: Crimewave Edition",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "PEAKY BLINDERS: MASTERMIND",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Persona 3 Reload PS4",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Persona 5",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Persona 5 Royal",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Persona 5 Strikers",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Persona 5 Tactica PS4",
+    "primario": 27000,
+    "secundario": 21600,
+    "disponible": true
+  },
+  {
+    "nombre": "Pes 2021",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "PGA Tour 2K23 PS4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Pine",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "PixArk",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "PJ Masks Heroes of the Night",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Planet Coaster Console Edition",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Plantas vs. Zombies Garden Warfare 1",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Plantas vs. Zombies Garden Warfare 2 - Standard Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Plantas vs. Zombies: Battle for Neighborville - Founder's Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Plants vs. Zombies™: Replanted PS4",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Poppy Playtime: Chapter 1",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Poppy Playtime: Chapter 2",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Poppy Playtime: Chapter 3",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Poppy Playtime: Chapter 4",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Port Royal",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Portal Knights",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Power Rangers: Battle For The Grid",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "PREDATOR HUNTING GROUNDS",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Primal Carnage: Extinction",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Prince of Persia The Lost Crown PS4",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "Project Cars 1",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Project Cars 1 - GOTY Edition",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Project Cars 2",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Project Cars 3",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Prototype",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Prototype - Biohazard Pack",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Prototype 2",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Raccoon City Edition",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Rage 2",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Rainbow Six Siege Extraction",
+    "primario": 55000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Rainbow Six Siege",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Ratchet & Clank",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Rayman Legends",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Real Truck Driver Simulator USA",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "Red dead Online Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Red Dead Redemption 2",
+    "primario": 18000,
+    "secundario": 14400,
+    "disponible": true
+  },
+  {
+    "nombre": "Red Dead Redemption Pack 1 + 2",
+    "primario": 43000,
+    "secundario": 34400,
+    "disponible": true
+  },
+  {
+    "nombre": "Red Dead Redemption Remastered",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Red Faction Guerrilla Re-Mars-tered",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "REMNANT : FROM THE ASHES",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Remnant Pack: From the Ashes - Swamps of Corsus",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Research and Destroy",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 0",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 1",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 2 REMAKE",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 3 REMAKE",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 3 Nemesis",
+    "primario": 14000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 4",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 4 Remake PS4",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 4 PS4 DELUXE EDITION",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Resident Evil 5",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 6",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil 7: Biohazard",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil Raccoon City Edition",
+    "primario": 22000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil Revelations 1",
+    "primario": 10000,
+    "secundario": 8000,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil Revelations Bundle",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Resident Evil Triple Pack",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil Village",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Resident Evil Village Gold Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Resident Evil: Deluxe Origins Bundle",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Ride",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Ride 2",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Ride 3",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Ride 4",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Riders Republic",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Rims Racing",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Rise of the Tomb Raider: 20 Year Celebration",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Road 96",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Rock Band 4: Rivals Bundle",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Rocket Arena",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Rocksmith 2014 Edition - Remastered",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Rugby 20",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Rugby 22",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Rugby 25",
+    "primario": 29000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Rugby Challenge 4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Rust Console Edition",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Ryan's Rescue Squad",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Sack Boy: A Big Adventure",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sackboy",
+    "primario": 29000,
+    "secundario": 23200,
+    "disponible": true
+  },
+  {
+    "nombre": "Saga Frontier Remastered",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Saint Seiya: Soldiers' Soul",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Saints Row",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Saints Row IV: Re-Elected",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Saints Row IV: Re-Elected and Gat out of Hell",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Saints Row: The Third Remastered",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "SAMURAI JACK: BATTLE THROUGH TIME",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Samurai Warriors 5",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "SBK 22",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Scarlet Nexus",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Sébastien Loeb Rally EVO",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "SEGA Genesis Classics",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sekiro: Shadows Die Twice GOTY",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Session Skate Sim",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Seven Days to Die",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Shadow of The Best",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Shadow of the Colossus",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Shadow of the Tomb Raider - Definitive Edition",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Shenmue 1 y 2",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Shenmue III",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Sherlock Holmes : The Devil's Daughter",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Sid Meier's Civilization VI",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Sifu",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Skater XL",
+    "primario": 38000,
+    "secundario": 30400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sleeping Dogs - Definitive Edition",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Slender: The Arrival Ps4",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Slime Rancher",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Slime Rancher Rainbow Bundle PS4",
+    "primario": 32000,
+    "secundario": 25600,
+    "disponible": true
+  },
+  {
+    "nombre": "Sniper Elite 3",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Sniper Elite 4",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Sniper Elite 5",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "SNIPER ELITE V2 REMASTERED",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Sniper Elite: Resistance PS4",
+    "primario": 23000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Sniper Ghost Warriors 3",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Sniper Ghost Warriors Contracts",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sniper Ghost Warriors Contracts 2",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "SnowRunner",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sonic Colors",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sonic Forces - Digital Standard Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Sonic Frontiers PS4",
+    "primario": 20000,
+    "secundario": 16000,
+    "disponible": true
+  },
+  {
+    "nombre": "Sonic Mania",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Sonic Origins",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sonic Racing: CrossWorlds",
+    "primario": 43000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "Sonic Superstars PS4",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Sonic Triple Pack",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "SONIC X SHADOW GENERATIONS PS4",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Soul Calibur VI",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "South Park The Fractured but Whole",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Spacebase Startopia",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Spike Volleyball",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "SpongeBob SquarePants™: The Patrick Star Game",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "SPYRO REIGNITED TRILOGY",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "SRX The Game",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Star Trek: Bridge Crew",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "STAR WARS Battlefront Classic Collection PS4",
+    "primario": 36000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "STAR WARS Jedi Knight II: Jedi Outcast",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Star Wars Jedi: Fallen Order",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "STAR WARS Jedi: Survivor PS4",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Star Wars Squadrons",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Star Wars: Battlefront",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Star Wars: Battlefront II",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Star Wars: Battlefront II - Celebration Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "STAR WARS™ Battlefront Classic Collection PS4",
+    "primario": 36000,
+    "secundario": 28800,
+    "disponible": true
+  },
+  {
+    "nombre": "Steep",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Stranded Deep",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Strange Brigade",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Stranger of Paradise Final Fantasy Origin PS4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Stray",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Street Fighter 6 PS4",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Street Fighter V",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Street Fighter V: Champion Edition",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Street Fighter: 30th Aniversary Collection",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "STREET POWER SOCCER",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Streets of Rage 4",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Subnautica",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "Subnautica Below Zero",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Super Bomberman R",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Super Monkey Ball Banana",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Super Star Wars",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Super Street The Game",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Super Toy Cars 2",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Super Toy Cars Offroad",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Supermarket Simulator Manager",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "SURF WORLD SERIES",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Sword Art Online: Fatal Bullet",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Tales of Arise",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Tamarin",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Taxi Chaos",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Team Sonic Racing",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Tearaway Unfolded",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Teenage Mutant Ninja Turtles",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Teenage Mutant Ninja Turtles Arcade: Wrath of the Mutants",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Teenage Mutant Ninja Turtles: Mutants Unleashed",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Teenage Mutant Ninja Turtles: The Cowabunga Collection",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Tekken 7",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Tennis World Tour",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Tennis World Tour - Roland Garros Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Tennis World Tour 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Terminator: Ressistance",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Terraria",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "The Adams Family: Mansion Mayhem",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Amazing American Circus",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Blizzard 30 Years Collection",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "The Blob",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Blob 2",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "The Callisto Protocol",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Crew",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "The Crew 2 - Standard Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "The Crew Motor Fest PS4",
+    "primario": 18000,
+    "secundario": 14400,
+    "disponible": true
+  },
+  {
+    "nombre": "The Dark Pictures Anthology: Man Of Medan",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "The Dark Pictures House of Ashes",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "The Dark Pictures The Devil in Me PS4",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "The Disney Afternoon Collection",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Elder Scrolls Online: Blackwood Collectors",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Elder Scrolls V: Skyrim Special Edition",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Evil Within 1",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "The Evil Within 2",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "The Forest",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "The Golf Club 2019 featuring PGA TOUR",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Jackbox The Party Pack",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "The King of Fighters XV",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "The Last of Us Parte II",
+    "primario": 27000,
+    "secundario": 21600,
+    "disponible": true
+  },
+  {
+    "nombre": "The Last Of Us Remastered",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "The Last of Us: Left Behind Stand Alone",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "The Lord of the Rings: Gollum™",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "The Nioh Colelction",
+    "primario": 63000,
+    "secundario": 50400,
+    "disponible": true
+  },
+  {
+    "nombre": "The Order: 1886",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "The Outer Worlds",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "The Quarry PS4 Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "The Quiet Man",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Sims 4",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Surge 1",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "The Surge 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "The Surge Dual Pack",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "The War Of Mine: Final Cut",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "The Warriors",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "The Witcher 3: Wild Hunt",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Thief",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "TIEBREAK",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Tiny Tina's Wonderlands",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Titanfall 2 - Standard Edition",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Tom Clancy's Ghost Recon: Breakpoint",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "Tom Clancy's Ghost Recon: Wildlands",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Tom Clancy's Rainbow Six Siege",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Tom Clancy’s Rainbow Six® Extraction PS4",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "TOM CLANCY'S THE DIVISION",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "TOM CLANCY'S THE DIVISION 2",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Tom Clancy's The Division Bundle",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Tomb Raider I-III Remastered Starring Lara Croft Ps4",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Tomb Raider Triple Pack",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Tomb Raider: Definitive Edition",
+    "primario": 11000,
+    "secundario": 8800,
+    "disponible": true
+  },
+  {
+    "nombre": "Tony Hawks Pro Skater 1+2",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "Tony Hawk's™ Pro Skater™ 3 + 4 - Edición Digital",
+    "primario": 33000,
+    "secundario": null,
+    "disponible": true
+  },
+  {
+    "nombre": "TopSpin 2K25 PS4",
+    "primario": 29000,
+    "secundario": 23200,
+    "disponible": true
+  },
+  {
+    "nombre": "Tour France 2021",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "TRAIN SIM WORLD 2",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Train Sim World 2020",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Train Sim World 3",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Transformers Battlegrounds",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Transistor",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Trek To Yomi",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Trek To Yomi",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Trials Fusion",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Trials of Mana",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Tropico 5",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Tropico 6",
+    "primario": 30000,
+    "secundario": 24000,
+    "disponible": true
+  },
+  {
+    "nombre": "TRUCK RACING CHAMPIONSHIP",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Twisted Metal 2 PS4",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "Twisted Metal: Black",
+    "primario": 15000,
+    "secundario": 12000,
+    "disponible": true
+  },
+  {
+    "nombre": "UFC 2",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "UFC 4",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Ultimate Marvel vs. Capcom 3",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Ultra Street Fighter IV",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Umbrella Corps",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Uncharted 4: A Thief's End",
+    "primario": 17000,
+    "secundario": 13600,
+    "disponible": true
+  },
+  {
+    "nombre": "Uncharted: The Lost Legacy",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Uncharted: The Nathan Drake Collection",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Unpacking",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Unravel Yarny Bundle",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Until Dawn",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "V-Rally 4",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Valentino Rossi: The Official Videogame - Special Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Vampire: The Masquerade",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Vampyr",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Virtua Fighter 5",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Virtual Surfing",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "WARFACE HEROIC EDITION",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Warface: Breakout",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Watch Dogs 1",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "Watch Dogs 2",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Watch Dogs Legion",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "Watch Dogs Legion Gold Edition",
+    "primario": 85000,
+    "secundario": 68000,
+    "disponible": true
+  },
+  {
+    "nombre": "Watch Dogs Pack 1 + 2",
+    "primario": 18000,
+    "secundario": 14400,
+    "disponible": true
+  },
+  {
+    "nombre": "We Sing",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Werewolf The Apocalypse",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Where The Art Leads",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Winter Games 2023",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Wo Long: Fallen Dynasty PS4",
+    "primario": 28000,
+    "secundario": 22400,
+    "disponible": true
+  },
+  {
+    "nombre": "Wobbly Life",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Wolfenstein II: The New Colossus",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Wolfenstein: The New Order",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Wolfenstein: The Old Blood",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Wolfenstein: Youngblood",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "World of Outlaws: Dirt Racing",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "World War Z",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "World War Z Aftermath",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "World War Z GOTY Edition",
+    "primario": null,
+    "secundario": null,
+    "disponible": false
+  },
+  {
+    "nombre": "Worms Rumble",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "WRC 10",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "WRC 5 FIA World Rally Championship",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "WRC 7 FIA World Rally Championship",
+    "primario": 12000,
+    "secundario": 9600,
+    "disponible": true
+  },
+  {
+    "nombre": "WRC 8 FIA World Rally Championship",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "WRC 9 FIA World Rally Championship",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "WRC Collection",
+    "primario": 22000,
+    "secundario": 17600,
+    "disponible": true
+  },
+  {
+    "nombre": "WRC Generations PS4",
+    "primario": 21000,
+    "secundario": 16800,
+    "disponible": true
+  },
+  {
+    "nombre": "Wreckfest",
+    "primario": 24000,
+    "secundario": 19200,
+    "disponible": true
+  },
+  {
+    "nombre": "WWE 2K Battlegrounds",
+    "primario": 14000,
+    "secundario": 11200,
+    "disponible": true
+  },
+  {
+    "nombre": "WWE 2K20",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "WWE 2k22 PS4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "WWE 2K23 PS4",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "WWE 2K24 PS4",
+    "primario": 19000,
+    "secundario": 15200,
+    "disponible": true
+  },
+  {
+    "nombre": "WWE 2K25 PS4",
+    "primario": 23000,
+    "secundario": 18400,
+    "disponible": true
+  },
+  {
+    "nombre": "Yakuza 0",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Yakuza 3",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Yakuza 4",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Yakuza 5",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Yakuza 6",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Yakuza Kiwami",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Yakuza Kiwami 2",
+    "primario": 25000,
+    "secundario": 20000,
+    "disponible": true
+  },
+  {
+    "nombre": "Yakuza Origins Pack ( Yakuza 0 / Kiwami / Kiwami 2)",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  },
+  {
+    "nombre": "Yakuza Remastered Collection ( Yakuza 3/4/5)",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "Yakuza: Like a Dragon Day Ichi Edition",
+    "primario": 16000,
+    "secundario": 12800,
+    "disponible": true
+  },
+  {
+    "nombre": "Yoga Master - Magic Atmosphere Bundle",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Yooka-Laylee and the Impossible Lair",
+    "primario": 40000,
+    "secundario": 32000,
+    "disponible": true
+  },
+  {
+    "nombre": "YouTubers Life OMG!",
+    "primario": 33000,
+    "secundario": 26400,
+    "disponible": true
+  },
+  {
+    "nombre": "Zombie Army 4: Dead War",
+    "primario": 13000,
+    "secundario": 10400,
+    "disponible": true
+  },
+  {
+    "nombre": "Zombie Army Trilogy",
+    "primario": 55000,
+    "secundario": 44000,
+    "disponible": true
+  }
+]
