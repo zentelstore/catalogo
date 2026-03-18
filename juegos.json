@@ -1,0 +1,12 @@
+[
+  { "nombre": "GTA V", "precio": 4500, "disponible": true, "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" },
+  { "nombre": "Red Dead Redemption 2", "precio": 6000, "disponible": true, "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg" },
+  { "nombre": "Elden Ring", "precio": 7500, "disponible": false, "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg" },
+  { "nombre": "Counter-Strike 2", "precio": 2000, "disponible": true, "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" },
+  { "nombre": "Cyberpunk 2077", "precio": 8000, "disponible": true, "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" },
+  { "nombre": "The Witcher 3", "precio": 3500, "disponible": false, "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" },
+  { "nombre": "Hollow Knight", "precio": 1500, "disponible": true, "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg" },
+  { "nombre": "Stardew Valley", "precio": 1200, "disponible": true, "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/413150/header.jpg" },
+  { "nombre": "Among Us", "precio": 800, "disponible": false, "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/945360/header.jpg" },
+  { "nombre": "Rust", "precio": 5500, "disponible": true, "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/header.jpg" }
+]
