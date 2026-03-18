@@ -1,0 +1,58 @@
+[
+  {
+    "servicio": "Netflix",
+    "emoji": "🔴",
+    "items": [
+      {
+        "tipo": "1 pantalla",
+        "precio": 10000
+      },
+      {
+        "tipo": "4 pantallas",
+        "precio": 20000
+      }
+    ]
+  },
+  {
+    "servicio": "MAX",
+    "emoji": "🟣",
+    "items": [
+      {
+        "tipo": "1 pantalla",
+        "precio": 8000
+      },
+      {
+        "tipo": "4 pantallas",
+        "precio": 12000
+      }
+    ]
+  },
+  {
+    "servicio": "Disney+",
+    "emoji": "🔵",
+    "items": [
+      {
+        "tipo": "1 pantalla",
+        "precio": 8000
+      },
+      {
+        "tipo": "4 pantallas",
+        "precio": 14000
+      }
+    ]
+  },
+  {
+    "servicio": "Prime Video",
+    "emoji": "🟡",
+    "items": [
+      {
+        "tipo": "1 pantalla",
+        "precio": 8000
+      },
+      {
+        "tipo": "4 pantallas",
+        "precio": 10000
+      }
+    ]
+  }
+]
