@@ -1,58 +1,21 @@
 [
   {
-    "servicio": "Netflix",
-    "emoji": "🔴",
-    "items": [
-      {
-        "tipo": "1 pantalla",
-        "precio": 10000
-      },
-      {
-        "tipo": "4 pantallas",
-        "precio": 20000
-      }
+    "categoria": "Cuentas Online",
+    "servicios": [
+      {"servicio":"Netflix","emoji":"🔴","imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1280px-Netflix_2015_logo.svg.png","items":[{"tipo":"1 Perfil / 30 días","precio":12000}]},
+      {"servicio":"Disney+","emoji":"🐭","imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney%2B_logo.svg/1280px-Disney%2B_logo.svg.png","items":[{"tipo":"1 Perfil / 30 días","precio":5000}]},
+      {"servicio":"MAX","emoji":"👑","imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Max_logo.svg/1280px-Max_logo.svg.png","items":[{"tipo":"1 Perfil / 30 días","precio":5000}]},
+      {"servicio":"Crunchyroll","emoji":"🍥","imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_logo.svg/1280px-Crunchyroll_logo.svg.png","items":[{"tipo":"1 Perfil / 30 días","precio":5000}]},
+      {"servicio":"Paramount+","emoji":"🏔️","imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Paramount_Plus_logo.svg/1280px-Paramount_Plus_logo.svg.png","items":[{"tipo":"1 Perfil / 30 días","precio":5000}]},
+      {"servicio":"Prime Video","emoji":"📦","imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Amazon_Prime_Video_logo.svg/1280px-Amazon_Prime_Video_logo.svg.png","items":[{"tipo":"1 Perfil / 30 días","precio":5000}]}
     ]
   },
   {
-    "servicio": "MAX",
-    "emoji": "🟣",
-    "items": [
-      {
-        "tipo": "1 pantalla",
-        "precio": 8000
-      },
-      {
-        "tipo": "4 pantallas",
-        "precio": 12000
-      }
-    ]
-  },
-  {
-    "servicio": "Disney+",
-    "emoji": "🔵",
-    "items": [
-      {
-        "tipo": "1 pantalla",
-        "precio": 8000
-      },
-      {
-        "tipo": "4 pantallas",
-        "precio": 14000
-      }
-    ]
-  },
-  {
-    "servicio": "Prime Video",
-    "emoji": "🟡",
-    "items": [
-      {
-        "tipo": "1 pantalla",
-        "precio": 8000
-      },
-      {
-        "tipo": "4 pantallas",
-        "precio": 10000
-      }
+    "categoria": "Cuentas TV",
+    "servicios": [
+      {"servicio":"VIX Premium","emoji":"⚽️","imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/ViX_logo.svg/1280px-ViX_logo.svg.png","items":[{"tipo":"1 Perfil / 30 días","precio":5000}]},
+      {"servicio":"PowerSignal","emoji":"📊","imagen":"","items":[{"tipo":"1 Perfil / 30 días","precio":5000}]},
+      {"servicio":"Flujo TV","emoji":"🟧","imagen":"","items":[{"tipo":"1 Perfil / 30 días","precio":8000}]}
     ]
   }
 ]
