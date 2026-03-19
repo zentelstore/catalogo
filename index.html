@@ -550,25 +550,46 @@ function renderStreaming(){
   const data = state.datos.streaming;
   const cont = document.getElementById('grid-streaming');
   cont.innerHTML='';
-  data.forEach((s,i)=>{
-    const div=document.createElement('div');
-    div.className='stream-card';
-    div.style.animationDelay=`${i*80}ms`;
-    div.innerHTML=`
-      <div class="stream-header">
-        <span class="stream-emoji">${s.emoji}</span>
-        <span class="stream-nombre">${s.servicio}</span>
-      </div>
-      <div class="stream-items">
-        ${s.items.map(it=>`
-          <div class="stream-item">
-            <span class="stream-tipo">${it.tipo}</span>
-            <span class="stream-precio">${fmt(it.precio)}</span>
-          </div>`).join('')}
-      </div>`;
-    cont.appendChild(div);
+
+  // Aviso incluye 1 perfil / 30 días
+  const aviso = document.createElement('div');
+  aviso.style.cssText='grid-column:1/-1;background:rgba(0,229,255,.07);border:1px solid rgba(0,229,255,.2);border-radius:10px;padding:.75rem 1.1rem;font-size:.85rem;color:var(--accent);margin-bottom:.25rem;display:flex;align-items:center;gap:.5rem';
+  aviso.innerHTML='🍿 <strong>Tu acceso incluye:</strong>&nbsp;1 Perfil · 30 días de garantía';
+  cont.appendChild(aviso);
+
+  let idx = 0;
+  data.forEach(cat => {
+    // Título de categoría
+    const label = document.createElement('div');
+    label.style.cssText='grid-column:1/-1;font-family:"Rajdhani",sans-serif;font-size:1rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;padding-bottom:.4rem;border-bottom:1px solid var(--border);margin-top:.5rem';
+    label.textContent = cat.categoria;
+    cont.appendChild(label);
+
+    cat.servicios.forEach((s, i) => {
+      const div = document.createElement('div');
+      div.className = 'stream-card';
+      div.style.animationDelay = `${idx * 60}ms`;
+      const imgHtml = s.imagen
+        ? `<img src="${s.imagen}" alt="${s.servicio}" style="height:28px;object-fit:contain;filter:brightness(0) invert(1);opacity:.85" onerror="this.style.display='none'">`
+        : `<span class="stream-emoji">${s.emoji}</span>`;
+      div.innerHTML=`
+        <div class="stream-header">
+          ${imgHtml}
+          <span class="stream-nombre">${s.servicio}</span>
+        </div>
+        <div class="stream-items">
+          ${s.items.map(it=>`
+            <div class="stream-item">
+              <span class="stream-tipo">${it.tipo}</span>
+              <span class="stream-precio">${fmt(it.precio)}</span>
+            </div>`).join('')}
+        </div>`;
+      cont.appendChild(div);
+      idx++;
+    });
   });
 }
+
 
 // ─────────────────────────────────────────────────────────────
 // STATS (solo Steam/PS4/PS5)
