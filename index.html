@@ -6,19 +6,10 @@
   <title>ZentelStore — Catálogo</title>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
   <style>
-    :root {
-      --bg: #0a0a0f;
-      --surface: #12121a;
-      --card: #1a1a26;
-      --border: #2a2a3d;
-      --accent: #00e5ff;
-      --accent2: #7c3aed;
-      --green: #22c55e;
-      --red: #ef4444;
-      --yellow: #f59e0b;
-      --blue: #3b82f6;
-      --text: #e2e8f0;
-      --muted: #64748b;
+    :root{
+      --bg:#0a0a0f;--surface:#12121a;--card:#1a1a26;--border:#2a2a3d;
+      --accent:#00e5ff;--accent2:#7c3aed;--green:#22c55e;--red:#ef4444;
+      --yellow:#f59e0b;--blue:#3b82f6;--text:#e2e8f0;--muted:#64748b;
     }
     *{margin:0;padding:0;box-sizing:border-box}
     body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;min-height:100vh}
@@ -44,7 +35,7 @@
     .tab:hover{color:var(--text)}
     .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
 
-    /* FILTROS DISPONIBILIDAD */
+    /* FILTROS */
     .filtros-wrap{max-width:1300px;margin:0 auto;padding:1rem 1.5rem .25rem;display:flex;gap:.4rem;flex-wrap:wrap;align-items:center}
     .btn-filtro{padding:.35rem .85rem;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'Inter',sans-serif;font-size:.78rem;font-weight:500;cursor:pointer;transition:all .2s;white-space:nowrap}
     .btn-filtro:hover{border-color:var(--accent);color:var(--accent)}
@@ -52,48 +43,45 @@
     .stat-pill{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;font-size:.75rem;color:var(--muted);display:flex;align-items:center;gap:.35rem;margin-left:auto}
     .stat-dot{width:6px;height:6px;border-radius:50%}
     .dot-green{background:var(--green);box-shadow:0 0 5px var(--green)}
-    .dot-red{background:var(--red);box-shadow:0 0 5px var(--red)}
     .dot-blue{background:var(--accent);box-shadow:0 0 5px var(--accent)}
+
+    /* SUB TABS */
+    .btn-sub{padding:.4rem .9rem;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'Inter',sans-serif;font-size:.8rem;font-weight:500;cursor:pointer;transition:all .2s}
+    .btn-sub:hover{border-color:var(--accent);color:var(--accent)}
+    .btn-sub.active{background:var(--accent);border-color:var(--accent);color:#000}
 
     /* MAIN */
     main{position:relative;z-index:1;max-width:1300px;margin:0 auto;padding:1.2rem 1.5rem 5rem}
-
-    /* PANEL */
     .panel{display:none}
     .panel.active{display:block}
 
-    /* GRID JUEGOS */
-    .grid-juegos{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1rem}
+    /* GRID */
+    .grid-juegos{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}
 
     /* CARD JUEGO */
-    .card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:transform .2s,border-color .2s,box-shadow .2s;animation:fadeUp .35s ease both}
-    .card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 0 18px rgba(0,229,255,.08)}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:transform .2s,border-color .2s,box-shadow .2s;animation:fadeUp .35s ease both;cursor:pointer}
+    .card:hover{transform:translateY(-5px);border-color:var(--accent);box-shadow:0 0 22px rgba(0,229,255,.12)}
     .card-img{width:100%;aspect-ratio:460/215;object-fit:cover;background:var(--surface);display:block}
     .card-body{padding:.75rem .9rem .9rem}
     .card-nombre{font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;margin-bottom:.55rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-
-    /* PRECIOS PS / STEAM */
     .precios-row{display:flex;justify-content:space-between;align-items:flex-end;gap:.5rem}
     .precio-bloque{display:flex;flex-direction:column;gap:.15rem}
     .precio-label{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
     .precio-valor{font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:700;color:var(--accent)}
     .precio-valor.sec{color:#a78bfa}
-    .precio-sin-stock{font-size:.75rem;color:var(--red);font-weight:600}
+    .precio-consultar{font-size:.75rem;color:var(--yellow);font-weight:600}
     .badge{font-size:.65rem;font-weight:600;padding:.18rem .55rem;border-radius:4px;text-transform:uppercase;letter-spacing:.04em;flex-shrink:0}
     .badge-ok{background:rgba(34,197,94,.15);color:var(--green);border:1px solid rgba(34,197,94,.3)}
     .badge-no{background:rgba(239,68,68,.12);color:var(--red);border:1px solid rgba(239,68,68,.25)}
-
-    /* CARD STEAM (un solo precio) */
     .card-footer{display:flex;align-items:center;justify-content:space-between}
     .precio-steam{font-family:'Rajdhani',sans-serif;font-size:1.1rem;font-weight:700;color:var(--accent)}
 
     /* SIN RESULTADOS / LOADING */
     .empty{text-align:center;padding:4rem 1rem;color:var(--muted);grid-column:1/-1}
-    .empty svg{opacity:.25;margin-bottom:.75rem}
     .spinner{width:34px;height:34px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto}
     .loading-msg{text-align:center;padding:4rem 1rem;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:.85rem}
 
-    /* ── PROMOS ─────────────────────────────────────────────── */
+    /* PROMOS */
     .promos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem}
     .promo-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;animation:fadeUp .4s ease both}
     .promo-header{padding:1rem 1.2rem .75rem;border-bottom:1px solid var(--border)}
@@ -105,21 +93,20 @@
     .promo-vigencia{font-size:.7rem;color:var(--yellow);margin-top:.3rem;display:flex;align-items:center;gap:.3rem}
     .promo-lista{padding:.75rem 1.2rem 1rem;display:flex;flex-direction:column;gap:.35rem;max-height:380px;overflow-y:auto}
     .promo-lista::-webkit-scrollbar{width:4px}
-    .promo-lista::-webkit-scrollbar-track{background:transparent}
     .promo-lista::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-    .promo-item{font-size:.82rem;color:var(--text);padding:.3rem .5rem;border-radius:5px;display:flex;align-items:center;gap:.5rem;transition:background .15s}
+    .promo-item{font-size:.82rem;color:var(--text);padding:.3rem .5rem;border-radius:5px;display:flex;align-items:center;gap:.5rem;transition:background .15s;cursor:pointer}
     .promo-item::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--muted);flex-shrink:0}
-    .promo-item:hover{background:rgba(255,255,255,.04)}
+    .promo-item:hover{background:rgba(0,229,255,.06)}
 
-    /* ── PS PLUS & MONEDAS ──────────────────────────────────── */
+    /* PS PLUS & MONEDAS */
     .psplus-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.2rem}
     .service-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;animation:fadeUp .4s ease both}
     .service-header{padding:.9rem 1.1rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.6rem}
     .service-emoji{font-size:1.4rem}
     .service-nombre{font-family:'Rajdhani',sans-serif;font-size:1.15rem;font-weight:700;color:var(--text)}
     .service-items{padding:.7rem 1.1rem 1rem;display:flex;flex-direction:column;gap:.45rem}
-    .service-item{display:flex;justify-content:space-between;align-items:center;padding:.4rem .5rem;border-radius:6px;transition:background .15s}
-    .service-item:hover{background:rgba(255,255,255,.04)}
+    .service-item{display:flex;justify-content:space-between;align-items:center;padding:.4rem .5rem;border-radius:6px;transition:background .15s;cursor:pointer}
+    .service-item:hover{background:rgba(0,229,255,.06)}
     .service-item-nombre{font-size:.85rem;color:var(--text)}
     .service-item-precio{font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;color:var(--accent)}
     .service-item-precio.prox{font-size:.75rem;color:var(--muted);font-family:'Inter',sans-serif;font-weight:500}
@@ -127,46 +114,83 @@
     .section-label{font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem;margin-top:1.25rem;padding-bottom:.4rem;border-bottom:1px solid var(--border)}
     .section-label:first-child{margin-top:0}
 
-    /* ── STREAMING ──────────────────────────────────────────── */
+    /* STREAMING */
     .streaming-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.1rem}
-    .stream-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;animation:fadeUp .4s ease both;transition:transform .2s,border-color .2s,box-shadow .2s}
-    .stream-card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 0 18px rgba(0,229,255,.07)}
+    .stream-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;animation:fadeUp .4s ease both;transition:transform .2s,border-color .2s,box-shadow .2s;cursor:pointer}
+    .stream-card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 0 18px rgba(0,229,255,.09)}
     .stream-header{padding:.9rem 1.1rem .7rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.6rem}
     .stream-emoji{font-size:1.6rem}
     .stream-nombre{font-family:'Rajdhani',sans-serif;font-size:1.25rem;font-weight:700}
     .stream-items{padding:.7rem 1.1rem 1rem;display:flex;flex-direction:column;gap:.4rem}
-    .stream-item{display:flex;justify-content:space-between;align-items:center;padding:.35rem .4rem;border-radius:5px;transition:background .15s}
-    .stream-item:hover{background:rgba(255,255,255,.04)}
+    .stream-item{display:flex;justify-content:space-between;align-items:center;padding:.35rem .4rem;border-radius:5px}
     .stream-tipo{font-size:.83rem;color:var(--muted)}
     .stream-precio{font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:700;color:var(--accent)}
+
+    /* ── MODAL ─────────────────────────────────────────────────── */
+    .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(6px);z-index:500;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity .2s}
+    .modal-overlay.open{opacity:1;pointer-events:all}
+    .modal{background:var(--card);border:1px solid var(--border);border-radius:16px;width:100%;max-width:440px;overflow:hidden;transform:scale(.95) translateY(20px);transition:transform .25s;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+    .modal-overlay.open .modal{transform:scale(1) translateY(0)}
+    .modal-img{width:100%;aspect-ratio:460/215;object-fit:cover;background:var(--surface);display:block}
+    .modal-img.placeholder{aspect-ratio:unset;height:80px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;background:var(--surface)}
+    .modal-body{padding:1.25rem 1.4rem 1.4rem}
+    .modal-nombre{font-family:'Rajdhani',sans-serif;font-size:1.4rem;font-weight:700;margin-bottom:.3rem}
+    .modal-desc{font-size:.82rem;color:var(--muted);margin-bottom:1rem;line-height:1.5}
+    .modal-precios{display:flex;gap:1rem;margin-bottom:1.2rem;flex-wrap:wrap}
+    .modal-precio-bloque{display:flex;flex-direction:column;gap:.2rem}
+    .modal-precio-label{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+    .modal-precio-valor{font-family:'Rajdhani',sans-serif;font-size:1.6rem;font-weight:700;color:var(--accent)}
+    .modal-precio-valor.sec{color:#a78bfa}
+    .modal-precio-valor.consultar{font-size:1rem;color:var(--yellow)}
+    .modal-btns{display:flex;gap:.6rem}
+    .btn-wa{flex:1;background:#25d366;color:#fff;border:none;border-radius:10px;padding:.8rem 1rem;font-family:'Inter',sans-serif;font-size:.9rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;text-decoration:none;transition:opacity .2s}
+    .btn-wa:hover{opacity:.9}
+    .btn-cerrar{background:var(--surface);color:var(--muted);border:1px solid var(--border);border-radius:10px;padding:.8rem 1rem;font-family:'Inter',sans-serif;font-size:.9rem;cursor:pointer;transition:all .2s}
+    .btn-cerrar:hover{border-color:var(--accent);color:var(--accent)}
+
+    /* WA FLOTANTE */
+    .wa-btn{position:fixed;bottom:1.4rem;right:1.4rem;z-index:400;background:#25d366;color:#fff;border:none;border-radius:50px;padding:.7rem 1.1rem;display:flex;align-items:center;gap:.55rem;font-family:'Inter',sans-serif;font-size:.875rem;font-weight:600;text-decoration:none;box-shadow:0 4px 18px rgba(37,211,102,.4);transition:transform .2s,box-shadow .2s;animation:waPulse 2.5s ease-in-out infinite}
+    .wa-btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 6px 26px rgba(37,211,102,.55);animation:none}
 
     /* FOOTER */
     footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:1rem 1.5rem;text-align:center;color:var(--muted);font-size:.78rem}
     footer strong{color:var(--accent)}
-
-    /* WA */
-    .btn-sub{padding:.4rem .9rem;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'Inter',sans-serif;font-size:.8rem;font-weight:500;cursor:pointer;transition:all .2s}
-    .btn-sub:hover{border-color:var(--accent);color:var(--accent)}
-    .btn-sub.active{background:var(--accent);border-color:var(--accent);color:#000}
-    .wa-btn{position:fixed;bottom:1.4rem;right:1.4rem;z-index:999;background:#25d366;color:#fff;border:none;border-radius:50px;padding:.7rem 1.1rem;display:flex;align-items:center;gap:.55rem;font-family:'Inter',sans-serif;font-size:.875rem;font-weight:600;text-decoration:none;box-shadow:0 4px 18px rgba(37,211,102,.4);transition:transform .2s,box-shadow .2s;animation:waPulse 2.5s ease-in-out infinite}
-    .wa-btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 6px 26px rgba(37,211,102,.55);animation:none}
 
     /* ANIMATIONS */
     @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
     @keyframes spin{to{transform:rotate(360deg)}}
     @keyframes waPulse{0%,100%{box-shadow:0 4px 18px rgba(37,211,102,.4)}50%{box-shadow:0 4px 30px rgba(37,211,102,.7)}}
 
-    /* RESPONSIVE */
     @media(max-width:640px){
       .header-inner{flex-wrap:wrap;height:auto;padding:.65rem 1rem}
       .search-wrap{order:3;max-width:100%;width:100%}
       main{padding:1rem 1rem 4rem}
       .filtros-wrap{padding:.75rem 1rem .2rem}
       .stat-pill{margin-left:0}
+      .modal{max-width:100%}
     }
   </style>
 </head>
 <body>
+
+<!-- ── MODAL ── -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div id="modal-img-wrap"></div>
+    <div class="modal-body">
+      <div class="modal-nombre" id="modal-nombre"></div>
+      <div class="modal-desc" id="modal-desc"></div>
+      <div class="modal-precios" id="modal-precios"></div>
+      <div class="modal-btns">
+        <a class="btn-wa" id="modal-wa" href="#" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Consultar por WhatsApp
+        </a>
+        <button class="btn-cerrar" onclick="closeModal()">✕</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <header>
   <div class="header-inner">
@@ -176,7 +200,7 @@
     </a>
     <div class="search-wrap">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-      <input id="buscador" type="text" placeholder="Buscar..."/>
+      <input id="buscador" type="text" placeholder="Buscá tu juego o servicio..."/>
     </div>
   </div>
 </header>
@@ -193,65 +217,64 @@
   </div>
 </nav>
 
-<!-- FILTROS (solo para pestañas con grilla de juegos) -->
 <div class="filtros-wrap" id="filtros-wrap">
   <button class="btn-filtro active" data-filtro="todos">Todos</button>
   <button class="btn-filtro" data-filtro="disponible">✅ Disponibles</button>
   <button class="btn-filtro" data-filtro="no-disponible">❌ Sin stock</button>
   <div class="stat-pill" id="stat-pill" style="display:none">
-    <span class="stat-dot dot-blue"></span><span id="stat-total">0</span>&nbsp;total&nbsp;
+    <span class="stat-dot dot-blue"></span><span id="stat-total">0</span>&nbsp;juegos&nbsp;
     <span class="stat-dot dot-green"></span><span id="stat-disp">0</span>&nbsp;disponibles
   </div>
 </div>
 
 <main>
 
-  <!-- ── STEAM / PC ── -->
+  <!-- STEAM -->
   <div class="panel active" id="panel-steam">
     <div style="display:flex;gap:.4rem;margin-bottom:1rem;flex-wrap:wrap">
       <button class="btn-sub active" data-sub="disponibles">✅ Disponibles (47k)</button>
       <button class="btn-sub" data-sub="drm">⚠️ Con DRM (936)</button>
     </div>
-    <div class="loading-msg" id="loading-steam"><div class="spinner"></div><span>Cargando Steam...</span></div>
+    <div class="loading-msg" id="loading-steam"><div class="spinner"></div><span>Cargando catálogo Steam...</span></div>
     <div class="grid-juegos" id="grid-steam"></div>
   </div>
 
-  <!-- ── PS4 ── -->
+  <!-- PS4 -->
   <div class="panel" id="panel-ps4">
     <div class="loading-msg" id="loading-ps4"><div class="spinner"></div><span>Cargando PS4...</span></div>
     <div class="grid-juegos" id="grid-ps4"></div>
   </div>
 
-  <!-- ── PS5 ── -->
+  <!-- PS5 -->
   <div class="panel" id="panel-ps5">
     <div class="loading-msg" id="loading-ps5"><div class="spinner"></div><span>Cargando PS5...</span></div>
     <div class="grid-juegos" id="grid-ps5"></div>
   </div>
 
-  <!-- ── PROMOS ── -->
+  <!-- PROMOS -->
   <div class="panel" id="panel-promos">
     <div class="loading-msg" id="loading-promos"><div class="spinner"></div><span>Cargando Promos...</span></div>
     <div class="promos-grid" id="grid-promos"></div>
   </div>
 
-  <!-- ── PS PLUS & MONEDAS ── -->
+  <!-- PS PLUS & MONEDAS -->
   <div class="panel" id="panel-psplus">
     <div class="loading-msg" id="loading-psplus"><div class="spinner"></div><span>Cargando PS Plus...</span></div>
     <div id="contenido-psplus"></div>
   </div>
 
-  <!-- ── STREAMING ── -->
+  <!-- STREAMING -->
   <div class="panel" id="panel-streaming">
     <div class="loading-msg" id="loading-streaming"><div class="spinner"></div><span>Cargando Streaming...</span></div>
     <div class="streaming-grid" id="grid-streaming"></div>
   </div>
 
-  <!-- ── PRODUCTIVIDAD ── -->
+  <!-- PRODUCTIVIDAD -->
   <div class="panel" id="panel-productividad">
     <div style="text-align:center;padding:5rem 1rem">
       <div style="font-size:3rem;margin-bottom:1rem">💼</div>
       <div style="font-family:'Rajdhani',sans-serif;font-size:1.6rem;font-weight:700;color:var(--text);margin-bottom:.5rem">Productividad</div>
-      <p style="color:var(--muted);font-size:.95rem;margin-bottom:1.5rem">Esta sección está en construcción.<br>Próximamente vas a encontrar Microsoft Office, Adobe y más.</p>
+      <p style="color:var(--muted);font-size:.95rem;margin-bottom:1.5rem">Esta sección está en construcción.<br>Próximamente Microsoft Office, Adobe y más.</p>
       <a href="https://wa.me/543518046904?text=Hola!%20Quiero%20consultar%20por%20productos%20de%20productividad%20%F0%9F%92%BC" target="_blank" rel="noopener"
          style="display:inline-flex;align-items:center;gap:.5rem;background:#25d366;color:#fff;text-decoration:none;padding:.65rem 1.3rem;border-radius:8px;font-weight:600;font-size:.9rem">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -272,44 +295,75 @@
 </a>
 
 <script>
-// ─────────────────────────────────────────────────────────────
-// ESTADO GLOBAL
-// ─────────────────────────────────────────────────────────────
+const WA = '543518046904';
+const TABS_CON_FILTRO = ['steam','ps4','ps5'];
+
 const state = {
   tabActual: 'steam',
   subSteam: 'disponibles',
   filtro: 'todos',
-  datos: { steam_disponibles: null, steam_drm: null, ps4: null, ps5: null, promos: null, psplus: null, streaming: null }
+  datos: { steam_disponibles:null, steam_drm:null, ps4:null, ps5:null, promos:null, psplus:null, streaming:null }
 };
 
-const TABS_CON_FILTRO = ['steam','ps4','ps5'];
 const ARCHIVOS = {
-  steam_disponibles: 'juegos_disponibles.json',
-  steam_drm:         'juegos_drm.json',
-  ps4:   'ps4.json',
-  ps5:   'ps5.json',
-  promos:'promos.json',
-  psplus:'psplus.json',
-  streaming:'streaming.json'
+  steam_disponibles:'juegos_disponibles.json',
+  steam_drm:'juegos_drm.json',
+  ps4:'ps4.json', ps5:'ps5.json',
+  promos:'promos.json', psplus:'psplus.json', streaming:'streaming.json'
 };
 
-// ─────────────────────────────────────────────────────────────
-// UTILS
-// ─────────────────────────────────────────────────────────────
-function fmt(n){ return n != null ? '$'+Number(n).toLocaleString('es-AR') : null }
+function fmt(n){
+  if(n == null || n === 0) return null;
+  return '$'+Number(n).toLocaleString('es-AR');
+}
 
-// ─────────────────────────────────────────────────────────────
-// TABS
-// ─────────────────────────────────────────────────────────────
-document.querySelectorAll('.tab').forEach(btn => {
-  btn.addEventListener('click', () => {
+function waLink(texto){
+  return `https://wa.me/${WA}?text=${encodeURIComponent(texto)}`;
+}
+
+// ── MODAL ────────────────────────────────────────────────────
+function openModal({nombre, imagen, desc, precios, waMsg}){
+  // Imagen
+  const imgWrap = document.getElementById('modal-img-wrap');
+  if(imagen){
+    imgWrap.innerHTML = `<img class="modal-img" src="${imagen}" alt="${nombre}" onerror="this.parentElement.innerHTML='<div class=\\'modal-img placeholder\\'>🎮</div>'">`;
+  } else {
+    imgWrap.innerHTML = `<div class="modal-img placeholder">🎮</div>`;
+  }
+
+  document.getElementById('modal-nombre').textContent = nombre;
+  document.getElementById('modal-desc').textContent = desc || '';
+
+  // Precios
+  const preciosEl = document.getElementById('modal-precios');
+  preciosEl.innerHTML = precios.map(p => `
+    <div class="modal-precio-bloque">
+      <span class="modal-precio-label">${p.label}</span>
+      <span class="modal-precio-valor ${p.clase||''}">${p.valor}</span>
+    </div>`).join('');
+
+  document.getElementById('modal-wa').href = waLink(waMsg);
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(e){
+  if(e && e.target !== document.getElementById('modal-overlay')) return;
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
+
+// ── TABS ─────────────────────────────────────────────────────
+document.querySelectorAll('.tab').forEach(btn=>{
+  btn.addEventListener('click',()=>{
     document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
     const tab = btn.dataset.tab;
     document.getElementById('panel-'+tab).classList.add('active');
     state.tabActual = tab;
-    // Mostrar/ocultar filtros y buscador
     const conFiltro = TABS_CON_FILTRO.includes(tab);
     document.getElementById('filtros-wrap').style.display = conFiltro ? 'flex' : 'none';
     document.getElementById('buscador').style.display = conFiltro ? '' : 'none';
@@ -318,38 +372,46 @@ document.querySelectorAll('.tab').forEach(btn => {
   });
 });
 
-// ─────────────────────────────────────────────────────────────
-// CARGA DE DATOS
-// ─────────────────────────────────────────────────────────────
+// ── SUB TABS STEAM ───────────────────────────────────────────
+document.querySelectorAll('.btn-sub').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.btn-sub').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    state.subSteam = btn.dataset.sub;
+    document.getElementById('loading-steam').style.display='flex';
+    cargarTab('steam');
+  });
+});
+
+// ── CARGA DE DATOS ───────────────────────────────────────────
 async function cargarTab(tab){
-  if(tab === 'steam'){
-    const key = 'steam_' + state.subSteam;
-    if(state.datos[key] !== null){ renderTab('steam'); return; }
+  if(tab==='steam'){
+    const key='steam_'+state.subSteam;
+    if(state.datos[key]!==null){ renderTab('steam'); return; }
     try{
-      const r = await fetch(ARCHIVOS[key]);
-      state.datos[key] = await r.json();
+      const r=await fetch(ARCHIVOS[key]);
+      state.datos[key]=await r.json();
       renderTab('steam');
-    } catch(e){
-      document.getElementById('loading-steam').innerHTML = '<p style="color:var(--red)">⚠️ No se pudo cargar el archivo</p>';
+    }catch(e){
+      document.getElementById('loading-steam').innerHTML='<p style="color:var(--red)">⚠️ No se pudo cargar el archivo</p>';
     }
     return;
   }
-  if(state.datos[tab] !== null){ renderTab(tab); return; }
+  if(state.datos[tab]!==null){ renderTab(tab); return; }
   try{
-    const r = await fetch(ARCHIVOS[tab]);
-    state.datos[tab] = await r.json();
+    const r=await fetch(ARCHIVOS[tab]);
+    state.datos[tab]=await r.json();
     renderTab(tab);
-  } catch(e){
-    document.getElementById('loading-'+tab).innerHTML =
-      '<p style="color:var(--red)">⚠️ No se pudo cargar '+ARCHIVOS[tab]+'</p>';
+  }catch(e){
+    document.getElementById('loading-'+tab).innerHTML=`<p style="color:var(--red)">⚠️ No se pudo cargar ${ARCHIVOS[tab]}</p>`;
   }
 }
 
 function renderTab(tab){
-  if(tab === 'steam'){
+  if(tab==='steam'){
     document.getElementById('loading-steam').style.display='none';
-    const key = 'steam_' + state.subSteam;
-    renderJuegos('steam', state.datos[key] || [], true);
+    const key='steam_'+state.subSteam;
+    renderJuegos('steam', state.datos[key]||[], true);
     return;
   }
   document.getElementById('loading-'+tab).style.display='none';
@@ -360,9 +422,7 @@ function renderTab(tab){
   else if(tab==='streaming') renderStreaming();
 }
 
-// ─────────────────────────────────────────────────────────────
-// RENDER JUEGOS (Steam / PS4 / PS5)
-// ─────────────────────────────────────────────────────────────
+// ── RENDER JUEGOS ────────────────────────────────────────────
 function renderJuegos(tipo, datos, esSteam){
   const cont = document.getElementById('grid-'+tipo);
   cont.innerHTML='';
@@ -370,40 +430,45 @@ function renderJuegos(tipo, datos, esSteam){
 
   let lista = datos.filter(j=>{
     const matchTexto = j.nombre.toLowerCase().includes(texto);
-    const disp = j.disponible;
     const matchFiltro =
       state.filtro==='todos' ||
-      (state.filtro==='disponible' && disp) ||
-      (state.filtro==='no-disponible' && !disp);
+      (state.filtro==='disponible' && j.disponible) ||
+      (state.filtro==='no-disponible' && !j.disponible);
     return matchTexto && matchFiltro;
   });
 
   if(!lista.length){
-    cont.innerHTML=`<div class="empty">
-      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-      <p>Sin resultados</p></div>`;
+    cont.innerHTML=`<div class="empty"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><p>Sin resultados</p></div>`;
     return;
   }
 
   lista.forEach((j,i)=>{
-    const card = document.createElement('div');
+    const card=document.createElement('div');
     card.className='card';
-    card.style.animationDelay=`${Math.min(i*30,600)}ms`;
+    card.style.animationDelay=`${Math.min(i*20,500)}ms`;
 
     if(esSteam){
-      const img = j.imagen||'https://placehold.co/460x215/1a1a26/64748b?text=Sin+imagen';
-      const precio = fmt(j.precio)||'—';
-      const disp = j.disponible;
+      const precioDisplay = j.precio ? `<span class="precio-steam">${fmt(j.precio)}</span>` : `<span class="precio-consultar">Consultar precio</span>`;
+      const img = j.imagen||'';
       card.innerHTML=`
-        <img class="card-img" src="${img}" alt="${j.nombre}" loading="lazy"
-             onerror="this.src='https://placehold.co/460x215/1a1a26/64748b?text=Sin+imagen'"/>
+        <img class="card-img" src="${img}" alt="${j.nombre}" loading="lazy" onerror="this.src='https://placehold.co/460x215/1a1a26/64748b?text=Sin+imagen'"/>
         <div class="card-body">
           <div class="card-nombre" title="${j.nombre}">${j.nombre}</div>
           <div class="card-footer">
-            <span class="precio-steam">${precio}</span>
-            <span class="badge ${disp?'badge-ok':'badge-no'}">${disp?'Disponible':'Agotado'}</span>
+            ${precioDisplay}
+            <span class="badge ${j.disponible?'badge-ok':'badge-no'}">${j.disponible?'Disp.':'DRM'}</span>
           </div>
         </div>`;
+      card.addEventListener('click',()=>{
+        const p = j.precio ? [{label:'Precio',valor:fmt(j.precio)}] : [{label:'Precio',valor:'Consultar',clase:'consultar'}];
+        openModal({
+          nombre: j.nombre,
+          imagen: j.imagen,
+          desc: j.disponible ? '✅ Juego disponible para activar en Steam.' : '⚠️ Este juego requiere DRM adicional.',
+          precios: p,
+          waMsg: `Hola! Quiero consultar por el juego de Steam: *${j.nombre}* 🖥️`
+        });
+      });
     } else {
       const p1 = fmt(j.primario);
       const p2 = fmt(j.secundario);
@@ -413,17 +478,29 @@ function renderJuegos(tipo, datos, esSteam){
           <div class="precios-row">
             <div class="precio-bloque">
               <span class="precio-label">Primaria</span>
-              ${p1 ? `<span class="precio-valor">${p1}</span>` : `<span class="precio-sin-stock">Sin stock</span>`}
+              ${p1 ? `<span class="precio-valor">${p1}</span>` : `<span class="precio-consultar">Sin stock</span>`}
             </div>
             <div class="precio-bloque" style="text-align:right">
               <span class="precio-label">Secundaria</span>
-              ${p2 ? `<span class="precio-valor sec">${p2}</span>` : `<span class="precio-sin-stock">Sin stock</span>`}
+              ${p2 ? `<span class="precio-valor sec">${p2}</span>` : `<span class="precio-consultar">Sin stock</span>`}
             </div>
-            <span class="badge ${j.disponible?'badge-ok':'badge-no'}" style="align-self:flex-end">
-              ${j.disponible?'Disp.':'Agotado'}
-            </span>
+            <span class="badge ${j.disponible?'badge-ok':'badge-no'}" style="align-self:flex-end">${j.disponible?'Disp.':'Agotado'}</span>
           </div>
         </div>`;
+      const plat = tipo.toUpperCase();
+      card.addEventListener('click',()=>{
+        const precios=[];
+        if(p1) precios.push({label:'Cuenta Primaria',valor:p1});
+        if(p2) precios.push({label:'Cuenta Secundaria',valor:p2,clase:'sec'});
+        if(!precios.length) precios.push({label:'Precio',valor:'Sin stock',clase:'consultar'});
+        openModal({
+          nombre: j.nombre,
+          imagen: null,
+          desc: `🎮 Juego para ${plat}. ${j.disponible ? 'Disponible para activar.' : 'Sin stock actualmente.'}`,
+          precios,
+          waMsg: `Hola! Quiero consultar por *${j.nombre}* para ${plat} 🎮`
+        });
+      });
     }
     cont.appendChild(card);
   });
@@ -431,12 +508,10 @@ function renderJuegos(tipo, datos, esSteam){
   if(TABS_CON_FILTRO.includes(tipo)) actualizarStats();
 }
 
-// ─────────────────────────────────────────────────────────────
-// RENDER PROMOS
-// ─────────────────────────────────────────────────────────────
+// ── RENDER PROMOS ────────────────────────────────────────────
 function renderPromos(){
-  const data = state.datos.promos;
-  const cont = document.getElementById('grid-promos');
+  const data=state.datos.promos;
+  const cont=document.getElementById('grid-promos');
   cont.innerHTML='';
   data.forEach((promo,i)=>{
     const div=document.createElement('div');
@@ -449,174 +524,165 @@ function renderPromos(){
         <div class="promo-vigencia">⏰ ${promo.vigencia}</div>
       </div>
       <div class="promo-lista">
-        ${promo.juegos.map(j=>`<div class="promo-item">${j}</div>`).join('')}
+        ${promo.juegos.map(j=>`<div class="promo-item" data-juego="${j}" data-promo="${promo.titulo}">${j}</div>`).join('')}
       </div>`;
     cont.appendChild(div);
   });
+
+  // Click en item de promo
+  cont.querySelectorAll('.promo-item').forEach(el=>{
+    el.addEventListener('click',()=>{
+      const juego=el.dataset.juego;
+      const promo=el.dataset.promo;
+      openModal({
+        nombre: juego,
+        imagen: null,
+        desc: `🔥 En promoción: ${promo}`,
+        precios:[{label:'Promoción',valor:promo.split('POR')[1]?.trim()||'Ver promo',clase:''}],
+        waMsg: `Hola! Vi la promo *${promo}* y quiero consultar por *${juego}* 🔥`
+      });
+    });
+  });
 }
 
-// ─────────────────────────────────────────────────────────────
-// RENDER PS PLUS & MONEDAS
-// ─────────────────────────────────────────────────────────────
+// ── RENDER PS PLUS & MONEDAS ─────────────────────────────────
 function renderPsplus(){
-  const d = state.datos.psplus;
-  const cont = document.getElementById('contenido-psplus');
+  const d=state.datos.psplus;
+  const cont=document.getElementById('contenido-psplus');
   cont.innerHTML='';
 
-  // PS Plus plans
   let html=`<div class="section-label">PlayStation Plus</div><div class="psplus-grid">`;
+  const colores=['#3b82f6','#8b5cf6','#06b6d4'];
   d.psplus.forEach((plan,i)=>{
-    const colores=['#3b82f6','#8b5cf6','#06b6d4'];
     html+=`<div class="service-card" style="animation-delay:${i*80}ms">
-      <div class="service-header">
-        <span class="service-emoji">🏆</span>
-        <span class="service-nombre" style="color:${colores[i]}">${plan.plan}</span>
-      </div>
+      <div class="service-header"><span class="service-emoji">🏆</span><span class="service-nombre" style="color:${colores[i]}">${plan.plan}</span></div>
       <div class="service-items">
-        ${plan.opciones.map(o=>`
-          <div class="service-item">
-            <span class="service-item-nombre">${o.duracion}</span>
-            <span class="service-item-precio">${fmt(o.precio)}</span>
-          </div>`).join('')}
-      </div>
-    </div>`;
+        ${plan.opciones.map(o=>`<div class="service-item" data-nombre="${plan.plan} - ${o.duracion}" data-precio="${o.precio}">
+          <span class="service-item-nombre">${o.duracion}</span>
+          <span class="service-item-precio">${fmt(o.precio)}</span>
+        </div>`).join('')}
+      </div></div>`;
   });
   html+=`</div>`;
 
-  // Tarjetas PSN
   html+=`<div class="section-label" style="margin-top:1.75rem">Tarjetas PSN</div><div class="psplus-grid">`;
   d.tarjetas_psn.forEach((t,i)=>{
     html+=`<div class="service-card" style="animation-delay:${i*80}ms">
-      <div class="service-header">
-        <span class="service-emoji">💳</span>
-        <span class="service-nombre">${t.tipo}</span>
-      </div>
+      <div class="service-header"><span class="service-emoji">💳</span><span class="service-nombre">${t.tipo}</span></div>
       <div class="service-items">
-        ${t.items.map(it=>`
-          <div class="service-item">
-            <span class="service-item-nombre">${it.valor}</span>
-            <span class="service-item-precio prox">${it.precio}</span>
-          </div>`).join('')}
-      </div>
-    </div>`;
-  });
-  html+=`</div>`;
-
-  // Monedas de juegos
-  html+=`<div class="section-label" style="margin-top:1.75rem">Monedas de Juegos</div><div class="psplus-grid">`;
-  d.monedas.forEach((m,i)=>{
-    const emojis={
-      'Free Fire':'🔥','Clash Royale':'⚔️','Fortnite (Pavos)':'🪂','Robux':'🟥'
-    };
-    html+=`<div class="service-card" style="animation-delay:${i*80}ms">
-      <div class="service-header">
-        <span class="service-emoji">${emojis[m.juego]||'💰'}</span>
-        <span class="service-nombre">${m.juego}</span>
-      </div>
-      <div class="service-items">
-        ${m.items.map(it=>`
-          <div class="service-item">
-            <span class="service-item-nombre">${it.cantidad}</span>
-            <span class="service-item-precio ${it.precio==null?'consultar':''}">${it.precio!=null?fmt(it.precio):'Consultar'}</span>
-          </div>`).join('')}
-      </div>
-    </div>`;
-  });
-  html+=`</div>`;
-
-  // Game Pass
-  html+=`<div class="section-label" style="margin-top:1.75rem">Xbox Game Pass</div><div class="psplus-grid">`;
-  html+=`<div class="service-card">
-    <div class="service-header">
-      <span class="service-emoji">🎮</span>
-      <span class="service-nombre" style="color:#22c55e">Game Pass</span>
-    </div>
-    <div class="service-items">
-      ${d.gamepass.map(g=>`
-        <div class="service-item">
-          <span class="service-item-nombre">${g.nombre}</span>
-          <span class="service-item-precio">${fmt(g.precio)}</span>
+        ${t.items.map(it=>`<div class="service-item" data-nombre="Tarjeta PSN ${t.tipo} ${it.valor}" data-precio="0">
+          <span class="service-item-nombre">${it.valor}</span>
+          <span class="service-item-precio prox">${it.precio}</span>
         </div>`).join('')}
-    </div>
-  </div></div>`;
+      </div></div>`;
+  });
+  html+=`</div>`;
+
+  html+=`<div class="section-label" style="margin-top:1.75rem">Monedas de Juegos</div><div class="psplus-grid">`;
+  const emojis={'Free Fire':'🔥','Clash Royale':'⚔️','Fortnite (Pavos)':'🪂','Robux':'🟥'};
+  d.monedas.forEach((m,i)=>{
+    html+=`<div class="service-card" style="animation-delay:${i*80}ms">
+      <div class="service-header"><span class="service-emoji">${emojis[m.juego]||'💰'}</span><span class="service-nombre">${m.juego}</span></div>
+      <div class="service-items">
+        ${m.items.map(it=>`<div class="service-item" data-nombre="${m.juego} - ${it.cantidad}" data-precio="${it.precio||0}">
+          <span class="service-item-nombre">${it.cantidad}</span>
+          <span class="service-item-precio ${it.precio==null?'consultar':''}">${it.precio!=null?fmt(it.precio):'Consultar'}</span>
+        </div>`).join('')}
+      </div></div>`;
+  });
+  html+=`</div>`;
+
+  html+=`<div class="section-label" style="margin-top:1.75rem">Xbox Game Pass</div><div class="psplus-grid">`;
+  html+=`<div class="service-card"><div class="service-header"><span class="service-emoji">🎮</span><span class="service-nombre" style="color:#22c55e">Game Pass</span></div>
+    <div class="service-items">
+      ${d.gamepass.map(g=>`<div class="service-item" data-nombre="Game Pass - ${g.nombre}" data-precio="${g.precio}">
+        <span class="service-item-nombre">${g.nombre}</span>
+        <span class="service-item-precio">${fmt(g.precio)}</span>
+      </div>`).join('')}
+    </div></div></div>`;
 
   cont.innerHTML=html;
+
+  // Click en service-item
+  cont.querySelectorAll('.service-item[data-nombre]').forEach(el=>{
+    el.addEventListener('click',()=>{
+      const nombre=el.dataset.nombre;
+      const precio=parseInt(el.dataset.precio)||0;
+      const precioEl=el.querySelector('.service-item-precio');
+      const precioTexto=precioEl?precioEl.textContent:'Consultar';
+      if(precioTexto==='Próximamente') return;
+      openModal({
+        nombre,
+        imagen:null,
+        desc:'✅ Activación inmediata. Consultá disponibilidad.',
+        precios:[{label:'Precio',valor:precio?fmt(precio):precioTexto,clase:precio?'':'consultar'}],
+        waMsg:`Hola! Quiero consultar por *${nombre}* 🏆`
+      });
+    });
+  });
 }
 
-// ─────────────────────────────────────────────────────────────
-// RENDER STREAMING
-// ─────────────────────────────────────────────────────────────
+// ── RENDER STREAMING ─────────────────────────────────────────
 function renderStreaming(){
-  const data = state.datos.streaming;
-  const cont = document.getElementById('grid-streaming');
+  const data=state.datos.streaming;
+  const cont=document.getElementById('grid-streaming');
   cont.innerHTML='';
 
-  // Aviso incluye 1 perfil / 30 días
-  const aviso = document.createElement('div');
+  const aviso=document.createElement('div');
   aviso.style.cssText='grid-column:1/-1;background:rgba(0,229,255,.07);border:1px solid rgba(0,229,255,.2);border-radius:10px;padding:.75rem 1.1rem;font-size:.85rem;color:var(--accent);margin-bottom:.25rem;display:flex;align-items:center;gap:.5rem';
   aviso.innerHTML='🍿 <strong>Tu acceso incluye:</strong>&nbsp;1 Perfil · 30 días de garantía';
   cont.appendChild(aviso);
 
-  let idx = 0;
-  data.forEach(cat => {
-    // Título de categoría
-    const label = document.createElement('div');
+  let idx=0;
+  data.forEach(cat=>{
+    const label=document.createElement('div');
     label.style.cssText='grid-column:1/-1;font-family:"Rajdhani",sans-serif;font-size:1rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;padding-bottom:.4rem;border-bottom:1px solid var(--border);margin-top:.5rem';
-    label.textContent = cat.categoria;
+    label.textContent=cat.categoria;
     cont.appendChild(label);
 
-    cat.servicios.forEach((s, i) => {
-      const div = document.createElement('div');
-      div.className = 'stream-card';
-      div.style.animationDelay = `${idx * 60}ms`;
-      const imgHtml = s.imagen
-        ? `<img src="${s.imagen}" alt="${s.servicio}" style="height:28px;object-fit:contain;filter:brightness(0) invert(1);opacity:.85" onerror="this.style.display='none'">`
-        : `<span class="stream-emoji">${s.emoji}</span>`;
+    cat.servicios.forEach(s=>{
+      const div=document.createElement('div');
+      div.className='stream-card';
+      div.style.animationDelay=`${idx*60}ms`;
+      const imgHtml=s.imagen
+        ?`<img src="${s.imagen}" alt="${s.servicio}" style="height:28px;object-fit:contain;filter:brightness(0) invert(1);opacity:.85" onerror="this.style.display='none'">`
+        :`<span class="stream-emoji">${s.emoji}</span>`;
       div.innerHTML=`
-        <div class="stream-header">
-          ${imgHtml}
-          <span class="stream-nombre">${s.servicio}</span>
-        </div>
+        <div class="stream-header">${imgHtml}<span class="stream-nombre">${s.servicio}</span></div>
         <div class="stream-items">
-          ${s.items.map(it=>`
-            <div class="stream-item">
-              <span class="stream-tipo">${it.tipo}</span>
-              <span class="stream-precio">${fmt(it.precio)}</span>
-            </div>`).join('')}
+          ${s.items.map(it=>`<div class="stream-item">
+            <span class="stream-tipo">${it.tipo}</span>
+            <span class="stream-precio">${fmt(it.precio)}</span>
+          </div>`).join('')}
         </div>`;
+      div.addEventListener('click',()=>{
+        const it=s.items[0];
+        openModal({
+          nombre: s.servicio,
+          imagen: s.imagen||null,
+          desc: `📺 ${cat.categoria} · ${it.tipo} · Acceso inmediato tras la compra.`,
+          precios:[{label:'Precio',valor:fmt(it.precio)}],
+          waMsg:`Hola! Quiero consultar por *${s.servicio}* (Streaming) 📺`
+        });
+      });
       cont.appendChild(div);
       idx++;
     });
   });
 }
 
-
-// ─────────────────────────────────────────────────────────────
-// STATS (solo Steam/PS4/PS5)
-// ─────────────────────────────────────────────────────────────
+// ── STATS ────────────────────────────────────────────────────
 function actualizarStats(){
-  const key = state.tabActual === 'steam' ? 'steam_'+state.subSteam : state.tabActual;
-  const d = state.datos[key];
+  const key=state.tabActual==='steam'?'steam_'+state.subSteam:state.tabActual;
+  const d=state.datos[key];
   if(!d) return;
-  const pill = document.getElementById('stat-pill');
+  const pill=document.getElementById('stat-pill');
   pill.style.display='flex';
-  document.getElementById('stat-total').textContent=d.length;
-  document.getElementById('stat-disp').textContent=d.filter(j=>j.disponible).length;
+  document.getElementById('stat-total').textContent=d.length.toLocaleString('es-AR');
+  document.getElementById('stat-disp').textContent=d.filter(j=>j.disponible).length.toLocaleString('es-AR');
 }
 
-// ─────────────────────────────────────────────────────────────
-// FILTROS
-// ─────────────────────────────────────────────────────────────
-document.querySelectorAll('.btn-sub').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.btn-sub').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    state.subSteam = btn.dataset.sub;
-    document.getElementById('loading-steam').style.display='flex';
-    cargarTab('steam');
-  });
-});
-
+// ── FILTROS ───────────────────────────────────────────────────
 document.querySelectorAll('.btn-filtro').forEach(btn=>{
   btn.addEventListener('click',()=>{
     document.querySelectorAll('.btn-filtro').forEach(b=>b.classList.remove('active'));
@@ -629,16 +695,14 @@ document.querySelectorAll('.btn-filtro').forEach(btn=>{
 function filtrarActual(){
   const tab=state.tabActual;
   if(!TABS_CON_FILTRO.includes(tab)) return;
-  const key = tab === 'steam' ? 'steam_'+state.subSteam : tab;
+  const key=tab==='steam'?'steam_'+state.subSteam:tab;
   if(!state.datos[key]) return;
   renderJuegos(tab, state.datos[key], tab==='steam');
 }
 
 document.getElementById('buscador').addEventListener('input', filtrarActual);
 
-// ─────────────────────────────────────────────────────────────
-// INIT
-// ─────────────────────────────────────────────────────────────
+// ── INIT ─────────────────────────────────────────────────────
 cargarTab('steam');
 </script>
 </body>
