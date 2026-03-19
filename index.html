@@ -145,6 +145,9 @@
     footer strong{color:var(--accent)}
 
     /* WA */
+    .btn-sub{padding:.4rem .9rem;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'Inter',sans-serif;font-size:.8rem;font-weight:500;cursor:pointer;transition:all .2s}
+    .btn-sub:hover{border-color:var(--accent);color:var(--accent)}
+    .btn-sub.active{background:var(--accent);border-color:var(--accent);color:#000}
     .wa-btn{position:fixed;bottom:1.4rem;right:1.4rem;z-index:999;background:#25d366;color:#fff;border:none;border-radius:50px;padding:.7rem 1.1rem;display:flex;align-items:center;gap:.55rem;font-family:'Inter',sans-serif;font-size:.875rem;font-weight:600;text-decoration:none;box-shadow:0 4px 18px rgba(37,211,102,.4);transition:transform .2s,box-shadow .2s;animation:waPulse 2.5s ease-in-out infinite}
     .wa-btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 6px 26px rgba(37,211,102,.55);animation:none}
 
@@ -205,6 +208,10 @@
 
   <!-- ── STEAM / PC ── -->
   <div class="panel active" id="panel-steam">
+    <div style="display:flex;gap:.4rem;margin-bottom:1rem;flex-wrap:wrap">
+      <button class="btn-sub active" data-sub="disponibles">✅ Disponibles (47k)</button>
+      <button class="btn-sub" data-sub="drm">⚠️ Con DRM (936)</button>
+    </div>
     <div class="loading-msg" id="loading-steam"><div class="spinner"></div><span>Cargando Steam...</span></div>
     <div class="grid-juegos" id="grid-steam"></div>
   </div>
@@ -270,13 +277,15 @@
 // ─────────────────────────────────────────────────────────────
 const state = {
   tabActual: 'steam',
+  subSteam: 'disponibles',
   filtro: 'todos',
-  datos: { steam: null, ps4: null, ps5: null, promos: null, psplus: null, streaming: null }
+  datos: { steam_disponibles: null, steam_drm: null, ps4: null, ps5: null, promos: null, psplus: null, streaming: null }
 };
 
 const TABS_CON_FILTRO = ['steam','ps4','ps5'];
 const ARCHIVOS = {
-  steam: 'juegos.json',
+  steam_disponibles: 'juegos_disponibles.json',
+  steam_drm:         'juegos_drm.json',
   ps4:   'ps4.json',
   ps5:   'ps5.json',
   promos:'promos.json',
@@ -313,6 +322,18 @@ document.querySelectorAll('.tab').forEach(btn => {
 // CARGA DE DATOS
 // ─────────────────────────────────────────────────────────────
 async function cargarTab(tab){
+  if(tab === 'steam'){
+    const key = 'steam_' + state.subSteam;
+    if(state.datos[key] !== null){ renderTab('steam'); return; }
+    try{
+      const r = await fetch(ARCHIVOS[key]);
+      state.datos[key] = await r.json();
+      renderTab('steam');
+    } catch(e){
+      document.getElementById('loading-steam').innerHTML = '<p style="color:var(--red)">⚠️ No se pudo cargar el archivo</p>';
+    }
+    return;
+  }
   if(state.datos[tab] !== null){ renderTab(tab); return; }
   try{
     const r = await fetch(ARCHIVOS[tab]);
@@ -325,9 +346,14 @@ async function cargarTab(tab){
 }
 
 function renderTab(tab){
+  if(tab === 'steam'){
+    document.getElementById('loading-steam').style.display='none';
+    const key = 'steam_' + state.subSteam;
+    renderJuegos('steam', state.datos[key] || [], true);
+    return;
+  }
   document.getElementById('loading-'+tab).style.display='none';
-  if(tab==='steam') renderJuegos('steam', state.datos.steam, true);
-  else if(tab==='ps4') renderJuegos('ps4', state.datos.ps4, false);
+  if(tab==='ps4') renderJuegos('ps4', state.datos.ps4, false);
   else if(tab==='ps5') renderJuegos('ps5', state.datos.ps5, false);
   else if(tab==='promos') renderPromos();
   else if(tab==='psplus') renderPsplus();
@@ -548,7 +574,8 @@ function renderStreaming(){
 // STATS (solo Steam/PS4/PS5)
 // ─────────────────────────────────────────────────────────────
 function actualizarStats(){
-  const d = state.datos[state.tabActual];
+  const key = state.tabActual === 'steam' ? 'steam_'+state.subSteam : state.tabActual;
+  const d = state.datos[key];
   if(!d) return;
   const pill = document.getElementById('stat-pill');
   pill.style.display='flex';
@@ -559,6 +586,16 @@ function actualizarStats(){
 // ─────────────────────────────────────────────────────────────
 // FILTROS
 // ─────────────────────────────────────────────────────────────
+document.querySelectorAll('.btn-sub').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.btn-sub').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    state.subSteam = btn.dataset.sub;
+    document.getElementById('loading-steam').style.display='flex';
+    cargarTab('steam');
+  });
+});
+
 document.querySelectorAll('.btn-filtro').forEach(btn=>{
   btn.addEventListener('click',()=>{
     document.querySelectorAll('.btn-filtro').forEach(b=>b.classList.remove('active'));
@@ -570,8 +607,10 @@ document.querySelectorAll('.btn-filtro').forEach(btn=>{
 
 function filtrarActual(){
   const tab=state.tabActual;
-  if(!TABS_CON_FILTRO.includes(tab) || !state.datos[tab]) return;
-  renderJuegos(tab, state.datos[tab], tab==='steam');
+  if(!TABS_CON_FILTRO.includes(tab)) return;
+  const key = tab === 'steam' ? 'steam_'+state.subSteam : tab;
+  if(!state.datos[key]) return;
+  renderJuegos(tab, state.datos[key], tab==='steam');
 }
 
 document.getElementById('buscador').addEventListener('input', filtrarActual);
