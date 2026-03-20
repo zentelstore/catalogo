@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZentelStore — Admin</title>
+  <meta name="robots" content="noindex,nofollow"/>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--bg:#0a0a0f;--surface:#12121a;--card:#1a1a26;--border:#2a2a3d;--accent:#00e5ff;--accent2:#7c3aed;--green:#22c55e;--red:#ef4444;--yellow:#f59e0b;--text:#e2e8f0;--muted:#64748b;}
+    *{margin:0;padding:0;box-sizing:border-box}body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;min-height:100vh}
+    body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,229,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,255,.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}
+    .lw{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:999;background:var(--bg)}
+    .lb{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2.5rem 2rem;width:min(360px,90vw);text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+    .li{width:56px;height:56px;background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin:0 auto 1.2rem}
+    .lt{font-family:'Rajdhani',sans-serif;font-size:1.5rem;font-weight:700;margin-bottom:.3rem}
+    .ls{font-size:.8rem;color:var(--muted);margin-bottom:1.5rem}
+    .linp{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'Inter',sans-serif;font-size:.9rem;padding:.65rem 1rem;outline:none;transition:border-color .2s;text-align:center;letter-spacing:.2em;margin-bottom:.75rem}
+    .linp:focus{border-color:var(--accent)}
+    .lbtn{width:100%;background:var(--accent);color:#000;border:none;border-radius:8px;padding:.7rem;font-family:'Inter',sans-serif;font-size:.9rem;font-weight:700;cursor:pointer}
+    .lerr{color:var(--red);font-size:.78rem;margin-top:.5rem;display:none}
+    .aw{display:none;position:relative;z-index:1}
+    .ah{background:rgba(10,10,15,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+    .ahi{max-width:1400px;margin:0 auto;padding:0 1.5rem;height:58px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+    .alo{font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;display:flex;align-items:center;gap:.5rem}
+    .alo span{color:var(--accent)}
+    .abadge{background:rgba(239,68,68,.15);color:var(--red);border:1px solid rgba(239,68,68,.3);font-size:.62rem;font-weight:700;padding:.1rem .42rem;border-radius:4px;letter-spacing:.06em}
+    .bsm{background:transparent;border:1px solid var(--border);border-radius:7px;color:var(--muted);font-family:'Inter',sans-serif;font-size:.76rem;padding:.32rem .72rem;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem}
+    .bsm:hover{border-color:var(--accent);color:var(--accent)}
+    .bsmr:hover{border-color:var(--red) !important;color:var(--red) !important}
+    .tabs{background:rgba(10,10,15,.8);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none}
+    .tabs::-webkit-scrollbar{display:none}
+    .tabsi{max-width:1400px;margin:0 auto;padding:0 1.5rem;display:flex;gap:.1rem;white-space:nowrap}
+    .atab{padding:.56rem .92rem;border:none;background:transparent;color:var(--muted);font-family:'Inter',sans-serif;font-size:.8rem;font-weight:500;cursor:pointer;border-bottom:2px solid transparent;transition:all .2s}
+    .atab:hover{color:var(--text)}.atab.on{color:var(--accent);border-bottom-color:var(--accent)}
+    .am{max-width:1400px;margin:0 auto;padding:1.4rem}
+    .ap{display:none}.ap.on{display:block}
+    .srow{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.9rem;margin-bottom:1.4rem}
+    .sc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem 1.15rem}
+    .sn{font-family:'Rajdhani',sans-serif;font-size:1.9rem;font-weight:700;color:var(--accent)}
+    .sl{font-size:.76rem;color:var(--muted);margin-top:.12rem}
+    .aviso{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.22);border-radius:10px;padding:.7rem .95rem;font-size:.79rem;color:var(--yellow);margin-bottom:1.1rem;display:flex;align-items:flex-start;gap:.45rem;line-height:1.55}
+    .bp{background:var(--accent);color:#000;border:none;border-radius:7px;padding:.42rem .95rem;font-family:'Inter',sans-serif;font-size:.8rem;font-weight:700;cursor:pointer;transition:opacity .2s;display:inline-flex;align-items:center;gap:.32rem;white-space:nowrap}
+    .bp:hover{opacity:.85}
+    .bs{background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:7px;padding:.42rem .88rem;font-family:'Inter',sans-serif;font-size:.8rem;cursor:pointer;transition:all .2s;display:inline-flex;align-items:center;gap:.32rem;white-space:nowrap}
+    .bs:hover{border-color:var(--accent);color:var(--accent)}
+    .bd{background:rgba(239,68,68,.1);color:var(--red);border:1px solid rgba(239,68,68,.22);border-radius:7px;padding:.42rem .88rem;font-family:'Inter',sans-serif;font-size:.8rem;cursor:pointer;transition:all .2s;display:inline-flex;align-items:center;gap:.32rem}
+    .bd:hover{background:rgba(239,68,68,.2)}
+    .tbar{display:flex;gap:.55rem;margin-bottom:1rem;flex-wrap:wrap;align-items:center}
+    .srch{position:relative;flex:1;max-width:300px}
+    .srch svg{position:absolute;left:8px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+    .srch input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:7px;color:var(--text);font-family:'Inter',sans-serif;font-size:.83rem;padding:.44rem .85rem .44rem 1.9rem;outline:none;transition:border-color .2s}
+    .srch input:focus{border-color:var(--accent)}
+    .tw{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+    table{width:100%;border-collapse:collapse}
+    th{padding:.6rem .88rem;font-size:.7rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}
+    td{padding:.55rem .88rem;font-size:.82rem;border-bottom:1px solid rgba(42,42,61,.45);vertical-align:middle}
+    tr:last-child td{border-bottom:none}tr:hover td{background:rgba(0,229,255,.02)}
+    .tn{max-width:260px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:500}
+    .tp input{background:var(--surface);border:1px solid var(--border);border-radius:5px;color:var(--text);font-family:'Inter',sans-serif;font-size:.8rem;padding:.25rem .5rem;width:88px;outline:none;transition:border-color .15s}
+    .tp input:focus{border-color:var(--accent)}
+    .bd2{font-size:.62rem;font-weight:600;padding:.15rem .48rem;border-radius:4px;border:none;cursor:pointer;transition:all .18s}
+    .ok{background:rgba(34,197,94,.14);color:var(--green);border:1px solid rgba(34,197,94,.28)}
+    .nok{background:rgba(239,68,68,.11);color:var(--red);border:1px solid rgba(239,68,68,.24)}
+    .bdel{background:none;border:none;color:var(--muted);cursor:pointer;font-size:.95rem;padding:.12rem .28rem;transition:color .15s;line-height:1}
+    .bdel:hover{color:var(--red)}
+    .pagbar{padding:.7rem 1rem;display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap;border-top:1px solid var(--border)}
+    .paginf{font-size:.73rem;color:var(--muted)}
+    .pagbtns{display:flex;gap:.3rem}
+    .pb{background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--muted);font-family:'Inter',sans-serif;font-size:.74rem;padding:.3rem .64rem;cursor:pointer;transition:all .18s}
+    .pb:hover{border-color:var(--accent);color:var(--accent)}.pb.on{background:var(--accent);border-color:var(--accent);color:#000;font-weight:700}.pb:disabled{opacity:.28;cursor:default}
+    .fadd{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.1rem 1.2rem;margin-bottom:1.1rem;display:none}
+    .fadd.on{display:block;animation:fu .22s ease}
+    .fadd h3{font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:700;margin-bottom:.9rem;color:var(--accent)}
+    .fg2{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:.7rem}
+    .fg{display:flex;flex-direction:column;gap:.28rem}
+    .fg label{font-size:.72rem;color:var(--muted);font-weight:500}
+    .fg input,.fg select{background:var(--card);border:1px solid var(--border);border-radius:7px;color:var(--text);font-family:'Inter',sans-serif;font-size:.83rem;padding:.45rem .72rem;outline:none;transition:border-color .2s}
+    .fg input:focus,.fg select:focus{border-color:var(--accent)}.fg select option{background:#1a1a26}
+    .faddbts{display:flex;gap:.45rem;margin-top:.85rem}
+    .pedit{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.05rem 1.15rem;margin-bottom:.9rem}
+    .peh{display:flex;align-items:center;gap:.55rem;margin-bottom:.75rem;flex-wrap:wrap}
+    .peh input{flex:1;min-width:160px;background:var(--surface);border:1px solid var(--border);border-radius:7px;color:var(--text);font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;padding:.42rem .72rem;outline:none}
+    .peh input:focus,.peh select:focus{border-color:var(--accent)}
+    .peh select{background:var(--surface);border:1px solid var(--border);border-radius:7px;color:var(--muted);font-family:'Inter',sans-serif;font-size:.78rem;padding:.42rem .7rem;outline:none}
+    .peh select option{background:#1a1a26}
+    .prow{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin-bottom:.55rem}
+    .pi2{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:7px;color:var(--text);font-family:'Inter',sans-serif;font-size:.82rem;padding:.42rem .7rem;outline:none}
+    .pi2:focus{border-color:var(--accent)}
+    .pjl{background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:.55rem .7rem;margin-top:.35rem;max-height:200px;overflow-y:auto}
+    .pji{display:flex;align-items:center;justify-content:space-between;padding:.2rem 0;border-bottom:1px solid rgba(42,42,61,.4);font-size:.81rem}
+    .pji:last-child{border-bottom:none}
+    .pja{display:flex;gap:.38rem;margin-top:.55rem}
+    .pja input{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:7px;color:var(--text);font-family:'Inter',sans-serif;font-size:.82rem;padding:.42rem .7rem;outline:none}
+    .pja input:focus{border-color:var(--accent)}
+    .dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;margin-top:1rem}
+    .dc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.1rem 1.2rem}
+    .dc h3{font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;margin-bottom:.6rem}
+    .dc p{font-size:.78rem;color:var(--muted);margin-bottom:.9rem;line-height:1.5}
+    .ulbl{display:flex;align-items:center;gap:.45rem;font-size:.8rem;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:.46rem .72rem;cursor:pointer;transition:border-color .2s;margin-bottom:.4rem}
+    .ulbl:hover{border-color:var(--accent)}
+    .toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(20px);background:var(--card);border:1px solid var(--border);border-radius:10px;padding:.55rem 1rem;font-size:.8rem;color:var(--text);z-index:700;opacity:0;transition:all .3s;pointer-events:none;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+    .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+    .cov{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(4px);z-index:800;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity .2s}
+    .cov.on{opacity:1;pointer-events:all}
+    .cb{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.4rem 1.5rem;width:min(340px,90vw);text-align:center}
+    .cb .ci{font-size:2rem;margin-bottom:.7rem}
+    .cb h3{font-family:'Rajdhani',sans-serif;font-size:1.15rem;font-weight:700;margin-bottom:.38rem}
+    .cb p{font-size:.8rem;color:var(--muted);margin-bottom:1.1rem}
+    .cbbtns{display:flex;gap:.5rem;justify-content:center}
+    @keyframes fu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.am{padding:.9rem .75rem}.fg2{grid-template-columns:1fr}.prow{grid-template-columns:1fr}th:nth-child(3),td:nth-child(3){display:none}}
+  </style>
+</head>
+<body>
+<div class="toast" id="t"></div>
+<div class="cov" id="cov"><div class="cb"><div class="ci">🗑️</div><h3 id="ctit">¿Eliminar?</h3><p id="csub">Esta acción no se puede deshacer.</p><div class="cbbtns"><button class="bd" id="cok">Eliminar</button><button class="bs" onclick="cerrarC()">Cancelar</button></div></div></div>
+
+<div class="lw" id="lw">
+  <div class="lb">
+    <div class="li">🔐</div>
+    <div class="lt">Panel Admin</div>
+    <div class="ls">ZentelStore — Acceso restringido</div>
+    <input class="linp" id="pi" type="password" placeholder="Contraseña" onkeydown="if(event.key==='Enter')login()"/>
+    <button class="lbtn" onclick="login()">Ingresar →</button>
+    <div class="lerr" id="lerr">Contraseña incorrecta</div>
+    <div style="margin-top:1rem;font-size:.72rem"><a href="index.html" style="color:var(--muted)">← Volver al catálogo</a></div>
+  </div>
+</div>
+
+<div class="aw" id="aw">
+  <div class="ah"><div class="ahi">
+    <div class="alo">🎮 Zentel<span>Store</span> <span class="abadge">ADMIN</span></div>
+    <div style="display:flex;gap:.45rem;align-items:center">
+      <a class="bsm" href="index.html">← Catálogo</a>
+      <button class="bsm bsmr" onclick="logout()">Salir</button>
+    </div>
+  </div></div>
+
+  <div class="tabs"><div class="tabsi">
+    <button class="atab on" data-tab="dash">📊 Dashboard</button>
+    <button class="atab" data-tab="steam">🖥️ Steam</button>
+    <button class="atab" data-tab="ps4">🎮 PS4</button>
+    <button class="atab" data-tab="ps5">🎮 PS5</button>
+    <button class="atab" data-tab="promos">🔥 Promos</button>
+  </div></div>
+
+  <div class="am">
+
+    <!-- DASHBOARD -->
+    <div class="ap on" id="ap-dash">
+      <div class="srow">
+        <div class="sc"><div class="sn" id="s0">—</div><div class="sl">Steam disponibles</div></div>
+        <div class="sc"><div class="sn" id="s1">—</div><div class="sl">Juegos PS4</div></div>
+        <div class="sc"><div class="sn" id="s2">—</div><div class="sl">Juegos PS5</div></div>
+        <div class="sc"><div class="sn" id="s3">—</div><div class="sl">Promos activas</div></div>
+      </div>
+      <div class="aviso">⚠️ <div><strong>Cómo usar:</strong> Cargá un JSON → hacé los cambios → descargá el archivo → subilo a GitHub. Los cambios se guardan al hacer clic en <strong>💾 Descargar</strong>.</div></div>
+      <div class="dgrid">
+        <div class="dc">
+          <h3>📂 Cargar archivos</h3>
+          <p>Seleccioná los archivos desde tu PC para editarlos acá.</p>
+          <label class="ulbl">🖥️ juegos_disponibles.json <input type="file" accept=".json" onchange="loadJ('steam',this)" style="display:none"/></label>
+          <label class="ulbl">🎮 ps4.json <input type="file" accept=".json" onchange="loadJ('ps4',this)" style="display:none"/></label>
+          <label class="ulbl">🎮 ps5.json <input type="file" accept=".json" onchange="loadJ('ps5',this)" style="display:none"/></label>
+          <label class="ulbl">🔥 promos.json <input type="file" accept=".json" onchange="loadJ('promos',this)" style="display:none"/></label>
+        </div>
+        <div class="dc">
+          <h3>💾 Descargar editados</h3>
+          <p>Descargá con tus cambios y subílos a GitHub para actualizar el catálogo.</p>
+          <button class="bs" style="width:100%;justify-content:center;margin-bottom:.4rem" onclick="saveJ('steam','juegos_disponibles.json')">⬇️ juegos_disponibles.json</button>
+          <button class="bs" style="width:100%;justify-content:center;margin-bottom:.4rem" onclick="saveJ('ps4','ps4.json')">⬇️ ps4.json</button>
+          <button class="bs" style="width:100%;justify-content:center;margin-bottom:.4rem" onclick="saveJ('ps5','ps5.json')">⬇️ ps5.json</button>
+          <button class="bs" style="width:100%;justify-content:center" onclick="saveJ('promos','promos.json')">⬇️ promos.json</button>
+        </div>
+        <div class="dc">
+          <h3>⏰ Horario de atención</h3>
+          <p>Definí las horas del banner. Luego copiá los valores en el index.html en HORA_APERTURA / HORA_CIERRE.</p>
+          <div style="display:flex;gap:.6rem;margin-bottom:.75rem">
+            <div class="fg" style="flex:1"><label>Apertura (hs)</label><input type="number" id="hap" min="0" max="23" value="9" style="background:var(--surface);border:1px solid var(--border);border-radius:7px;color:var(--text);font-family:'Inter',sans-serif;font-size:.85rem;padding:.44rem .7rem;outline:none"/></div>
+            <div class="fg" style="flex:1"><label>Cierre (hs)</label><input type="number" id="hci" min="0" max="23" value="22" style="background:var(--surface);border:1px solid var(--border);border-radius:7px;color:var(--text);font-family:'Inter',sans-serif;font-size:.85rem;padding:.44rem .7rem;outline:none"/></div>
+          </div>
+          <button class="bp" style="width:100%;justify-content:center" onclick="showHorario()">Ver código para copiar</button>
+          <div id="hcode" style="display:none;margin-top:.6rem;background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:.55rem .75rem;font-size:.76rem;color:var(--accent);font-family:monospace"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEAM -->
+    <div class="ap" id="ap-steam">
+      <div class="aviso">⚠️ <div>Cargá <strong>juegos_disponibles.json</strong> desde el Dashboard. Al terminar descargalo y subilo a GitHub.</div></div>
+      <div class="fadd" id="f-steam">
+        <h3>➕ Agregar juego Steam</h3>
+        <div class="fg2">
+          <div class="fg"><label>Nombre *</label><input id="sn" type="text" placeholder="Ej: Half-Life Alyx"/></div>
+          <div class="fg"><label>Precio ($) — 0 = Consultar</label><input id="sp" type="number" min="0" placeholder="5000"/></div>
+          <div class="fg"><label>URL imagen (opcional)</label><input id="si" type="text" placeholder="https://shared.akamai.steamstatic.com/..."/></div>
+          <div class="fg"><label>Estado</label><select id="sd"><option value="true">✅ Disponible</option><option value="false">❌ No disponible</option></select></div>
+        </div>
+        <div class="faddbts"><button class="bp" onclick="addSteam()">✅ Agregar</button><button class="bs" onclick="tf('f-steam')">Cancelar</button></div>
+      </div>
+      <div class="tbar">
+        <div class="srch"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="text" placeholder="Buscar juego Steam..." oninput="filt('steam',this.value)"/></div>
+        <button class="bp" onclick="tf('f-steam')">➕ Agregar</button>
+        <button class="bs" onclick="saveJ('steam','juegos_disponibles.json')">💾 Descargar</button>
+        <span style="margin-left:auto;font-size:.76rem;color:var(--muted)" id="cnt-steam"></span>
+      </div>
+      <div class="tw"><table><thead><tr><th>Nombre</th><th>Precio</th><th>Imagen</th><th>Estado</th><th></th></tr></thead>
+      <tbody id="tb-steam"><tr><td colspan="5" style="text-align:center;color:var(--muted);padding:2rem">Cargá el archivo desde el Dashboard</td></tr></tbody></table>
+      <div class="pagbar"><span class="paginf" id="pi-steam"></span><div class="pagbtns" id="pb-steam"></div></div></div>
+    </div>
+
+    <!-- PS4 -->
+    <div class="ap" id="ap-ps4">
+      <div class="aviso">⚠️ <div>Cargá <strong>ps4.json</strong> desde el Dashboard primero.</div></div>
+      <div class="fadd" id="f-ps4">
+        <h3>➕ Agregar juego PS4</h3>
+        <div class="fg2">
+          <div class="fg"><label>Nombre *</label><input id="4n" type="text" placeholder="Ej: Ratchet & Clank"/></div>
+          <div class="fg"><label>Precio Primaria ($)</label><input id="4p" type="number" min="0" placeholder="15000"/></div>
+          <div class="fg"><label>Precio Secundaria ($)</label><input id="4s" type="number" min="0" placeholder="12000"/></div>
+          <div class="fg"><label>Estado</label><select id="4d"><option value="true">✅ Disponible</option><option value="false">❌ Sin stock</option></select></div>
+        </div>
+        <div class="faddbts"><button class="bp" onclick="addPS('ps4')">✅ Agregar</button><button class="bs" onclick="tf('f-ps4')">Cancelar</button></div>
+      </div>
+      <div class="tbar">
+        <div class="srch"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="text" placeholder="Buscar juego PS4..." oninput="filt('ps4',this.value)"/></div>
+        <button class="bp" onclick="tf('f-ps4')">➕ Agregar</button>
+        <button class="bs" onclick="saveJ('ps4','ps4.json')">💾 Descargar</button>
+        <span style="margin-left:auto;font-size:.76rem;color:var(--muted)" id="cnt-ps4"></span>
+      </div>
+      <div class="tw"><table><thead><tr><th>Nombre</th><th>Primaria</th><th>Secundaria</th><th>Estado</th><th></th></tr></thead>
+      <tbody id="tb-ps4"><tr><td colspan="5" style="text-align:center;color:var(--muted);padding:2rem">Cargá el archivo desde el Dashboard</td></tr></tbody></table>
+      <div class="pagbar"><span class="paginf" id="pi-ps4"></span><div class="pagbtns" id="pb-ps4"></div></div></div>
+    </div>
+
+    <!-- PS5 -->
+    <div class="ap" id="ap-ps5">
+      <div class="aviso">⚠️ <div>Cargá <strong>ps5.json</strong> desde el Dashboard primero.</div></div>
+      <div class="fadd" id="f-ps5">
+        <h3>➕ Agregar juego PS5</h3>
+        <div class="fg2">
+          <div class="fg"><label>Nombre *</label><input id="5n" type="text" placeholder="Ej: Demon's Souls"/></div>
+          <div class="fg"><label>Precio Primaria ($)</label><input id="5p" type="number" min="0" placeholder="32000"/></div>
+          <div class="fg"><label>Precio Secundaria ($)</label><input id="5s" type="number" min="0" placeholder="25000"/></div>
+          <div class="fg"><label>Estado</label><select id="5d"><option value="true">✅ Disponible</option><option value="false">❌ Sin stock</option></select></div>
+        </div>
+        <div class="faddbts"><button class="bp" onclick="addPS('ps5')">✅ Agregar</button><button class="bs" onclick="tf('f-ps5')">Cancelar</button></div>
+      </div>
+      <div class="tbar">
+        <div class="srch"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="text" placeholder="Buscar juego PS5..." oninput="filt('ps5',this.value)"/></div>
+        <button class="bp" onclick="tf('f-ps5')">➕ Agregar</button>
+        <button class="bs" onclick="saveJ('ps5','ps5.json')">💾 Descargar</button>
+        <span style="margin-left:auto;font-size:.76rem;color:var(--muted)" id="cnt-ps5"></span>
+      </div>
+      <div class="tw"><table><thead><tr><th>Nombre</th><th>Primaria</th><th>Secundaria</th><th>Estado</th><th></th></tr></thead>
+      <tbody id="tb-ps5"><tr><td colspan="5" style="text-align:center;color:var(--muted);padding:2rem">Cargá el archivo desde el Dashboard</td></tr></tbody></table>
+      <div class="pagbar"><span class="paginf" id="pi-ps5"></span><div class="pagbtns" id="pb-ps5"></div></div></div>
+    </div>
+
+    <!-- PROMOS -->
+    <div class="ap" id="ap-promos">
+      <div class="aviso">⚠️ <div>Cargá <strong>promos.json</strong> desde el Dashboard primero. Al terminar descargalo y subilo a GitHub.</div></div>
+      <div class="tbar">
+        <button class="bp" onclick="addPromo()">➕ Nueva promo</button>
+        <button class="bs" onclick="saveJ('promos','promos.json')">💾 Descargar</button>
+      </div>
+      <div id="pedit-cont"><p style="color:var(--muted);font-size:.85rem">Cargá el archivo desde el Dashboard para editar las promos.</p></div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const PASS='zentel2025'; // ← Cambiá esta contraseña
+const PPP=80;
+const D={steam:null,ps4:null,ps5:null,promos:null};
+const F={steam:'',ps4:'',ps5:''};
+const P={steam:1,ps4:1,ps5:1};
+
+// LOGIN
+if(sessionStorage.getItem('za')==='1')show();
+function login(){if(document.getElementById('pi').value===PASS){sessionStorage.setItem('za','1');show();}else{const e=document.getElementById('lerr');e.style.display='block';document.getElementById('pi').value='';setTimeout(()=>e.style.display='none',2500);}}
+function show(){document.getElementById('lw').style.display='none';document.getElementById('aw').style.display='block';updStats();}
+function logout(){sessionStorage.removeItem('za');location.reload();}
+
+// TABS
+document.querySelectorAll('.atab').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.atab').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  document.querySelectorAll('.ap').forEach(p=>p.classList.remove('on'));
+  document.getElementById('ap-'+b.dataset.tab).classList.add('on');
+}));
+
+// UTILS
+function toast(m,d=2200){const t=document.getElementById('t');t.textContent=m;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),d);}
+function tf(id){document.getElementById(id).classList.toggle('on');}
+function cerrarC(){document.getElementById('cov').classList.remove('on');}
+function confirm2(ti,su,cb){document.getElementById('ctit').textContent=ti;document.getElementById('csub').textContent=su;document.getElementById('cov').classList.add('on');document.getElementById('cok').onclick=()=>{cb();cerrarC();};}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')cerrarC();});
+
+// JSON
+function loadJ(key,inp){const f=inp.files[0];if(!f)return;const r=new FileReader();r.onload=e=>{try{D[key]=JSON.parse(e.target.result);updStats();renderT(key);if(key==='promos')renderPromos();toast('✅ '+f.name+' cargado ('+D[key].length+' items)');}catch{toast('⚠️ Error leyendo el JSON');}};r.readAsText(f);}
+function saveJ(key,nombre){if(!D[key]){toast('⚠️ Cargá el archivo primero');return;}const b=new Blob([JSON.stringify(D[key],null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=nombre;a.click();toast('💾 Descargando '+nombre+'...');}
+function updStats(){document.getElementById('s0').textContent=D.steam?D.steam.filter(j=>j.disponible).length.toLocaleString('es-AR'):'—';document.getElementById('s1').textContent=D.ps4?D.ps4.length.toLocaleString('es-AR'):'—';document.getElementById('s2').textContent=D.ps5?D.ps5.length.toLocaleString('es-AR'):'—';document.getElementById('s3').textContent=D.promos?D.promos.length:'—';}
+function showHorario(){const ap=document.getElementById('hap').value,ci=document.getElementById('hci').value;const c=document.getElementById('hcode');c.style.display='block';c.textContent='const HORA_APERTURA='+ap+';\nconst HORA_CIERRE='+ci+';';toast('⏰ Copiá ese código al index.html');}
+
+// TABLA
+function filt(k,q){F[k]=q.toLowerCase();P[k]=1;renderT(k);}
+function renderT(key){
+  const datos=D[key];if(!datos)return;
+  const lista=datos.filter(j=>j.nombre.toLowerCase().includes(F[key]||''));
+  const pag=P[key],tot=lista.length,totP=Math.ceil(tot/PPP)||1;
+  const ini=(pag-1)*PPP,fin=Math.min(ini+PPP,tot);
+  const page=lista.slice(ini,fin);
+  const isSt=(key==='steam');
+  const tb=document.getElementById('tb-'+key);
+  const cnt=document.getElementById('cnt-'+key);
+  if(cnt)cnt.textContent=tot.toLocaleString('es-AR')+' juegos';
+  if(!page.length){tb.innerHTML='<tr><td colspan="5" style="text-align:center;color:var(--muted);padding:2rem">Sin resultados</td></tr>';return;}
+  tb.innerHTML=page.map(j=>{
+    const ri=datos.indexOf(j);
+    if(isSt)return '<tr><td class="tn" title="'+j.nombre+'">'+j.nombre+'</td><td class="tp"><input type="number" value="'+(j.precio||0)+'" onchange="chgP(\'steam\','+ri+',\'precio\',this.value)"/></td><td style="font-size:.72rem;color:var(--muted)">'+(j.imagen?'✓ Sí':'—')+'</td><td><button class="bd2 '+(j.disponible?'ok':'nok')+'" onclick="togD(\'steam\','+ri+')">'+(j.disponible?'✅ Disp.':'❌ Sin stock')+'</button></td><td><button class="bdel" onclick="delJ(\'steam\','+ri+')">🗑️</button></td></tr>';
+    return '<tr><td class="tn" title="'+j.nombre+'">'+j.nombre+'</td><td class="tp"><input type="number" value="'+(j.primario||0)+'" onchange="chgP(\''+key+'\','+ri+',\'primario\',this.value)"/></td><td class="tp"><input type="number" value="'+(j.secundario||0)+'" onchange="chgP(\''+key+'\','+ri+',\'secundario\',this.value)"/></td><td><button class="bd2 '+(j.disponible?'ok':'nok')+'" onclick="togD(\''+key+'\','+ri+')">'+(j.disponible?'✅ Disp.':'❌ Sin stock')+'</button></td><td><button class="bdel" onclick="delJ(\''+key+'\','+ri+')">🗑️</button></td></tr>';
+  }).join('');
+  document.getElementById('pi-'+key).textContent=(ini+1)+'–'+fin+' de '+tot;
+  const pb=document.getElementById('pb-'+key);pb.innerHTML='';
+  const mk=(txt,dis,fn)=>{const b=document.createElement('button');b.className='pb';b.textContent=txt;b.disabled=dis;if(!dis)b.onclick=fn;return b;};
+  pb.appendChild(mk('←',pag===1,()=>{P[key]=pag-1;renderT(key);}));
+  const ds=Math.max(1,pag-2),ht=Math.min(totP,ds+4);
+  for(let p=ds;p<=ht;p++){const pp=p;const b=mk(p,false,()=>{P[key]=pp;renderT(key);});if(p===pag)b.classList.add('on');pb.appendChild(b);}
+  pb.appendChild(mk('→',pag===totP,()=>{P[key]=pag+1;renderT(key);}));
+}
+
+// ACCIONES
+function chgP(key,i,campo,val){if(!D[key]||i<0||i>=D[key].length)return;D[key][i][campo]=parseInt(val)||null;toast('✏️ Precio actualizado');}
+function togD(key,i){if(!D[key]||i<0||i>=D[key].length)return;D[key][i].disponible=!D[key][i].disponible;renderT(key);updStats();toast(D[key][i].disponible?'✅ Disponible':'❌ Sin stock');}
+function delJ(key,i){if(!D[key])return;const n=D[key][i]?.nombre||'este juego';confirm2('¿Eliminar "'+n+'"?','Se quita al descargar el JSON.',()=>{D[key].splice(i,1);renderT(key);updStats();toast('🗑️ Eliminado');});}
+
+// AGREGAR
+function addSteam(){const n=document.getElementById('sn').value.trim();if(!n){toast('⚠️ El nombre es obligatorio');return;}if(!D.steam){toast('⚠️ Cargá el JSON primero');return;}D.steam.unshift({nombre:n,precio:parseInt(document.getElementById('sp').value)||null,disponible:document.getElementById('sd').value==='true',imagen:document.getElementById('si').value.trim()||null});document.getElementById('sn').value='';document.getElementById('sp').value='';document.getElementById('si').value='';tf('f-steam');renderT('steam');updStats();toast('✅ "'+n+'" agregado a Steam');}
+function addPS(key){const pref=key==='ps4'?'4':'5';const n=document.getElementById(pref+'n').value.trim();if(!n){toast('⚠️ El nombre es obligatorio');return;}if(!D[key]){toast('⚠️ Cargá el JSON primero');return;}D[key].unshift({nombre:n,primario:parseInt(document.getElementById(pref+'p').value)||null,secundario:parseInt(document.getElementById(pref+'s').value)||null,disponible:document.getElementById(pref+'d').value==='true'});document.getElementById(pref+'n').value='';document.getElementById(pref+'p').value='';document.getElementById(pref+'s').value='';tf('f-'+key);renderT(key);updStats();toast('✅ "'+n+'" agregado a '+key.toUpperCase());}
+
+// PROMOS
+function renderPromos(){
+  if(!D.promos)return;
+  const c=document.getElementById('pedit-cont');c.innerHTML='';
+  D.promos.forEach((pr,pi)=>{
+    const d=document.createElement('div');d.className='pedit';
+    d.innerHTML='<div class="peh"><input value="'+pr.titulo+'" placeholder="Título" oninput="D.promos['+pi+'].titulo=this.value"/><select onchange="D.promos['+pi+'].color=this.value"><option value="green" '+(pr.color==='green'?'selected':'')+'>🟢 Verde</option><option value="blue" '+(pr.color==='blue'?'selected':'')+'>🔵 Azul</option><option value="purple" '+(pr.color==='purple'?'selected':'')+'>🟣 Violeta</option></select><button class="bd" onclick="delPromo('+pi+')">🗑️ Eliminar</button></div>'
+    +'<div class="prow"><div class="fg"><label>Subtítulo</label><input class="pi2" value="'+(pr.subtitulo||'')+'" placeholder="Ej: Secundaria por $12.000" oninput="D.promos['+pi+'].subtitulo=this.value"/></div><div class="fg"><label>Vigencia</label><input class="pi2" value="'+(pr.vigencia||'')+'" placeholder="Ej: Válido hasta el 31 de Marzo" oninput="D.promos['+pi+'].vigencia=this.value"/></div></div>'
+    +'<label style="font-size:.72rem;color:var(--muted);font-weight:500;display:block;margin-bottom:.3rem">Juegos incluidos ('+pr.juegos.length+')</label>'
+    +'<div class="pjl">'+pr.juegos.map((j,ji)=>'<div class="pji"><span>'+j+'</span><button class="bdel" onclick="delPJ('+pi+','+ji+')">✕</button></div>').join('')+'</div>'
+    +'<div class="pja"><input id="pji-'+pi+'" placeholder="Nombre del juego..." onkeydown="if(event.key===\'Enter\')addPJ('+pi+')"/><button class="bp" onclick="addPJ('+pi+')">+ Agregar</button></div>';
+    c.appendChild(d);
+  });
+}
+function addPromo(){if(!D.promos)D.promos=[];D.promos.push({titulo:'NUEVA PROMO POR $X.000',subtitulo:'Secundaria por $X.000',color:'green',vigencia:'Válido hasta el...',juegos:[]});renderPromos();updStats();toast('✅ Nueva promo creada');}
+function delPromo(pi){confirm2('¿Eliminar esta promo?','',()=>{D.promos.splice(pi,1);renderPromos();updStats();toast('🗑️ Promo eliminada');});}
+function addPJ(pi){const inp=document.getElementById('pji-'+pi);const n=inp.value.trim();if(!n)return;D.promos[pi].juegos.push(n);inp.value='';renderPromos();toast('✅ "'+n+'" agregado');}
+function delPJ(pi,ji){D.promos[pi].juegos.splice(ji,1);renderPromos();}
+</script>
+</body>
+</html>
