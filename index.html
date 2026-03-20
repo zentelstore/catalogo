@@ -8,6 +8,8 @@
   <meta name="robots" content="index,follow"/>
   <!-- PWA -->
   <link rel="manifest" href="manifest.json"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"/>
+  <link rel="apple-touch-icon" href="icon-192.png"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
   <meta name="apple-mobile-web-app-title" content="ZentelStore"/>
@@ -633,7 +635,7 @@
       </div>
       <div class="home-card" style="animation-delay:55ms" onclick="irTab('ps4')">
         <div class="home-card-icon">🎮</div>
-        <div class="home-card-info"><div class="home-card-titulo">PlayStation 4</div><div class="home-card-desc">Primaria y secundaria al mejor precio.</div><div class="home-card-badge">1.037 juegos</div></div>
+        <div class="home-card-info"><div class="home-card-titulo">PlayStation 4</div><div class="home-card-desc">Tu cuenta o la nuestra, al mejor precio.</div><div class="home-card-badge">1.037 juegos</div></div>
       </div>
       <div class="home-card" style="animation-delay:110ms" onclick="irTab('ps5')">
         <div class="home-card-icon">🎮</div>
@@ -687,6 +689,22 @@
 
   <!-- STEAM -->
   <div class="panel" id="panel-steam">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1rem">
+      <div style="background:rgba(0,229,255,.06);border:1px solid rgba(0,229,255,.18);border-radius:12px;padding:.85rem 1rem;display:flex;align-items:flex-start;gap:.65rem">
+        <span style="font-size:1.5rem;flex-shrink:0">📦</span>
+        <div>
+          <div style="font-family:'Rajdhani',sans-serif;font-size:.95rem;font-weight:700;color:var(--accent);margin-bottom:.2rem">Directo a tu Biblioteca</div>
+          <div style="font-size:.76rem;color:var(--muted);line-height:1.5">Activación e instalación inmediata en tu cuenta de Steam.</div>
+        </div>
+      </div>
+      <div style="background:rgba(124,58,237,.08);border:1px solid rgba(124,58,237,.22);border-radius:12px;padding:.85rem 1rem;display:flex;align-items:flex-start;gap:.65rem">
+        <span style="font-size:1.5rem;flex-shrink:0">🔑</span>
+        <div>
+          <div style="font-family:'Rajdhani',sans-serif;font-size:.95rem;font-weight:700;color:#a78bfa;margin-bottom:.2rem">Entrega de Key Privada</div>
+          <div style="font-size:.76rem;color:var(--muted);line-height:1.5">Sin acceso remoto, garantizando tu seguridad.</div>
+        </div>
+      </div>
+    </div>
     <div style="display:flex;gap:.38rem;margin-bottom:.82rem;flex-wrap:wrap">
       <button class="btn-sub active" data-sub="disponibles">✅ Disponibles</button>
       <button class="btn-sub" data-sub="drm">⚠️ Con DRM</button>
@@ -698,6 +716,7 @@
 
   <!-- PS4 -->
   <div class="panel" id="panel-ps4">
+
     <div class="loading-msg" id="loading-ps4"><div class="spinner"></div><span>Cargando PS4...</span></div>
     <div class="grid-juegos" id="grid-ps4"></div>
     <div class="paginacion" id="pag-ps4"></div>
@@ -705,6 +724,22 @@
 
   <!-- PS5 -->
   <div class="panel" id="panel-ps5">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1rem">
+      <div style="background:rgba(0,229,255,.06);border:1px solid rgba(0,229,255,.18);border-radius:12px;padding:.85rem 1rem;display:flex;align-items:flex-start;gap:.65rem">
+        <span style="font-size:1.5rem;flex-shrink:0">👑</span>
+        <div>
+          <div style="font-family:'Rajdhani',sans-serif;font-size:.95rem;font-weight:700;color:var(--accent);margin-bottom:.2rem">Cuenta Primaria</div>
+          <div style="font-size:.76rem;color:var(--muted);line-height:1.5">Tenés acceso al juego en tu cuenta principal sin problema.</div>
+        </div>
+      </div>
+      <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.22);border-radius:12px;padding:.85rem 1rem;display:flex;align-items:flex-start;gap:.65rem">
+        <span style="font-size:1.5rem;flex-shrink:0">🎮</span>
+        <div>
+          <div style="font-family:'Rajdhani',sans-serif;font-size:.95rem;font-weight:700;color:#a78bfa;margin-bottom:.2rem">Cuenta Secundaria</div>
+          <div style="font-size:.76rem;color:var(--muted);line-height:1.5">Solo podés jugar con la cuenta que te damos.</div>
+        </div>
+      </div>
+    </div>
     <div class="loading-msg" id="loading-ps5"><div class="spinner"></div><span>Cargando PS5...</span></div>
     <div class="grid-juegos" id="grid-ps5"></div>
     <div class="paginacion" id="pag-ps5"></div>
@@ -802,7 +837,11 @@
 
 </main>
 
-<footer><strong>ZentelStore</strong> © 2025 — Activación vía Steam / PlayStation</footer>
+<footer>
+  <strong>ZentelStore</strong> © 2025 — Activación vía Steam / PlayStation
+  <span style="margin:0 .6rem;opacity:.3">·</span>
+  <a href="admin.html" style="color:var(--muted);font-size:.68rem;text-decoration:none;opacity:.5;transition:opacity .2s" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='.5'">⚙️ Admin</a>
+</footer>
 
 <a class="wa-btn" href="https://wa.me/543518046904?text=Hola!%20Vi%20el%20cat%C3%A1logo%20%F0%9F%8E%AE" target="_blank" rel="noopener">
   <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -1220,10 +1259,10 @@ function renderJuegos(tipo,datos,esSteam){
     card.addEventListener('click',()=>{
       const precios=esSteam
         ?(j.precio?[{label:'Precio',valor:fmt(j.precio),_val:j.precio}]:[{label:'Precio',valor:'Consultar',clase:'consultar',_val:0}])
-        :(()=>{const pr=[];if(j.primario)pr.push({label:'Primaria',valor:fmt(j.primario),_val:j.primario});if(j.secundario)pr.push({label:'Secundaria',valor:fmt(j.secundario),clase:'sec',_val:j.secundario});return pr.length?pr:[{label:'Precio',valor:'Sin stock',clase:'consultar',_val:0}];})();
+        :(()=>{const pr=[];if(j.primario)pr.push({label:'👑 Primaria — tu cuenta',valor:fmt(j.primario),_val:j.primario});if(j.secundario)pr.push({label:'🎮 Secundaria — cuenta nuestra',valor:fmt(j.secundario),clase:'sec',_val:j.secundario});return pr.length?pr:[{label:'Precio',valor:'Sin stock',clase:'consultar',_val:0}];})();
       const plat=tipo.toUpperCase();
       openModal({nombre:j.nombre,imagen:j.imagen||null,
-        desc:esSteam?(j.disponible?'✅ Disponible en Steam.':'⚠️ Requiere DRM.'):`🎮 ${plat}. ${j.disponible?'Disponible.':'Sin stock.'}`,
+        desc:esSteam?(j.disponible?'✅ Disponible en Steam. Se activa directo en tu biblioteca.':'⚠️ Requiere DRM.'):`🎮 ${plat}. ${j.disponible?'Disponible.':'Sin stock.'}`,
         precios,waMsg:esSteam?`Hola! Quiero consultar por *${j.nombre}* (Steam) 🖥️`:`Hola! Quiero consultar por *${j.nombre}* para ${plat} 🎮`,
         disponible:j.disponible,obj:objConTag});
     });
@@ -1314,7 +1353,7 @@ const FAQS=[
   {q:'¿Qué métodos de pago aceptan?',a:'Aceptamos transferencia bancaria, Mercado Pago y efectivo. Consultanos por WhatsApp para más detalles.'},
   {q:'¿Puedo pedir un juego que no está en el catálogo?',a:'¡Sí! Escribinos por WhatsApp con el nombre del juego y lo conseguimos. El catálogo se actualiza constantemente.'},
   {q:'¿Funciona en cualquier región?',a:'Los juegos de Steam y PlayStation pueden tener restricciones regionales. Consultanos antes de comprar si tenés dudas.'},
-  {q:'¿Qué es cuenta primaria y secundaria en PS?',a:'La cuenta primaria es exclusiva para tu consola. La secundaria te permite jugar en tu consola pero también puede usarla otro. La primaria tiene precio mayor por ser exclusiva.'},
+  {q:'¿Qué es cuenta primaria y secundaria en PS?',a:'La cuenta primaria te da acceso al juego en tu propia cuenta de PlayStation, sin restricciones. La cuenta secundaria solo te permite jugar usando la cuenta que nosotros te proporcionamos. La primaria es más cara por ser completamente tuya.'},
 ];
 function renderFAQ(){
   const list=document.getElementById('faq-list');if(!list||list.children.length)return;
