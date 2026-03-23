@@ -260,35 +260,36 @@
     .home-wa-text strong{display:block;font-size:.9rem;color:var(--text);margin-bottom:.08rem}
     .home-wa-text span{font-size:.76rem;color:var(--muted)}
 
-    /* ── RESEÑAS ── */
-    .resenas-section{margin-top:1.2rem}
-    .resenas-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:.88rem;flex-wrap:wrap;gap:.5rem}
-    .resenas-titulo{font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:700;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
-    .btn-nueva-resena{background:var(--accent);color:#000;border:none;border-radius:7px;padding:.38rem .85rem;font-family:'Inter',sans-serif;font-size:.78rem;font-weight:700;cursor:pointer;min-height:38px}
-    .resenas-grid{display:flex;flex-direction:column;gap:.72rem}
-    .resena-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:.88rem 1rem;animation:fadeUp .35s ease both}
-    .resena-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.42rem;gap:.6rem;flex-wrap:wrap}
-    .resena-autor{font-weight:600;font-size:.85rem}
-    .resena-estrellas{color:var(--yellow);font-size:.92rem;letter-spacing:.05rem}
-    .resena-fecha{font-size:.66rem;color:var(--muted);margin-left:auto}
-    .resena-juego{font-size:.7rem;color:var(--accent);background:rgba(0,229,255,.08);border:1px solid rgba(0,229,255,.18);border-radius:4px;padding:.07rem .38rem;margin-bottom:.38rem;display:inline-block}
-    .resena-texto{font-size:.81rem;color:var(--muted);line-height:1.55}
-    .resena-empty{text-align:center;padding:1.8rem;color:var(--muted);font-size:.86rem}
-    .resena-promedio{font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:.38rem}
-    .resena-promedio strong{color:var(--yellow);font-size:1.05rem}
-    .form-resena{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.95rem 1.05rem;margin-bottom:.9rem;display:none;animation:fadeUp .3s ease}
-    .form-resena.show{display:block}
-    .form-resena label{font-size:.76rem;color:var(--muted);display:block;margin-bottom:.28rem;margin-top:.55rem}
-    .form-resena label:first-child{margin-top:0}
-    .form-resena input,.form-resena textarea{width:100%;background:var(--card);border:1px solid var(--border);border-radius:7px;color:var(--text);font-family:'Inter',sans-serif;font-size:.84rem;padding:.46rem .72rem;outline:none;transition:border-color .2s}
-    .form-resena input:focus,.form-resena textarea:focus{border-color:var(--accent)}
-    .form-resena textarea{resize:vertical;min-height:68px}
-    .estrellas-selector{display:flex;gap:.28rem;margin-bottom:.1rem}
-    .estrella-btn{font-size:1.4rem;background:none;border:none;cursor:pointer;color:var(--border);transition:color .15s;padding:0;min-width:32px;min-height:32px}
-    .estrella-btn.sel{color:var(--yellow)}
-    .form-resena-btns{display:flex;gap:.45rem;margin-top:.82rem}
-    .btn-enviar-resena{background:var(--accent);color:#000;border:none;border-radius:7px;padding:.44rem .95rem;font-family:'Inter',sans-serif;font-size:.8rem;font-weight:700;cursor:pointer;min-height:38px}
-    .btn-cancelar-resena{background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:7px;padding:.44rem .88rem;font-family:'Inter',sans-serif;font-size:.8rem;cursor:pointer;min-height:38px}
+
+
+    /* ── PRODUCTIVIDAD ── */
+    .prod-grid{display:flex;flex-direction:column;gap:1.1rem}
+    .prod-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;animation:fadeUp .4s ease both}
+    .prod-header{padding:1rem 1.2rem .85rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.75rem;background:linear-gradient(90deg,rgba(18,18,26,1),rgba(26,26,42,1))}
+    .prod-header-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;border:1px solid var(--border)}
+    .prod-header-nombre{font-family:'Rajdhani',sans-serif;font-size:1.35rem;font-weight:700;color:var(--yellow);text-transform:uppercase;letter-spacing:.04em}
+    .prod-body{padding:.9rem 1.2rem 1.1rem;display:flex;flex-direction:column;gap:.75rem}
+    .prod-plan{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.75rem .9rem}
+    .prod-plan-titulo{font-weight:700;font-size:.92rem;margin-bottom:.3rem;color:var(--text)}
+    .prod-plan-desc{font-size:.78rem;color:var(--muted);margin-bottom:.6rem;line-height:1.5}
+    .prod-garantia{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25);border-radius:8px;padding:.6rem .8rem;margin-bottom:.55rem}
+    .prod-garantia-titulo{font-size:.68rem;font-weight:700;color:var(--yellow);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.35rem}
+    .prod-garantia-item{font-size:.78rem;color:var(--muted);display:flex;align-items:flex-start;gap:.4rem;margin-bottom:.2rem;line-height:1.5}
+    .prod-garantia-item::before{content:'•';color:var(--yellow);flex-shrink:0}
+    .prod-regalo{background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.2);border-radius:8px;padding:.5rem .8rem;font-size:.8rem;color:var(--green);margin-bottom:.55rem}
+    .prod-select{width:100%;background:var(--surface);border:1px solid var(--yellow);border-radius:8px;color:var(--text);font-family:'Inter',sans-serif;font-size:.85rem;padding:.55rem .85rem;outline:none;cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23f59e0b' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .85rem center;margin-bottom:.5rem}
+    .prod-select option{background:#1a1a26}
+    .btn-add-cart{width:100%;background:var(--surface);color:var(--muted);border:1px solid var(--border);border-radius:8px;padding:.6rem;font-family:'Inter',sans-serif;font-size:.85rem;font-weight:600;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:.4rem;min-height:42px}
+    .btn-add-cart.activo{background:var(--accent);color:#000;border-color:var(--accent)}
+    .btn-add-cart.activo:hover{opacity:.88}
+    /* Notas y condiciones */
+    .notas-section{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem 1.3rem;margin-top:1.5rem;animation:fadeUp .4s ease both}
+    .notas-titulo{font-family:'Rajdhani',sans-serif;font-size:1.2rem;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.9rem}
+    .nota-item{display:flex;align-items:flex-start;gap:.65rem;padding:.45rem 0;border-bottom:1px solid rgba(42,42,61,.5);font-size:.83rem;color:var(--muted);line-height:1.55}
+    .nota-item:last-child{border-bottom:none}
+    .nota-icon{font-size:1rem;flex-shrink:0;margin-top:.05rem}
+    .nota-item strong{color:var(--text)}
+    .nota-item a{color:#25d366;text-decoration:none;font-weight:600}
 
     /* ── CÓMO COMPRAR ── */
     .como-hero{text-align:center;padding:2rem 1rem 1.5rem;animation:fadeUp .4s ease}
@@ -369,18 +370,40 @@
     .btn-avisame:hover{background:rgba(239,68,68,.18)}
 
     /* ── CARRITO PANEL ── */
-    .carrito-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:600;opacity:0;pointer-events:none;transition:opacity .22s}
+    .carrito-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:600;opacity:0;pointer-events:none;transition:opacity .22s}
     .carrito-overlay.open{opacity:1;pointer-events:all}
-    .carrito-panel{position:fixed;top:0;right:0;height:100%;width:min(400px,100%);background:var(--card);border-left:1px solid var(--border);z-index:601;transform:translateX(100%);transition:transform .28s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+    .carrito-panel{position:fixed;top:0;right:0;height:100%;width:min(430px,100%);background:var(--bg);border-left:1px solid var(--border);z-index:601;transform:translateX(100%);transition:transform .28s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
     .carrito-overlay.open .carrito-panel{transform:translateX(0)}
-    .carrito-head{padding:1rem 1.2rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
-    .carrito-titulo{font-family:'Rajdhani',sans-serif;font-size:1.25rem;font-weight:700}
-    .btn-cerrar-carrito{background:var(--surface);border:1px solid var(--border);border-radius:7px;color:var(--muted);padding:.36rem .62rem;cursor:pointer;font-size:.88rem;transition:all .2s;min-height:38px}
-    .btn-cerrar-carrito:hover{border-color:var(--accent);color:var(--accent)}
-    .carrito-items{flex:1;overflow-y:auto;padding:.7rem 1.05rem}
-    .carrito-item{display:flex;align-items:center;gap:.65rem;padding:.62rem 0;border-bottom:1px solid var(--border)}
+    .carrito-head{padding:1rem 1.2rem;border-bottom:2px solid var(--yellow);display:flex;align-items:center;justify-content:space-between;background:var(--card)}
+    .carrito-titulo{font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;display:flex;align-items:center;gap:.5rem}
+    .btn-cerrar-carrito{background:transparent;border:none;color:var(--muted);font-size:1.3rem;cursor:pointer;padding:.2rem .5rem;transition:color .2s;min-height:38px}
+    .btn-cerrar-carrito:hover{color:var(--text)}
+    .carrito-body{flex:1;overflow-y:auto;padding:.85rem 1.1rem;display:flex;flex-direction:column;gap:.75rem}
+    .carrito-body::-webkit-scrollbar{width:4px}
+    .carrito-body::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+    /* Sección carrito */
+    .cart-section{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+    .cart-section-body{padding:.85rem 1rem}
+    .cart-section-titulo{font-weight:700;font-size:.88rem;margin-bottom:.6rem;color:var(--text)}
+    /* Estado */
+    .cart-estado-row{display:flex;justify-content:space-between;align-items:center;padding:.55rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+    .cart-estado-row:last-child{border-bottom:none}
+    .cart-estado-label{color:var(--muted)}
+    .cart-badge-online{background:rgba(34,197,94,.15);color:var(--green);border:1px solid rgba(34,197,94,.3);font-size:.72rem;font-weight:700;padding:.18rem .6rem;border-radius:20px}
+    .cart-badge-stock{color:var(--green);font-size:.82rem;font-weight:600}
+    /* Horario */
+    .cart-horario-titulo{font-weight:700;font-size:.88rem;margin-bottom:.35rem}
+    .cart-horario-sub{font-size:.76rem;color:var(--muted);margin-bottom:.5rem}
+    .cart-horario-horas{font-size:.84rem;margin-bottom:.25rem}
+    .cart-horario-horas span{color:var(--yellow);font-weight:700}
+    .cart-cuenta-regresiva{font-size:.84rem;margin-bottom:.25rem}
+    .cart-cuenta-regresiva strong{color:var(--yellow);font-weight:700}
+    .cart-badge-abierto{background:rgba(34,197,94,.15);color:var(--green);border:1px solid rgba(34,197,94,.3);font-size:.72rem;font-weight:700;padding:.22rem .7rem;border-radius:20px;display:inline-block;margin-bottom:.5rem}
+    .cart-badge-cerrado{background:rgba(239,68,68,.12);color:var(--red);border:1px solid rgba(239,68,68,.25);font-size:.72rem;font-weight:700;padding:.22rem .7rem;border-radius:20px;display:inline-block;margin-bottom:.5rem}
+    /* Items */
+    .carrito-item{display:flex;align-items:center;gap:.65rem;padding:.55rem 0;border-bottom:1px solid var(--border)}
     .carrito-item:last-child{border-bottom:none}
-    .ci-emoji{font-size:1.35rem;flex-shrink:0}
+    .ci-emoji{font-size:1.3rem;flex-shrink:0}
     .ci-info{flex:1;min-width:0}
     .ci-nombre{font-size:.84rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .ci-tipo{font-size:.68rem;color:var(--muted)}
@@ -389,11 +412,34 @@
     .btn-rm:hover{color:var(--red)}
     .carrito-empty{text-align:center;padding:3rem 1rem;color:var(--muted)}
     .carrito-empty div{font-size:2.4rem;margin-bottom:.72rem}
-    .carrito-footer{padding:.95rem 1.2rem;border-top:1px solid var(--border)}
-    .carrito-total{display:flex;justify-content:space-between;align-items:center;margin-bottom:.85rem}
-    .carrito-total span{color:var(--muted);font-size:.86rem}
-    .carrito-total strong{font-family:'Rajdhani',sans-serif;font-size:1.45rem;color:var(--accent)}
-    .btn-finalizar{width:100%;background:#25d366;color:#fff;border:none;border-radius:10px;padding:.8rem;font-family:'Inter',sans-serif;font-size:.9rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;transition:opacity .2s;min-height:48px}
+    /* Cupón */
+    .cupon-wrap{display:flex;gap:.5rem}
+    .cupon-input{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'Inter',sans-serif;font-size:.85rem;padding:.55rem .85rem;outline:none;transition:border-color .2s;text-transform:uppercase;letter-spacing:.05em}
+    .cupon-input::placeholder{color:var(--muted);text-transform:none;letter-spacing:0}
+    .cupon-input:focus{border-color:var(--yellow)}
+    .btn-cupon{background:var(--yellow);color:#000;border:none;border-radius:8px;padding:.55rem 1rem;font-family:'Inter',sans-serif;font-size:.82rem;font-weight:700;cursor:pointer;transition:opacity .2s;white-space:nowrap}
+    .btn-cupon:hover{opacity:.85}
+    .cupon-status{font-size:.76rem;margin-top:.4rem;color:var(--muted)}
+    .cupon-status.ok{color:var(--green)}
+    .cupon-status.err{color:var(--red)}
+    /* Totales */
+    .cart-total-row{display:flex;justify-content:space-between;align-items:center;font-size:.86rem;padding:.3rem 0;border-bottom:1px solid var(--border)}
+    .cart-total-row:last-child{border-bottom:none;font-weight:700;font-size:.95rem;margin-top:.2rem}
+    .cart-total-row.descuento{color:var(--green)}
+    /* Pago */
+    .pago-steps{display:flex;flex-direction:column;gap:.4rem;margin-bottom:.75rem}
+    .pago-step{font-size:.8rem;color:var(--muted);display:flex;gap:.5rem;line-height:1.5}
+    .pago-step span{color:var(--yellow);font-weight:700;flex-shrink:0}
+    .pago-aviso{display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--red);margin-bottom:.75rem}
+    .pago-dato{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.6rem .85rem;margin-bottom:.45rem}
+    .pago-dato-label{font-size:.68rem;color:var(--yellow);font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.15rem}
+    .pago-dato-row{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+    .pago-dato-valor{font-size:.86rem;font-weight:600;color:var(--text)}
+    .btn-copiar{background:var(--yellow);color:#000;border:none;border-radius:6px;padding:.28rem .7rem;font-family:'Inter',sans-serif;font-size:.72rem;font-weight:700;cursor:pointer;transition:opacity .2s;white-space:nowrap;flex-shrink:0}
+    .btn-copiar:hover{opacity:.85}
+    .pago-titular{font-size:.8rem;color:var(--muted);margin-bottom:.6rem;display:flex;align-items:center;gap:.35rem}
+    /* Botón finalizar */
+    .btn-finalizar{width:100%;background:#25d366;color:#fff;border:none;border-radius:10px;padding:.85rem;font-family:'Inter',sans-serif;font-size:.92rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;transition:opacity .2s;min-height:48px}
     .btn-finalizar:hover{opacity:.88}
     .btn-vaciar{width:100%;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:8px;padding:.46rem;font-family:'Inter',sans-serif;font-size:.76rem;cursor:pointer;margin-top:.42rem;transition:all .2s;min-height:38px}
     .btn-vaciar:hover{border-color:var(--red);color:var(--red)}
@@ -457,17 +503,123 @@
 <div class="carrito-overlay" id="carrito-overlay" onclick="cerrarCarrito(event)">
   <div class="carrito-panel">
     <div class="carrito-head">
-      <div class="carrito-titulo">🛒 Carrito <span id="cart-head-count" style="font-size:.82rem;color:var(--muted)"></span></div>
-      <button class="btn-cerrar-carrito" onclick="toggleCarrito()">✕ Cerrar</button>
+      <div class="carrito-titulo">🏪 Finalizá tu compra</div>
+      <button class="btn-cerrar-carrito" onclick="toggleCarrito()">✕</button>
     </div>
-    <div class="carrito-items" id="carrito-items"></div>
-    <div class="carrito-footer" id="carrito-footer" style="display:none">
-      <div class="carrito-total"><span>Total estimado</span><strong id="carrito-total-val">$0</strong></div>
-      <button class="btn-finalizar" onclick="finalizarPedido()">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Enviar pedido por WhatsApp
-      </button>
-      <button class="btn-vaciar" onclick="vaciarCarrito()">🗑️ Vaciar carrito</button>
+    <div class="carrito-body" id="carrito-body">
+
+      <!-- ESTADO -->
+      <div class="cart-section">
+        <div class="cart-section-body">
+          <div class="cart-estado-row">
+            <span class="cart-estado-label">Recepción de pedidos</span>
+            <span class="cart-badge-online">Online</span>
+          </div>
+          <div class="cart-estado-row">
+            <span class="cart-estado-label">Estado del pedido</span>
+            <span class="cart-badge-stock">Todos los productos en stock</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HORARIO -->
+      <div class="cart-section">
+        <div class="cart-section-body">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.4rem">
+            <div class="cart-horario-titulo">Estado de atención</div>
+            <div id="cart-badge-horario" class="cart-badge-abierto">ABIERTO AHORA</div>
+          </div>
+          <div class="cart-horario-sub" id="cart-hora-arg"></div>
+          <div class="cart-horario-horas">Horario de hoy: <span>10:00 - 22:00 hs</span></div>
+          <div class="cart-cuenta-regresiva" id="cart-countdown"></div>
+          <div style="font-size:.76rem;color:var(--muted);margin-top:.2rem" id="cart-horario-msg"></div>
+        </div>
+      </div>
+
+      <!-- PRODUCTOS -->
+      <div class="cart-section" id="cart-section-items" style="display:none">
+        <div class="cart-section-body">
+          <div class="cart-section-titulo">Detalle del stock</div>
+          <div id="carrito-items"></div>
+        </div>
+      </div>
+
+      <!-- VACÍO -->
+      <div class="carrito-empty" id="carrito-empty">
+        <div>🛒</div>
+        Tu carrito está vacío.<br>
+        <small style="color:var(--muted)">Agregá productos desde el catálogo.</small>
+      </div>
+
+      <!-- CUPÓN -->
+      <div class="cart-section" id="cart-section-cupon" style="display:none">
+        <div class="cart-section-body">
+          <div class="cart-section-titulo">Cupón de descuento</div>
+          <div style="font-size:.78rem;color:var(--muted);margin-bottom:.65rem">Aplicá o quitá tu cupón antes de confirmar el pedido.</div>
+          <div class="cupon-wrap">
+            <input class="cupon-input" id="cupon-input" type="text" placeholder="Ingresar cupón"/>
+            <button class="btn-cupon" onclick="aplicarCupon()">Aplicar</button>
+          </div>
+          <div class="cupon-status" id="cupon-status">Sin cupón aplicado.</div>
+        </div>
+      </div>
+
+      <!-- TOTALES -->
+      <div class="cart-section" id="cart-section-total" style="display:none">
+        <div class="cart-section-body">
+          <div class="cart-total-row">
+            <span style="color:var(--muted)">Subtotal</span>
+            <span id="cart-subtotal">$0</span>
+          </div>
+          <div class="cart-total-row descuento" id="cart-row-descuento" style="display:none">
+            <span>Descuento</span>
+            <span id="cart-descuento-val"></span>
+          </div>
+          <div class="cart-total-row">
+            <span>Total final</span>
+            <span id="cart-total-final" style="font-family:'Rajdhani',sans-serif;font-size:1.1rem;color:var(--accent)">$0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGO -->
+      <div class="cart-section" id="cart-section-pago" style="display:none">
+        <div class="cart-section-body">
+          <div class="cart-section-titulo">Paso a paso para pagar</div>
+          <div class="pago-steps">
+            <div class="pago-step"><span>1.</span> Transferí al alias o CVU indicado debajo.</div>
+            <div class="pago-step"><span>2.</span> Presioná "Enviar pedido por WhatsApp".</div>
+            <div class="pago-step"><span>3.</span> En el chat de WhatsApp mandanos el comprobante junto con el carrito.</div>
+            <div class="pago-step"><span>4.</span> Activamos tu producto al instante una vez acreditado el pago.</div>
+          </div>
+          <div class="pago-aviso">⛔ El producto se entrega <strong style="margin-left:.2rem">únicamente cuando el pago se acredita.</strong></div>
+          <div class="pago-titular">👤 <strong>Titular:</strong>&nbsp; TU NOMBRE ACÁ</div>
+          <div class="pago-dato">
+            <div class="pago-dato-label">Alias</div>
+            <div class="pago-dato-row">
+              <span class="pago-dato-valor" id="pago-alias">TU.ALIAS.ACÁ</span>
+              <button class="btn-copiar" onclick="copiarDato('pago-alias')">Copiar</button>
+            </div>
+          </div>
+          <div class="pago-dato">
+            <div class="pago-dato-label">CVU/CBU</div>
+            <div class="pago-dato-row">
+              <span class="pago-dato-valor" id="pago-cvu">TU CVU ACÁ</span>
+              <button class="btn-copiar" onclick="copiarDato('pago-cvu')">Copiar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BTN FINALIZAR -->
+      <div id="cart-section-btn" style="display:none">
+        <button class="btn-finalizar" onclick="finalizarPedido()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Enviar Pedido por WhatsApp
+        </button>
+        <button class="btn-vaciar" onclick="vaciarCarrito()">🗑️ Vaciar carrito</button>
+      </div>
+
     </div>
   </div>
 </div>
@@ -556,6 +708,7 @@
     <button class="tab" data-tab="psplus">🏆 PS Plus</button>
     <button class="tab" data-tab="streaming">📺 Streaming</button>
     <button class="tab" data-tab="como">❓ Cómo comprar</button>
+    <button class="tab" data-tab="productividad">💼 Productividad</button>
     <button class="tab" data-tab="contacto">📩 Contacto</button>
   </div>
 </nav>
@@ -571,6 +724,7 @@
     <option value="psplus">🏆 PS Plus & Monedas</option>
     <option value="streaming">📺 Streaming</option>
     <option value="como">❓ Cómo comprar</option>
+    <option value="productividad">💼 Productividad</option>
     <option value="contacto">📩 Contacto</option>
   </select>
 </div>
@@ -656,31 +810,7 @@
       </div>
     </div>
 
-    <!-- RESEÑAS -->
-    <div class="resenas-section">
-      <div class="resenas-header">
-        <div class="resenas-titulo">⭐ Reseñas <div class="resena-promedio" id="resena-promedio-txt"></div></div>
-        <button class="btn-nueva-resena" onclick="toggleFormResena()">+ Dejar reseña</button>
-      </div>
-      <div class="form-resena" id="form-resena">
-        <label>Tu nombre</label><input id="r-nombre" type="text" placeholder="Ej: Matías G."/>
-        <label>Producto / Juego</label><input id="r-juego" type="text" placeholder="Ej: GTA V (Steam)"/>
-        <label>Puntuación</label>
-        <div class="estrellas-selector" id="estrellas-sel">
-          <button class="estrella-btn" data-v="1" onclick="setEstrellas(1)">★</button>
-          <button class="estrella-btn" data-v="2" onclick="setEstrellas(2)">★</button>
-          <button class="estrella-btn" data-v="3" onclick="setEstrellas(3)">★</button>
-          <button class="estrella-btn" data-v="4" onclick="setEstrellas(4)">★</button>
-          <button class="estrella-btn" data-v="5" onclick="setEstrellas(5)">★</button>
-        </div>
-        <label>Comentario</label><textarea id="r-texto" placeholder="Contá tu experiencia..."></textarea>
-        <div class="form-resena-btns">
-          <button class="btn-enviar-resena" onclick="enviarResena()">Publicar</button>
-          <button class="btn-cancelar-resena" onclick="toggleFormResena()">Cancelar</button>
-        </div>
-      </div>
-      <div class="resenas-grid" id="resenas-lista"></div>
-    </div>
+
 
     <a class="home-wa" href="https://wa.me/543518046904?text=Hola!%20Vi%20el%20cat%C3%A1logo%20y%20quiero%20consultar%20%F0%9F%8E%AE" target="_blank" rel="noopener">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -762,6 +892,14 @@
   <div class="panel" id="panel-streaming">
     <div class="loading-msg" id="loading-streaming"><div class="spinner"></div><span>Cargando Streaming...</span></div>
     <div class="streaming-grid" id="grid-streaming"></div>
+    <!-- NOTAS STREAMING -->
+    <div class="notas-section" id="notas-streaming" style="display:none">
+      <div class="notas-titulo">📋 Notas y Condiciones</div>
+      <div class="nota-item"><span class="nota-icon">💲</span><span>Precios en <strong>ARS</strong>.</span></div>
+      <div class="nota-item"><span class="nota-icon">🛡️</span><span><strong>Garantía:</strong> por el tiempo contratado (en general <strong>30 días</strong> según cada plan).</span></div>
+      <div class="nota-item"><span class="nota-icon">🔒</span><span>Disponibilidad sujeta a stock y políticas de cada plataforma.</span></div>
+      <div class="nota-item"><span class="nota-icon">📞</span><span><strong>Contacto:</strong> <a href="https://wa.me/543518046904" target="_blank">WhatsApp +54 9 3518046904</a> (ZENTELSTORE)</span></div>
+    </div>
   </div>
 
   <!-- CÓMO COMPRAR -->
@@ -794,6 +932,128 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Consultá antes de comprar
       </a>
+    </div>
+  </div>
+
+  <!-- PRODUCTIVIDAD -->
+  <div class="panel" id="panel-productividad">
+    <div class="prod-grid">
+
+      <!-- CANVA PRO -->
+      <div class="prod-card">
+        <div class="prod-header">
+          <div class="prod-header-icon" style="background:rgba(124,58,237,.15);border-color:rgba(124,58,237,.3)">🎨</div>
+          <div class="prod-header-nombre">Canva Pro</div>
+        </div>
+        <div class="prod-body">
+          <div class="prod-regalo">🎁 Con cualquier compra de Canva Pro, <strong>curso de regalo.</strong></div>
+          <div class="prod-plan">
+            <div class="prod-plan-titulo">PLAN 1 — Canva Económico</div>
+            <select class="prod-select" onchange="seleccionarPlan(this,'Canva Pro')">
+              <option value="">Seleccioná un plan</option>
+              <option value="2400">1 Mes — $2.400</option>
+              <option value="3200">2 Meses — $3.200</option>
+              <option value="4000">3 Meses — $4.000</option>
+              <option value="4600">4 Meses — $4.600</option>
+              <option value="5600">6 Meses — $5.600</option>
+              <option value="8000">12 Meses — $8.000</option>
+            </select>
+            <button class="btn-add-cart" id="btn-canva" onclick="addProd('btn-canva','Canva Pro','🎨')">Añadir al Carrito 🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHATGPT -->
+      <div class="prod-card">
+        <div class="prod-header">
+          <div class="prod-header-icon" style="background:rgba(16,163,127,.15);border-color:rgba(16,163,127,.3)">🤖</div>
+          <div class="prod-header-nombre">Chat GPT Plus</div>
+        </div>
+        <div class="prod-body">
+          <div class="prod-plan">
+            <div class="prod-plan-titulo">Planes Disponibles</div>
+            <div class="prod-garantia">
+              <div class="prod-garantia-titulo">Garantía de Activación</div>
+              <div class="prod-garantia-item">Garantía solo de activación.</div>
+              <div class="prod-garantia-item">CHAT GPT PLUS se envía por invitación a tu correo.</div>
+            </div>
+            <select class="prod-select" onchange="seleccionarPlan(this,'ChatGPT Plus')">
+              <option value="">Seleccioná un plan</option>
+              <option value="8000">1 Mes — $8.000</option>
+            </select>
+            <button class="btn-add-cart" id="btn-chatgpt" onclick="addProd('btn-chatgpt','ChatGPT Plus','🤖')">Añadir al Carrito 🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAPCUT -->
+      <div class="prod-card">
+        <div class="prod-header">
+          <div class="prod-header-icon" style="background:rgba(0,0,0,.3);border-color:rgba(255,255,255,.15)">✂️</div>
+          <div class="prod-header-nombre">CapCut Pro</div>
+        </div>
+        <div class="prod-body">
+          <div class="prod-plan">
+            <div class="prod-plan-titulo">Cuenta Completa (PC, Celular, Tablet)</div>
+            <select class="prod-select" onchange="seleccionarPlan(this,'CapCut Pro')">
+              <option value="">Seleccioná un plan</option>
+              <option value="8000">30 Días — $8.000</option>
+            </select>
+            <button class="btn-add-cart" id="btn-capcut" onclick="addProd('btn-capcut','CapCut Pro','✂️')">Añadir al Carrito 🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERPLEXITY -->
+      <div class="prod-card">
+        <div class="prod-header">
+          <div class="prod-header-icon" style="background:rgba(99,102,241,.15);border-color:rgba(99,102,241,.3)">🔍</div>
+          <div class="prod-header-nombre">Perplexity Premium</div>
+        </div>
+        <div class="prod-body">
+          <div class="prod-plan">
+            <div class="prod-plan-titulo">Cuenta Compartida (30 días)</div>
+            <div class="prod-plan-desc">Funciones: <strong>DeepSearch</strong>, análisis de imágenes, modelos avanzados, respuesta rápida.</div>
+            <select class="prod-select" onchange="seleccionarPlan(this,'Perplexity Premium')">
+              <option value="">Seleccioná un plan</option>
+              <option value="8000">30 Días — $8.000</option>
+            </select>
+            <button class="btn-add-cart" id="btn-perplexity" onclick="addProd('btn-perplexity','Perplexity Premium','🔍')">Añadir al Carrito 🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- GEMINI -->
+      <div class="prod-card">
+        <div class="prod-header">
+          <div class="prod-header-icon" style="background:rgba(59,130,246,.15);border-color:rgba(59,130,246,.3)">✨</div>
+          <div class="prod-header-nombre">Gemini Advanced</div>
+        </div>
+        <div class="prod-body">
+          <div class="prod-plan">
+            <div class="prod-plan-titulo">Plan Anual</div>
+            <div class="prod-garantia">
+              <div class="prod-garantia-titulo">Garantía de Activación</div>
+              <div class="prod-garantia-item">Garantía de activación incluida.</div>
+            </div>
+            <select class="prod-select" onchange="seleccionarPlan(this,'Gemini Advanced')">
+              <option value="">Seleccioná un plan</option>
+              <option value="14000">12 Meses — $14.000</option>
+            </select>
+            <button class="btn-add-cart" id="btn-gemini" onclick="addProd('btn-gemini','Gemini Advanced','✨')">Añadir al Carrito 🛒</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- NOTAS Y CONDICIONES -->
+    <div class="notas-section">
+      <div class="notas-titulo">📋 Notas y Condiciones</div>
+      <div class="nota-item"><span class="nota-icon">💲</span><span>Precios en <strong>ARS</strong> salvo donde se indique USDT.</span></div>
+      <div class="nota-item"><span class="nota-icon">🛡️</span><span><strong>Garantía:</strong> por el tiempo contratado (en general <strong>30 días</strong> según cada plan).</span></div>
+      <div class="nota-item"><span class="nota-icon">🔒</span><span>Disponibilidad sujeta a stock y políticas de cada plataforma.</span></div>
+      <div class="nota-item"><span class="nota-icon">📞</span><span><strong>Contacto:</strong> <a href="https://wa.me/543518046904" target="_blank">WhatsApp +54 9 3518046904</a> (ZENTELSTORE)</span></div>
     </div>
   </div>
 
@@ -878,8 +1138,6 @@ const S={
   favoritos:JSON.parse(localStorage.getItem('zs_favs')||'[]'),
   vistos:JSON.parse(localStorage.getItem('zs_vistos')||'[]'),
   modalActual:null,
-  resenas:JSON.parse(localStorage.getItem('zs_resenas')||'[]'),
-  estrellasSelec:5,
   modoUSD:false
 };
 
@@ -1042,7 +1300,7 @@ function renderTab(tab){
 // ═══════════════════════════════════════════
 //  HOME
 // ═══════════════════════════════════════════
-function renderHome(){renderVistos();renderFavsHome();renderResenas();}
+function renderHome(){renderVistos();renderFavsHome();}
 
 // Buscador global
 let hsTimer;
@@ -1135,33 +1393,150 @@ function renderFavsHome(){
 // ═══════════════════════════════════════════
 //  CARRITO
 // ═══════════════════════════════════════════
-function toggleCarrito(){document.getElementById('carrito-overlay').classList.toggle('open');}
+// DATOS DE PAGO — Cambiá estos valores cuando tengas el alias
+const PAGO_TITULAR = 'TU NOMBRE ACÁ';
+const PAGO_ALIAS   = 'TU.ALIAS.ACÁ';
+const PAGO_CVU     = 'TU CVU ACÁ';
+
+// CUPONES — Agregá tus cupones acá: { 'CODIGO': porcentaje }
+const CUPONES = {
+  // 'ZENTEL10': 10,
+  // 'PROMO20': 20,
+};
+let cuponAplicado = null;
+
+function toggleCarrito(){
+  document.getElementById('carrito-overlay').classList.toggle('open');
+  actualizarHorarioCarrito();
+}
 function cerrarCarrito(e){if(e.target===document.getElementById('carrito-overlay'))toggleCarrito();}
+
+function actualizarHorarioCarrito(){
+  const ahora = new Date();
+  const h = ahora.getHours(), m = ahora.getMinutes(), s = ahora.getSeconds();
+  const abierto = h >= HORA_AP && h < HORA_CI;
+  const badge = document.getElementById('cart-badge-horario');
+  const countdown = document.getElementById('cart-countdown');
+  const msg = document.getElementById('cart-horario-msg');
+  const horaEl = document.getElementById('cart-hora-arg');
+  if(horaEl) horaEl.textContent = `Hora Argentina: ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+  if(abierto){
+    if(badge){badge.className='cart-badge-abierto';badge.textContent='ABIERTO AHORA';}
+    const restH = HORA_CI - h - 1;
+    const restM = 59 - m;
+    const restS = 59 - s;
+    if(countdown) countdown.innerHTML = `Cerramos en: <strong>${restH}h ${restM}m ${restS}s</strong>`;
+    if(msg) msg.textContent = `Hoy atendemos hasta las ${HORA_CI}:00 hs.`;
+  } else {
+    if(badge){badge.className='cart-badge-cerrado';badge.textContent='CERRADO AHORA';}
+    if(countdown) countdown.innerHTML = '';
+    if(msg) msg.textContent = `Abrimos a las ${HORA_AP}:00 hs. Podés dejarnos tu pedido igual.`;
+  }
+}
+setInterval(()=>{if(document.getElementById('carrito-overlay').classList.contains('open'))actualizarHorarioCarrito();},1000);
+
+function aplicarCupon(){
+  const codigo = document.getElementById('cupon-input').value.trim().toUpperCase();
+  const status = document.getElementById('cupon-status');
+  if(!codigo){status.className='cupon-status';status.textContent='Sin cupón aplicado.';return;}
+  if(CUPONES[codigo]){
+    cuponAplicado = {codigo, pct: CUPONES[codigo]};
+    status.className='cupon-status ok';
+    status.textContent=`✅ Cupón "${codigo}" aplicado — ${CUPONES[codigo]}% de descuento`;
+    actualizarCarritoUI();showToast(`🎟️ Cupón aplicado: ${CUPONES[codigo]}% off`);
+  } else {
+    cuponAplicado=null;
+    status.className='cupon-status err';
+    status.textContent='❌ Cupón inválido o expirado.';
+    actualizarCarritoUI();
+  }
+}
+
+function copiarDato(id){
+  const val = document.getElementById(id)?.textContent;
+  if(!val) return;
+  if(navigator.clipboard) navigator.clipboard.writeText(val).then(()=>showToast('📋 Copiado al portapapeles'));
+  else showToast('📋 '+val);
+}
+
 function agregarAlCarrito(nombre,precio,tipo,emoji){
   S.carrito.push({nombre,precio,tipo,emoji:emoji||'🎮',id:Date.now()});
   actualizarCarritoUI();showToast('🛒 Agregado al carrito');
 }
-function quitarDelCarrito(id){S.carrito=S.carrito.filter(i=>i.id!==id);actualizarCarritoUI();}
-function vaciarCarrito(){S.carrito=[];actualizarCarritoUI();showToast('🗑️ Carrito vaciado');}
+function quitarDelCarrito(id){S.carrito=S.carrito.filter(i=>i.id!==id);cuponAplicado=null;actualizarCarritoUI();}
+function vaciarCarrito(){S.carrito=[];cuponAplicado=null;document.getElementById('cupon-input').value='';document.getElementById('cupon-status').textContent='Sin cupón aplicado.';document.getElementById('cupon-status').className='cupon-status';actualizarCarritoUI();showToast('🗑️ Carrito vaciado');}
+
 function actualizarCarritoUI(){
-  const count=S.carrito.length;
-  const badge=document.getElementById('carrito-badge');
-  badge.textContent=count;badge.classList.toggle('show',count>0);
-  document.getElementById('cart-head-count').textContent=count?`(${count})`:'';
-  const cont=document.getElementById('carrito-items'),footer=document.getElementById('carrito-footer');
-  if(!count){cont.innerHTML='<div class="carrito-empty"><div>🛒</div>Tu carrito está vacío</div>';footer.style.display='none';return;}
-  cont.innerHTML=S.carrito.map(item=>`<div class="carrito-item"><span class="ci-emoji">${item.emoji}</span><div class="ci-info"><div class="ci-nombre">${item.nombre}</div><div class="ci-tipo">${item.tipo}</div></div><span class="ci-precio">${item.precio?fmt(item.precio):'Consultar'}</span><button class="btn-rm" onclick="quitarDelCarrito(${item.id})">✕</button></div>`).join('');
-  const total=S.carrito.reduce((a,i)=>a+(i.precio||0),0);
-  document.getElementById('carrito-total-val').textContent=total?fmt(total):'A consultar';
-  footer.style.display='block';
+  const count = S.carrito.length;
+  const badge = document.getElementById('carrito-badge');
+  badge.textContent=count; badge.classList.toggle('show',count>0);
+  const empty = document.getElementById('carrito-empty');
+  const secItems = document.getElementById('cart-section-items');
+  const secCupon = document.getElementById('cart-section-cupon');
+  const secTotal = document.getElementById('cart-section-total');
+  const secPago  = document.getElementById('cart-section-pago');
+  const secBtn   = document.getElementById('cart-section-btn');
+  // Update pago data
+  const aliasEl = document.getElementById('pago-alias');
+  const cvuEl   = document.getElementById('pago-cvu');
+  if(aliasEl) aliasEl.textContent = PAGO_ALIAS;
+  if(cvuEl)   cvuEl.textContent   = PAGO_CVU;
+  const titularEl = document.querySelector('.pago-titular');
+  if(titularEl) titularEl.innerHTML = `👤 <strong>Titular:</strong>&nbsp; ${PAGO_TITULAR}`;
+  if(!count){
+    empty.style.display='block';
+    [secItems,secCupon,secTotal,secPago,secBtn].forEach(el=>{if(el)el.style.display='none';});
+    return;
+  }
+  empty.style.display='none';
+  [secItems,secCupon,secTotal,secPago,secBtn].forEach(el=>{if(el)el.style.display='';});
+  // Items
+  const cont = document.getElementById('carrito-items');
+  cont.innerHTML = S.carrito.map(item=>`
+    <div class="carrito-item">
+      <span class="ci-emoji">${item.emoji}</span>
+      <div class="ci-info">
+        <div class="ci-nombre">${item.nombre}</div>
+        <div class="ci-tipo">${item.tipo}</div>
+      </div>
+      <span class="ci-precio">${item.precio?fmt(item.precio):'Consultar'}</span>
+      <button class="btn-rm" onclick="quitarDelCarrito(${item.id})">✕</button>
+    </div>`).join('');
+  // Totales
+  const subtotal = S.carrito.reduce((a,i)=>a+(i.precio||0),0);
+  const descuento = cuponAplicado ? Math.round(subtotal * cuponAplicado.pct / 100) : 0;
+  const total = subtotal - descuento;
+  document.getElementById('cart-subtotal').textContent = fmt(subtotal)||'A consultar';
+  document.getElementById('cart-total-final').textContent = fmt(total)||'A consultar';
+  const rowDesc = document.getElementById('cart-row-descuento');
+  if(descuento){
+    rowDesc.style.display='flex';
+    document.getElementById('cart-descuento-val').textContent = '-'+fmt(descuento);
+  } else {
+    rowDesc.style.display='none';
+  }
 }
+
 function finalizarPedido(){
   if(!S.carrito.length)return;
-  const lista=S.carrito.map(i=>`• ${i.nombre} (${i.tipo})${i.precio?' — '+fmt(i.precio):''}`).join('\n');
-  const total=S.carrito.reduce((a,i)=>a+(i.precio||0),0);
-  const msg=`Hola! Quiero hacer el siguiente pedido:\n\n${lista}\n\n${total?'Total estimado: '+fmt(total)+'\n':''}¡Gracias! 🎮`;
+  const subtotal = S.carrito.reduce((a,i)=>a+(i.precio||0),0);
+  const descuento = cuponAplicado ? Math.round(subtotal * cuponAplicado.pct / 100) : 0;
+  const total = subtotal - descuento;
+  const lista = S.carrito.map(i=>`• ${i.nombre} (${i.tipo})${i.precio?' — '+fmt(i.precio):''}`).join('
+');
+  let msg = `Hola! Quiero hacer el siguiente pedido:
+
+${lista}
+
+`;
+  if(cuponAplicado) msg += `Cupón aplicado: ${cuponAplicado.codigo} (-${cuponAplicado.pct}%)
+`;
+  msg += `Total: ${fmt(total)||'A consultar'}
+
+Ya realicé la transferencia. ¡Gracias! 🎮`;
   window.open(waLink(msg),'_blank');
 }
+
 function agregarDesdeModal(){
   if(!S.modalActual)return;
   const m=S.modalActual;
@@ -1392,35 +1767,47 @@ function enviarContacto(){
   showToast('✅ Abriendo WhatsApp...');
 }
 
+
+
 // ═══════════════════════════════════════════
-//  RESEÑAS
+//  PRODUCTIVIDAD
 // ═══════════════════════════════════════════
-if(!S.resenas.length){
-  S.resenas=[{nombre:'Lucas M.',juego:'GTA V (Steam)',estrellas:5,texto:'Excelente servicio, activó al instante. Super recomendado!',fecha:'Marzo 2025'},{nombre:'Valentina R.',juego:'Netflix Premium',estrellas:5,texto:'Todo perfecto, rápido y confiable. Ya compré varias veces.',fecha:'Febrero 2025'},{nombre:'Matías G.',juego:'God of War PS4',estrellas:4,texto:'Muy buena atención, llegó el juego en minutos.',fecha:'Enero 2025'}];
-  try{localStorage.setItem('zs_resenas',JSON.stringify(S.resenas));}catch(e){}
+const prodSelects = {}; // guardamos el precio seleccionado por botón
+
+function seleccionarPlan(sel, nombre){
+  const btnId = sel.closest('.prod-plan').querySelector('.btn-add-cart').id;
+  const val = parseInt(sel.value)||0;
+  const btn = document.getElementById(btnId);
+  if(!btn) return;
+  prodSelects[btnId] = {precio: val, nombre};
+  if(val){
+    btn.classList.add('activo');
+    btn.textContent = `Añadir al Carrito 🛒`;
+  } else {
+    btn.classList.remove('activo');
+    btn.textContent = 'Añadir al Carrito 🛒';
+  }
 }
-function renderResenas(){
-  const lista=document.getElementById('resenas-lista'),prom=document.getElementById('resena-promedio-txt');
-  if(!S.resenas.length){lista.innerHTML='<div class="resena-empty">Aún no hay reseñas. ¡Sé el primero!</div>';prom.textContent='';return;}
-  const avg=(S.resenas.reduce((a,r)=>a+r.estrellas,0)/S.resenas.length).toFixed(1);
-  prom.innerHTML=`<strong>${avg}</strong> ★ (${S.resenas.length})`;
-  lista.innerHTML=S.resenas.map((r,i)=>`<div class="resena-card" style="animation-delay:${i*60}ms"><div class="resena-top"><span class="resena-autor">${r.nombre}</span><span class="resena-estrellas">${'★'.repeat(r.estrellas)}${'☆'.repeat(5-r.estrellas)}</span><span class="resena-fecha">${r.fecha}</span></div><div class="resena-juego">${r.juego}</div><div class="resena-texto">${r.texto}</div></div>`).join('');
+
+function addProd(btnId, nombre, emoji){
+  const data = prodSelects[btnId];
+  if(!data || !data.precio){
+    showToast('⚠️ Seleccioná un plan primero');
+    return;
+  }
+  // Get the selected option text for tipo
+  const btn = document.getElementById(btnId);
+  const sel = btn?.closest('.prod-plan')?.querySelector('.prod-select');
+  const tipo = sel?.options[sel.selectedIndex]?.text || '';
+  agregarAlCarrito(nombre, data.precio, tipo, emoji);
 }
-function toggleFormResena(){document.getElementById('form-resena').classList.toggle('show');}
-function setEstrellas(v){S.estrellasSelec=v;document.querySelectorAll('.estrella-btn').forEach(b=>b.classList.toggle('sel',parseInt(b.dataset.v)<=v));}
-setEstrellas(5);
-function enviarResena(){
-  const nombre=document.getElementById('r-nombre').value.trim();
-  const juego=document.getElementById('r-juego').value.trim();
-  const texto=document.getElementById('r-texto').value.trim();
-  if(!nombre||!juego||!texto){showToast('⚠️ Completá todos los campos');return;}
-  const meses=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
-  const hoy=new Date();
-  S.resenas.unshift({nombre,juego,estrellas:S.estrellasSelec,texto,fecha:`${meses[hoy.getMonth()]} ${hoy.getFullYear()}`});
-  try{localStorage.setItem('zs_resenas',JSON.stringify(S.resenas));}catch(e){}
-  document.getElementById('r-nombre').value='';document.getElementById('r-juego').value='';document.getElementById('r-texto').value='';
-  setEstrellas(5);document.getElementById('form-resena').classList.remove('show');
-  renderResenas();showToast('⭐ ¡Reseña publicada!');
+
+// Mostrar notas streaming cuando carga
+const _origRenderStreaming = renderStreaming;
+function renderStreaming(){
+  _origRenderStreaming();
+  const notas = document.getElementById('notas-streaming');
+  if(notas) notas.style.display='block';
 }
 
 // ═══════════════════════════════════════════
