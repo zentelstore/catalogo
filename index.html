@@ -22,9 +22,7 @@
   <meta property="og:url" content="https://zentelstore.github.io/catalogo"/>
   <meta property="og:type" content="website"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <!-- Google Analytics — descomentá y pegá tu ID -->
-  <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>-->
+<!-- Google Analytics: cuando tengas tu ID, agregá el script acá -->
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
   <style>
     :root{
@@ -1560,7 +1558,7 @@ function openModal({nombre,imagen,desc,precios,waMsg,disponible,obj}){
   agregarVisto(obj||{nombre,imagen,precio:precios?.[0]?._val,_tag:'Juego'});
   S.modalActual={nombre,imagen,desc,precios,waMsg,disponible,obj,tipo:precios?.[0]?.label||'',emoji:obj?._icono||'🎮'};
   const iw=document.getElementById('modal-img-wrap');
-  iw.innerHTML=imagen?`<img class="modal-img" src="${imagen}" alt="${nombre}" onerror="this.parentElement.innerHTML='<div class=\\'modal-img-placeholder\\'>🎮</div>'">`:`<div class="modal-img-placeholder">🎮</div>`;
+  iw.innerHTML=imagen?`<img class="modal-img" src="${imagen}" alt="${nombre}" onerror="this.parentElement.innerHTML='<div class=modal-img-placeholder>🎮</div>'">`:`<div class="modal-img-placeholder">🎮</div>`;
   document.getElementById('modal-nombre').textContent=nombre;
   document.getElementById('modal-desc').textContent=desc||'';
   document.getElementById('modal-precios').innerHTML=(precios||[]).map(p=>`<div class="modal-precio-bloque"><span class="modal-precio-label">${p.label}</span><span class="modal-precio-valor ${p.clase||''}">${p.valor}</span></div>`).join('');
@@ -1619,7 +1617,7 @@ function renderJuegos(tipo,datos,esSteam){
       card.innerHTML=`<img class="card-img" src="${j.imagen||''}" alt="${j.nombre}" loading="lazy" onerror="this.src='https://placehold.co/460x215/1a1a26/64748b?text=+'"/>
         <div class="card-actions">
           <button class="btn-fav ${isFav?'active':''}" onclick="event.stopPropagation();toggleFavorito(this.closest('.card').__obj,this)">${isFav?'❤️':'🤍'}</button>
-          <button class="btn-cart-card" onclick="event.stopPropagation();agregarAlCarrito('${j.nombre.replace(/'/g,"\\'")}',${j.precio||0},'Steam','🖥️')">🛒</button>
+          <button class="btn-cart-card" onclick="event.stopPropagation();agregarAlCarrito(''+j.nombre.replace(/'/g,''),${j.precio||0},'Steam','🖥️')">🛒</button>
         </div>
         <div class="card-body"><div class="card-nombre" title="${j.nombre}">${j.nombre}</div>
         <div class="card-footer">${j.precio?`<span class="precio-steam">${fmt(j.precio)}</span>`:`<span class="precio-consultar">Consultar</span>`}
@@ -1628,7 +1626,7 @@ function renderJuegos(tipo,datos,esSteam){
       const p1=fmt(j.primario),p2=fmt(j.secundario),plat=tipo.toUpperCase();
       card.innerHTML=`<div class="card-actions">
           <button class="btn-fav ${isFav?'active':''}" onclick="event.stopPropagation();toggleFavorito(this.closest('.card').__obj,this)">${isFav?'❤️':'🤍'}</button>
-          <button class="btn-cart-card" onclick="event.stopPropagation();agregarAlCarrito('${j.nombre.replace(/'/g,"\\'")}',${j.primario||0},'${plat} Primaria','🎮')">🛒</button>
+          <button class="btn-cart-card" onclick="event.stopPropagation();agregarAlCarrito(''+j.nombre.replace(/'/g,''),${j.primario||0},'${plat} Primaria','🎮')">🛒</button>
         </div>
         <div class="card-body"><div class="card-nombre" title="${j.nombre}">${j.nombre}</div>
         <div class="precios-row">
@@ -1710,6 +1708,8 @@ function renderPsplus(){
 // ═══════════════════════════════════════════
 function renderStreaming(){
   const cont=document.getElementById('grid-streaming');cont.innerHTML='';
+  // Mostrar notas al final
+  setTimeout(()=>{const notas=document.getElementById('notas-streaming');if(notas)notas.style.display='block';},100);
   const av=document.createElement('div');av.style.cssText='grid-column:1/-1;background:rgba(0,229,255,.07);border:1px solid rgba(0,229,255,.2);border-radius:10px;padding:.65rem 1rem;font-size:.8rem;color:var(--accent);margin-bottom:.1rem;display:flex;align-items:center;gap:.45rem';
   av.innerHTML='🍿 <strong>Todos incluyen:</strong>&nbsp;1 Perfil · 30 días de garantía';cont.appendChild(av);
   let idx=0;
@@ -1803,11 +1803,17 @@ function addProd(btnId, nombre, emoji){
 }
 
 // Mostrar notas streaming cuando carga
-const _origRenderStreaming = renderStreaming;
-function renderStreaming(){
-  _origRenderStreaming();
-  const notas = document.getElementById('notas-streaming');
-  if(notas) notas.style.display='block';
+// notas streaming se muestran dentro de renderStreaming directamente
+
+// ═══════════════════════════════════════════
+//  HELPERS
+// ═══════════════════════════════════════════
+function addToCartSafe(card){
+  const nombre = card.dataset.nombre||'Producto';
+  const precio = parseInt(card.dataset.precio)||0;
+  const tipo   = card.dataset.tipo||'';
+  const emoji  = card.dataset.emoji||'🎮';
+  agregarAlCarrito(nombre, precio, tipo, emoji);
 }
 
 // ═══════════════════════════════════════════
