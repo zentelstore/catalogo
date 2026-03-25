@@ -1519,8 +1519,7 @@ function finalizarPedido(){
   const subtotal = S.carrito.reduce((a,i)=>a+(i.precio||0),0);
   const descuento = cuponAplicado ? Math.round(subtotal * cuponAplicado.pct / 100) : 0;
   const total = subtotal - descuento;
-  const lista = S.carrito.map(i=>`• ${i.nombre} (${i.tipo})${i.precio?' — '+fmt(i.precio):''}`).join('
-');
+  const lista = S.carrito.map(i=>`• ${i.nombre} (${i.tipo})${i.precio?' — '+fmt(i.precio):''}`).join('\n');
   let msg = `Hola! Quiero hacer el siguiente pedido:
 
 ${lista}
