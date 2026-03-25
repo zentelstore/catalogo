@@ -1392,14 +1392,13 @@ function renderFavsHome(){
 // ═══════════════════════════════════════════
 // DATOS DE PAGO — Cambiá estos valores cuando tengas el alias
 const PAGO_TITULAR = 'Ezequiel Fisogni';
-const PAGO_ALIAS   = 'TU.ALIAS.ACÁ';
-const PAGO_CVU     = 'TU CVU ACÁ';
+const PAGO_ALIAS   = 'zentelstore.nx';
+const PAGO_CVU     = '4530000800016377379003';
 
 // CUPONES — Agregá tus cupones acá: { 'CODIGO': porcentaje }
-const CUPONES = {
-  // 'ZENTEL10': 10,
-  // 'PROMO20': 20,
-};
+  const CUPONES = {
+  'ZENTEL10': { descuento: 10, activo: true }
+  };
 let cuponAplicado = null;
 
 function toggleCarrito(){
@@ -1436,8 +1435,8 @@ function aplicarCupon(){
   const codigo = document.getElementById('cupon-input').value.trim().toUpperCase();
   const status = document.getElementById('cupon-status');
   if(!codigo){status.className='cupon-status';status.textContent='Sin cupón aplicado.';return;}
-  if(CUPONES[codigo]){
-    cuponAplicado = {codigo, pct: CUPONES[codigo]};
+  if(CUPONES[codigo] && CUPONES[codigo].activo){
+    cuponAplicado = {codigo, pct: CUPONES[codigo].descuento};
     status.className='cupon-status ok';
     status.textContent=`✅ Cupón "${codigo}" aplicado — ${CUPONES[codigo]}% de descuento`;
     actualizarCarritoUI();showToast(`🎟️ Cupón aplicado: ${CUPONES[codigo]}% off`);
