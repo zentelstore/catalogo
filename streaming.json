@@ -2,7 +2,7 @@
   {
     "categoria": "Cuentas Online",
     "servicios": [
-      {"servicio":"Netflix","emoji":"🔴","imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1280px-Netflix_2015_logo.svg.png","items":[{"tipo":"1 Perfil / 30 días","precio":12000}]},
+      {"servicio":"Netflix","emoji":"🔴","imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1280px-Netflix_2015_logo.svg.png","items":[{"tipo":"1 Perfil / 30 días","precio":8000}]},
       {"servicio":"Disney+","emoji":"🐭","imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney%2B_logo.svg/1280px-Disney%2B_logo.svg.png","items":[{"tipo":"1 Perfil / 30 días","precio":6000}]},
       {"servicio":"MAX","emoji":"👑","imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Max_logo.svg/1280px-Max_logo.svg.png","items":[{"tipo":"1 Perfil / 30 días","precio":6000}]},
       {"servicio":"Crunchyroll","emoji":"🍥","imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_logo.svg/1280px-Crunchyroll_logo.svg.png","items":[{"tipo":"1 Perfil / 30 días","precio":6000}]},
