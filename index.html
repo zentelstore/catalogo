@@ -369,8 +369,18 @@
     /* ── CARRITO PANEL ── */
     .carrito-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:600;opacity:0;pointer-events:none;transition:opacity .22s}
     .carrito-overlay.open{opacity:1;pointer-events:all}
-    .carrito-panel{position:fixed;top:0;right:0;height:100%;width:min(430px,100%);background:var(--bg);border-left:1px solid var(--border);z-index:601;transform:translateX(100%);transition:transform .28s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+    /* Desktop: panel lateral */
+    .carrito-panel{position:fixed;top:0;right:0;height:100%;width:min(430px,100%);background:var(--bg);border-left:1px solid var(--border);z-index:601;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
     .carrito-overlay.open .carrito-panel{transform:translateX(0)}
+    /* Mobile: bottom sheet */
+    @media(max-width:768px){
+      .carrito-panel{top:auto;bottom:0;right:0;left:0;width:100%;height:92vh;border-left:none;border-top:1px solid var(--border);border-radius:20px 20px 0 0;transform:translateY(100%)}
+      .carrito-overlay.open .carrito-panel{transform:translateY(0)}
+      .carrito-handle{display:block !important}
+      .carrito-head{padding:.75rem 1rem}
+      .carrito-body{padding:.65rem .88rem}
+      .cupon-input{font-size:16px !important} /* prevent zoom on iOS */
+    }
     .carrito-head{padding:1rem 1.2rem;border-bottom:2px solid var(--yellow);display:flex;align-items:center;justify-content:space-between;background:var(--card)}
     .carrito-titulo{font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;display:flex;align-items:center;gap:.5rem}
     .btn-cerrar-carrito{background:transparent;border:none;color:var(--muted);font-size:1.3rem;cursor:pointer;padding:.2rem .5rem;transition:color .2s;min-height:38px}
@@ -499,6 +509,7 @@
 <!-- ── CARRITO ── -->
 <div class="carrito-overlay" id="carrito-overlay" onclick="cerrarCarrito(event)">
   <div class="carrito-panel">
+    <div class="carrito-handle" style="display:none;width:40px;height:4px;background:var(--border);border-radius:2px;margin:.65rem auto .1rem"></div>
     <div class="carrito-head">
       <div class="carrito-titulo">🏪 Finalizá tu compra</div>
       <button class="btn-cerrar-carrito" onclick="toggleCarrito()">✕</button>
@@ -817,6 +828,7 @@
 
   <!-- STEAM -->
   <div class="panel" id="panel-steam">
+    <!-- INFO CARDS -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1rem">
       <div style="background:rgba(0,229,255,.06);border:1px solid rgba(0,229,255,.18);border-radius:12px;padding:.85rem 1rem;display:flex;align-items:flex-start;gap:.65rem">
         <span style="font-size:1.5rem;flex-shrink:0">📦</span>
@@ -833,13 +845,42 @@
         </div>
       </div>
     </div>
-    <div style="display:flex;gap:.38rem;margin-bottom:.82rem;flex-wrap:wrap">
-      <button class="btn-sub active" data-sub="disponibles">✅ Disponibles</button>
-      <button class="btn-sub" data-sub="drm">⚠️ Con DRM</button>
+
+    <!-- BUSCADOR STEAM -->
+    <div style="position:relative;margin-bottom:1rem">
+      <svg style="position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted)" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input id="steam-buscador" type="text" placeholder="Buscá tu juego de Steam..." oninput="buscarSteam(this.value)"
+        style="width:100%;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'Inter',sans-serif;font-size:.88rem;padding:.55rem .9rem .55rem 2.1rem;outline:none;transition:border-color .2s"
+        onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'"/>
     </div>
-    <div class="loading-msg" id="loading-steam"><div class="spinner"></div><span>Cargando catálogo Steam...</span></div>
-    <div class="grid-juegos" id="grid-steam"></div>
-    <div class="paginacion" id="pag-steam"></div>
+
+    <!-- RESULTADOS BUSQUEDA -->
+    <div id="steam-resultados" style="display:none;margin-bottom:1rem">
+      <div id="steam-resultados-grid" class="grid-juegos"></div>
+      <div class="paginacion" id="pag-steam-busq"></div>
+    </div>
+
+    <!-- OFERTAS DESTACADAS -->
+    <div id="steam-ofertas-section">
+      <div style="font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem;padding-bottom:.35rem;border-bottom:1px solid var(--border)">
+        🔥 Ofertas destacadas
+      </div>
+      <div class="grid-juegos" id="steam-ofertas-grid"></div>
+
+      <!-- CTA WHATSAPP -->
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.4rem;text-align:center;margin-top:1.2rem;animation:fadeUp .4s ease">
+        <div style="font-size:2rem;margin-bottom:.6rem">🖥️</div>
+        <div style="font-family:'Rajdhani',sans-serif;font-size:1.2rem;font-weight:700;margin-bottom:.4rem">¿No encontrás lo que buscás?</div>
+        <div style="font-size:.83rem;color:var(--muted);margin-bottom:1rem;line-height:1.5">Tenemos más de 47.000 juegos disponibles.<br>Escribinos y te conseguimos el tuyo.</div>
+        <a href="https://wa.me/543518046904?text=Hola!%20Busco%20un%20juego%20de%20Steam%20%F0%9F%96%A5%EF%B8%8F"
+           target="_blank" rel="noopener"
+           style="display:inline-flex;align-items:center;gap:.5rem;background:#25d366;color:#fff;text-decoration:none;padding:.72rem 1.4rem;border-radius:10px;font-family:'Inter',sans-serif;font-weight:700;font-size:.9rem;transition:opacity .2s"
+           onmouseover="this.style.opacity='.88'" onmouseout="this.style.opacity='1'">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Consultar por WhatsApp
+        </a>
+      </div>
+    </div>
   </div>
 
   <!-- PS4 -->
@@ -1226,17 +1267,13 @@ function irTab(tab){
   if(cf) actualizarStats();
   if(tab==='home') renderHome();
   else if(tab==='como') renderFAQ();
+  else if(tab==='steam'){ renderSteamOfertas(); }
   else cargarTab(tab);
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
 // Sub tabs Steam
-document.querySelectorAll('.btn-sub').forEach(b=>b.addEventListener('click',()=>{
-  document.querySelectorAll('.btn-sub').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active');S.subSteam=b.dataset.sub;S.paginas.steam=1;
-  document.getElementById('loading-steam').style.display='flex';
-  cargarTab('steam');
-}));
+// subtabs removed — steam now uses search + ofertas
 
 // ═══════════════════════════════════════════
 //  SORT / VIEW
@@ -1274,6 +1311,130 @@ async function fetchConCache(key){
   try{sessionStorage.setItem('zs_'+key,JSON.stringify(d));}catch(e){}
   return d;
 }
+// ══════════════════════════════
+//  STEAM SIMPLIFICADO
+// ══════════════════════════════
+// Juegos destacados que mostramos sin cargar todo el JSON
+const STEAM_OFERTAS = [
+  {nombre:'GTA V',precio:8000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg',disponible:true},
+  {nombre:'Red Dead Redemption 2',precio:12000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg',disponible:true},
+  {nombre:'Cyberpunk 2077',precio:10000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg',disponible:true},
+  {nombre:'Elden Ring',precio:14000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg',disponible:true},
+  {nombre:'The Witcher 3',precio:7000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg',disponible:true},
+  {nombre:'FIFA 23',precio:9000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1811260/header.jpg',disponible:true},
+  {nombre:'Hogwarts Legacy',precio:11000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/header.jpg',disponible:true},
+  {nombre:'Call of Duty: Modern Warfare II',precio:15000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1938090/header.jpg',disponible:true},
+];
+
+function renderSteamOfertas(){
+  const grid = document.getElementById('steam-ofertas-grid');
+  if(!grid) return;
+  grid.innerHTML = '';
+  STEAM_OFERTAS.forEach((j,i)=>{
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.style.animationDelay = `${i*40}ms`;
+    card.dataset.nombre = j.nombre;
+    card.dataset.precio = j.precio;
+    card.dataset.tipo = 'Steam';
+    card.dataset.emoji = '🖥️';
+    card.innerHTML = `
+      <img class="card-img" src="${j.imagen}" alt="${j.nombre}" loading="lazy" onerror="this.src='https://placehold.co/460x215/1a1a26/64748b?text=+'"/>
+      <div class="card-body">
+        <div class="card-nombre" title="${j.nombre}">${j.nombre}</div>
+        <div class="card-footer">
+          <span class="precio-steam">${fmt(j.precio)}</span>
+          <span class="badge badge-ok">✓</span>
+        </div>
+      </div>`;
+    card.addEventListener('click',()=>openModal({
+      nombre:j.nombre,imagen:j.imagen,
+      desc:'✅ Disponible en Steam. Activación inmediata.',
+      precios:[{label:'Precio',valor:fmt(j.precio),_val:j.precio}],
+      waMsg:`Hola! Quiero consultar por *${j.nombre}* (Steam) 🖥️`,
+      disponible:true,obj:{...j,_tag:'Steam',_icono:'🖥️'}
+    }));
+    grid.appendChild(card);
+  });
+}
+
+let steamBusqPag = 1;
+let steamBusqResultados = [];
+let busqTimer;
+
+function buscarSteam(q){
+  clearTimeout(busqTimer);
+  q = q.trim().toLowerCase();
+  const secOfertas = document.getElementById('steam-ofertas-section');
+  const secResultados = document.getElementById('steam-resultados');
+  if(q.length < 2){
+    secOfertas.style.display = 'block';
+    secResultados.style.display = 'none';
+    return;
+  }
+  busqTimer = setTimeout(async ()=>{
+    // Cargar datos si no están
+    if(!S.datos.steam_disponibles){
+      document.getElementById('steam-resultados-grid').innerHTML = '<div class="empty"><div class="spinner"></div></div>';
+      secOfertas.style.display = 'none';
+      secResultados.style.display = 'block';
+      try{ S.datos.steam_disponibles = await fetchConCache('steam_disponibles'); }
+      catch{ document.getElementById('steam-resultados-grid').innerHTML = '<div class="empty"><p>Error al cargar</p></div>'; return; }
+    }
+    steamBusqResultados = S.datos.steam_disponibles.filter(j=>j.nombre.toLowerCase().includes(q));
+    steamBusqPag = 1;
+    secOfertas.style.display = 'none';
+    secResultados.style.display = 'block';
+    renderSteamBusqueda();
+  }, 350);
+}
+
+function renderSteamBusqueda(){
+  const grid = document.getElementById('steam-resultados-grid');
+  const pagCont = document.getElementById('pag-steam-busq');
+  grid.innerHTML = ''; pagCont.innerHTML = '';
+  if(!steamBusqResultados.length){
+    grid.innerHTML = '<div class="empty"><p>Sin resultados</p></div>';
+    return;
+  }
+  const total = steamBusqResultados.length;
+  const ini = (steamBusqPag-1)*50;
+  const fin = Math.min(ini+50, total);
+  steamBusqResultados.slice(ini,fin).forEach((j,i)=>{
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.style.animationDelay = `${Math.min(i*12,280)}ms`;
+    card.dataset.nombre = j.nombre;
+    card.dataset.precio = j.precio||0;
+    card.dataset.tipo = 'Steam';
+    card.dataset.emoji = '🖥️';
+    card.innerHTML = `
+      <img class="card-img" src="${j.imagen||''}" alt="${j.nombre}" loading="lazy" onerror="this.src='https://placehold.co/460x215/1a1a26/64748b?text=+'"/>
+      <div class="card-body">
+        <div class="card-nombre" title="${j.nombre}">${j.nombre}</div>
+        <div class="card-footer">
+          ${j.precio?`<span class="precio-steam">${fmt(j.precio)}</span>`:`<span class="precio-consultar">Consultar</span>`}
+          <span class="badge ${j.disponible?'badge-ok':'badge-no'}">${j.disponible?'✓':'DRM'}</span>
+        </div>
+      </div>`;
+    card.addEventListener('click',()=>openModal({
+      nombre:j.nombre,imagen:j.imagen,
+      desc:j.disponible?'✅ Disponible en Steam.':'⚠️ Requiere DRM.',
+      precios:j.precio?[{label:'Precio',valor:fmt(j.precio),_val:j.precio}]:[{label:'Precio',valor:'Consultar',clase:'consultar',_val:0}],
+      waMsg:`Hola! Quiero consultar por *${j.nombre}* (Steam) 🖥️`,
+      disponible:j.disponible,obj:{...j,_tag:'Steam',_icono:'🖥️'}
+    }));
+    grid.appendChild(card);
+  });
+  // Paginación
+  if(total>50){
+    const mk=(txt,dis,fn)=>{const b=document.createElement('button');b.className='btn-pag';b.textContent=txt;b.disabled=dis;if(!dis)b.onclick=fn;return b;};
+    pagCont.appendChild(mk('←',steamBusqPag===1,()=>{steamBusqPag--;renderSteamBusqueda();window.scrollTo({top:0,behavior:'smooth'});}));
+    const info=document.createElement('span');info.className='pag-info';info.textContent=`${ini+1}–${fin} de ${total}`;pagCont.appendChild(info);
+    pagCont.appendChild(mk('→',fin>=total,()=>{steamBusqPag++;renderSteamBusqueda();window.scrollTo({top:0,behavior:'smooth'});}));
+  }
+}
+
 async function cargarTab(tab){
   if(tab==='steam'){
     const key='steam_'+S.subSteam;
