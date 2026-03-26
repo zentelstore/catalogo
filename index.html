@@ -495,7 +495,11 @@
       .toolbar-right{width:100%;justify-content:flex-end}
     }
     /* Safe area iOS */
-    @supports(padding-bottom: env(safe-area-inset-bottom)){
+    @supports (padding-bottom: env(safe-area-inset-bottom)) {
+  main {
+    padding-bottom: calc(5rem + env(safe-area-inset-bottom));
+  }
+}
       .wa-btn{bottom:calc(1.2rem + env(safe-area-inset-bottom))}
       main{padding-bottom:calc(5rem + env(safe-area-inset-bottom))}
     }
@@ -2020,10 +2024,44 @@ renderHome();
 // Pre-carga background
 window.addEventListener('load',()=>{
   setTimeout(()=>{
-    fetchConCache('steam_disponibles').then(d=>{S.datos.steam_disponibles=d;mostrarNovedades(d);}).catch(()=>{});
-    setTimeout(()=>fetchConCache('streaming').then(d=>S.datos.streaming=d).catch(()=>{}),2000);
-    setTimeout(()=>fetchConCache('ps4').then(d=>S.datos.ps4=d).catch(()=>{}),3500);
-    setTimeout(()=>fetchConCache('ps5').then(d=>S.datos.ps5=d).catch(()=>{}),5000);
+
+    // 🔥 PROMOS (IMPORTANTE)
+    fetchConCache('promos').then(d=>{
+      S.datos.promos = d;
+      renderPromos();
+    }).catch(()=>{});
+
+    // 🎮 STEAM
+    fetchConCache('steam_disponibles').then(d=>{
+      S.datos.steam_disponibles = d;
+      mostrarNovedades(d);
+    }).catch(()=>{});
+
+    // 🎬 STREAMING
+    setTimeout(()=>{
+      fetchConCache('streaming').then(d=>S.datos.streaming=d).catch(()=>{});
+    },2000);
+
+    // 🎮 PS4
+    setTimeout(()=>{
+      fetchConCache('ps4').then(d=>S.datos.ps4=d).catch(()=>{});
+    },3500);
+
+    // 🎮 PS5
+    setTimeout(()=>{
+      fetchConCache('ps5').then(d=>S.datos.ps5=d).catch(()=>{});
+    },5000);
+
+    // ⭐ PS PLUS
+    setTimeout(()=>{
+      fetchConCache('psplus').then(d=>S.datos.psplus=d).catch(()=>{});
+    },6500);
+
+    // 🔒 STEAM DRM
+    setTimeout(()=>{
+      fetchConCache('steam_drm').then(d=>S.datos.steam_drm=d).catch(()=>{});
+    },8000);
+
   },1500);
 });
 </script>
