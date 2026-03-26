@@ -1848,14 +1848,30 @@ function actualizarStats(){
 //  PROMOS
 // ═══════════════════════════════════════════
 function renderPromos(){
-  const cont=document.getElementById('grid-promos');cont.innerHTML='';
+  const cont=document.getElementById('grid-promos');
+  cont.innerHTML='';
+
+  if(!S.datos.promos){
+    console.error('Promos no cargadas');
+    return;
+  }
+
   S.datos.promos.forEach((promo,i)=>{
-    const div=document.createElement('div');div.className='promo-card';div.style.animationDelay=`${i*100}ms`;
-    div.innerHTML=`<div class="promo-header"><div class="promo-titulo ${promo.color}">${promo.titulo}</div>${promo.subtitulo?`<div class="promo-subtitulo">${promo.subtitulo}</div>`:''}<div class="promo-vigencia">⏰ ${promo.vigencia}</div></div>
-      <div class="promo-lista">${promo.juegos.map(j=>`<div class="promo-item" data-j="${j}" data-p="${promo.titulo}">${j}</div>`).join('')}</div>`;
+    const div=document.createElement('div');
+    div.className='promo-card';
+    div.style.animationDelay=`${i*100}ms`;
+
+    div.innerHTML=`<div class="promo-header">
+      <div class="promo-titulo ${promo.color}">${promo.titulo}</div>
+      ${promo.subtitulo?`<div class="promo-subtitulo">${promo.subtitulo}</div>`:''}
+      <div class="promo-vigencia">⏰ ${promo.vigencia}</div>
+    </div>
+    <div class="promo-lista">
+      ${promo.juegos.map(j=>`<div class="promo-item" data-j="${j}" data-p="${promo.titulo}">${j}</div>`).join('')}
+    </div>`;
+
     cont.appendChild(div);
   });
-  cont.querySelectorAll('.promo-item').forEach(el=>el.addEventListener('click',()=>openModal({nombre:el.dataset.j,imagen:null,desc:`🔥 En promoción: ${el.dataset.p}`,precios:[{label:'Promo',valor:el.dataset.p.split('POR')[1]?.trim()||'Ver promo',_val:0}],waMsg:`Hola! Vi la promo *${el.dataset.p}* y quiero *${el.dataset.j}* 🔥`,disponible:true,obj:{nombre:el.dataset.j,_tag:'Promo',_icono:'🔥'}})));
 }
 
 // ═══════════════════════════════════════════
