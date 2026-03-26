@@ -1,4 +1,4 @@
-[
+  [
   {
     "titulo": "2 JUEGOS PRIMARIOS POR $15.000",
     "subtitulo": "Secundaria por $12.000",
@@ -105,13 +105,12 @@
 "HOLLOW KNIGHT VOIDHEART",
 "RESIDENT EVIL 4 REMAKE",
 "SACKBOY",
-"ps5_exclusivos": [
-  "MORTAL KOMBAT 1",
-  "ARK ASCENDED",
-  "UFC 5",
-  "DEAD SPACE",
-  "NEED FOR SPEED UNBOUND"
-]
-    ]
-  }
+"ps5_exclusivos",
+"MORTAL KOMBAT 1",
+"ARK ASCENDED",
+"UFC 5",
+"DEAD SPACE",
+"NEED FOR SPEED UNBOUND"
+ ]
+ }
 ]
