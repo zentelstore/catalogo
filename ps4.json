@@ -4,8 +4,7 @@
     "primario": 8000,
     "secundario": 6400,
     "disponible": true
-    img:
-    "https://store.steampowered.com/app/497850/8Bit_Hordes/"
+    img:"https://store.steampowered.com/app/497850/8Bit_Hordes/"
   },
   {
     "nombre": "8 Bits Invaders!",
