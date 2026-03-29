@@ -1,28 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ZentelStore — Catálogo de Juegos</title>
   <meta name="description" content="Steam, PS4, PS5, Streaming y más. Activación inmediata. Consultá por WhatsApp."/>
   <meta name="robots" content="index,follow"/>
-  <!-- PWA -->
-  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"/>
-  <link rel="apple-touch-icon" href="icon-192.png"/>
-  <meta name="apple-mobile-web-app-capable" content="yes"/>
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-  <meta name="apple-mobile-web-app-title" content="ZentelStore"/>
-  <meta name="mobile-web-app-capable" content="yes"/>
+  <link rel="canonical" href="https://zentelstore.github.io/catalogo"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
   <meta name="theme-color" content="#00e5ff"/>
-  <!-- OG -->
   <meta property="og:title" content="ZentelStore — Catálogo de Juegos"/>
   <meta property="og:description" content="Steam, PS4, PS5, Streaming. Activación inmediata."/>
   <meta property="og:image" content="https://zentelstore.github.io/catalogo/og-image.jpg"/>
   <meta property="og:url" content="https://zentelstore.github.io/catalogo"/>
   <meta property="og:type" content="website"/>
   <meta name="twitter:card" content="summary_large_image"/>
-<!-- Google Analytics: cuando tengas tu ID, agregá el script acá -->
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
   <style>
     :root{
@@ -72,17 +64,6 @@
     .carrito-badge{position:absolute;top:-6px;right:-6px;background:var(--accent);color:#000;font-size:.58rem;font-weight:700;width:16px;height:16px;border-radius:50%;display:none;align-items:center;justify-content:center}
     .carrito-badge.show{display:flex}
 
-    /* ── PWA INSTALL BANNER ── */
-    #pwa-banner{background:var(--card);border-bottom:1px solid var(--border);padding:.7rem 1rem;display:none;align-items:center;gap:.75rem;position:relative;z-index:98}
-    #pwa-banner.show{display:flex}
-    .pwa-icon{font-size:1.5rem;flex-shrink:0}
-    .pwa-text{flex:1;min-width:0}
-    .pwa-text strong{display:block;font-size:.85rem;color:var(--text)}
-    .pwa-text span{font-size:.74rem;color:var(--muted)}
-    .pwa-btns{display:flex;gap:.4rem;flex-shrink:0}
-    .pwa-install{background:var(--accent);color:#000;border:none;border-radius:7px;padding:.38rem .78rem;font-family:'Inter',sans-serif;font-size:.78rem;font-weight:700;cursor:pointer}
-    .pwa-dismiss{background:transparent;border:1px solid var(--border);border-radius:7px;padding:.38rem .65rem;font-family:'Inter',sans-serif;font-size:.78rem;color:var(--muted);cursor:pointer}
-
     /* ── TABS DESKTOP ── */
     .tabs-bar{background:rgba(10,10,15,.82);border-bottom:1px solid var(--border);position:sticky;top:56px;z-index:99;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);overflow-x:auto;scrollbar-width:none}
     .tabs-bar::-webkit-scrollbar{display:none}
@@ -108,7 +89,8 @@
     .sort-select{background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--muted);font-family:'Inter',sans-serif;font-size:.72rem;padding:.28rem .55rem;outline:none;cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .42rem center;padding-right:1.3rem;min-height:34px}
     .sort-select option{background:#1a1a26}
     .view-toggle{display:flex;gap:.2rem}
-    .btn-view{background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--muted);padding:.28rem .5rem;cursor:pointer;transition:all .2s;display:flex;align-items:center;min-height:34px}
+    .btn-view{background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--muted);padding:.28rem .5rem
+    ;cursor:pointer;transition:all .2s;display:flex;align-items:center;min-height:34px}
     .btn-view.active,.btn-view:hover{border-color:var(--accent);color:var(--accent)}
     .btn-sub{padding:.34rem .78rem;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'Inter',sans-serif;font-size:.76rem;font-weight:500;cursor:pointer;transition:all .2s;min-height:36px}
     .btn-sub:hover{border-color:var(--accent);color:var(--accent)}
@@ -201,7 +183,7 @@
 
     /* ── STREAMING ── */
     .streaming-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:.95rem}
-    .stream-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;animation:fadeUp .4s ease both;transition:transform .2s,border-color .2s,box-shadow .2s;cursor:pointer}
+    .stream-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;animation:fadeUp .4s easeboth;transition:transform .2s,border-color .2s,box-shadow .2s;cursor:pointer}
     .stream-card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 0 18px rgba(0,229,255,.09)}
     .stream-card:active{transform:scale(.97)}
     .stream-header{padding:.82rem 1rem .62rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.52rem}
@@ -222,7 +204,7 @@
     .home-search input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:'Inter',sans-serif;font-size:.95rem;padding:.68rem 1rem .68rem 2.35rem;outline:none;transition:border-color .2s;min-height:46px}
     .home-search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,229,255,.07)}
     .home-search svg{position:absolute;left:.78rem;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
-    .home-search-results{position:absolute;top:110%;left:0;right:0;background:var(--card);border:1px solid var(--border);border-radius:10px;max-height:320px;overflow-y:auto;z-index:200;display:none;box-shadow:0 8px 30px rgba(0,0,0,.4)}
+    .home-search-results{position:absolute;top:110%;left:0;right:0;background:var(--card);border:1px solid var(--border);border-radius:10px;max height:320px;overflow-y:auto;z-index:200;display:none;box-shadow:0 8px 30px rgba(0,0,0,.4)}
     .home-search-results.show{display:block}
     .hsr-item{padding:.58rem .88rem;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:.55rem;border-bottom:1px solid var(--border);transition:background .15s;min-height:44px}
     .hsr-item:last-child{border-bottom:none}
@@ -258,8 +240,6 @@
     .home-wa-text strong{display:block;font-size:.9rem;color:var(--text);margin-bottom:.08rem}
     .home-wa-text span{font-size:.76rem;color:var(--muted)}
 
-
-
     /* ── PRODUCTIVIDAD ── */
     .prod-grid{display:flex;flex-direction:column;gap:1.1rem}
     .prod-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;animation:fadeUp .4s ease both}
@@ -272,7 +252,7 @@
     .prod-plan-desc{font-size:.78rem;color:var(--muted);margin-bottom:.6rem;line-height:1.5}
     .prod-garantia{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25);border-radius:8px;padding:.6rem .8rem;margin-bottom:.55rem}
     .prod-garantia-titulo{font-size:.68rem;font-weight:700;color:var(--yellow);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.35rem}
-    .prod-garantia-item{font-size:.78rem;color:var(--muted);display:flex;align-items:flex-start;gap:.4rem;margin-bottom:.2rem;line-height:1.5}
+    .prod-garantia-item{font-size:.78rem;color:var(--muted    );display:flex;align-items:flex-start;gap:.4rem;margin-bottom:.2rem;line-height:1.5}
     .prod-garantia-item::before{content:'•';color:var(--yellow);flex-shrink:0}
     .prod-regalo{background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.2);border-radius:8px;padding:.5rem .8rem;font-size:.8rem;color:var(--green);margin-bottom:.55rem}
     .prod-select{width:100%;background:var(--surface);border:1px solid var(--yellow);border-radius:8px;color:var(--text);font-family:'Inter',sans-serif;font-size:.85rem;padding:.55rem .85rem;outline:none;cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23f59e0b' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .85rem center;margin-bottom:.5rem}
@@ -280,6 +260,7 @@
     .btn-add-cart{width:100%;background:var(--surface);color:var(--muted);border:1px solid var(--border);border-radius:8px;padding:.6rem;font-family:'Inter',sans-serif;font-size:.85rem;font-weight:600;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:.4rem;min-height:42px}
     .btn-add-cart.activo{background:var(--accent);color:#000;border-color:var(--accent)}
     .btn-add-cart.activo:hover{opacity:.88}
+
     /* Notas y condiciones */
     .notas-section{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.2rem 1.3rem;margin-top:1.5rem;animation:fadeUp .4s ease both}
     .notas-titulo{font-family:'Rajdhani',sans-serif;font-size:1.2rem;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.9rem}
@@ -341,12 +322,12 @@
     .modal-overlay.open{opacity:1;pointer-events:all}
     .modal{background:var(--card);border:1px solid var(--border);border-radius:18px 18px 0 0;width:100%;max-width:500px;overflow:hidden;transform:translateY(100%);transition:transform .3s cubic-bezier(.32,0,.67,0);box-shadow:0 -20px 60px rgba(0,0,0,.5);max-height:92vh;overflow-y:auto}
     .modal-overlay.open .modal{transform:translateY(0)}
-    /* Handle bar */
     .modal-handle{width:36px;height:4px;background:var(--border);border-radius:2px;margin:.75rem auto .25rem}
     .modal-img{width:100%;aspect-ratio:460/215;object-fit:cover;background:var(--surface);display:block}
     .modal-img-placeholder{height:70px;background:var(--surface);display:flex;align-items:center;justify-content:center;font-size:2.2rem}
     .modal-body{padding:1.1rem 1.25rem 1.5rem}
-    .modal-nombre{font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;margin-bottom:.25rem}
+    .modal-nombre{font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;margin-bot
+        tom:.25rem}
     .modal-desc{font-size:.79rem;color:var(--muted);margin-bottom:.88rem;line-height:1.5}
     .modal-precios{display:flex;gap:.85rem;margin-bottom:1rem;flex-wrap:wrap}
     .modal-precio-bloque{display:flex;flex-direction:column;gap:.16rem}
@@ -370,17 +351,14 @@
     /* ── CARRITO PANEL ── */
     .carrito-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:600;opacity:0;pointer-events:none;transition:opacity .22s}
     .carrito-overlay.open{opacity:1;pointer-events:all}
-    /* Desktop: panel lateral */
     .carrito-panel{position:fixed;top:0;right:0;height:100%;width:min(430px,100%);background:var(--bg);border-left:1px solid var(--border);z-index:601;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
     .carrito-overlay.open .carrito-panel{transform:translateX(0)}
-    /* Mobile: bottom sheet */
     @media(max-width:768px){
       .carrito-panel{top:auto;bottom:0;right:0;left:0;width:100%;height:92vh;border-left:none;border-top:1px solid var(--border);border-radius:20px 20px 0 0;transform:translateY(100%)}
       .carrito-overlay.open .carrito-panel{transform:translateY(0)}
       .carrito-handle{display:block !important}
       .carrito-head{padding:.75rem 1rem}
       .carrito-body{padding:.65rem .88rem}
-      .cupon-input{font-size:16px !important} /* prevent zoom on iOS */
     }
     .carrito-head{padding:1rem 1.2rem;border-bottom:2px solid var(--yellow);display:flex;align-items:center;justify-content:space-between;background:var(--card)}
     .carrito-titulo{font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;display:flex;align-items:center;gap:.5rem}
@@ -389,17 +367,14 @@
     .carrito-body{flex:1;overflow-y:auto;padding:.85rem 1.1rem;display:flex;flex-direction:column;gap:.75rem}
     .carrito-body::-webkit-scrollbar{width:4px}
     .carrito-body::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-    /* Sección carrito */
     .cart-section{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
     .cart-section-body{padding:.85rem 1rem}
     .cart-section-titulo{font-weight:700;font-size:.88rem;margin-bottom:.6rem;color:var(--text)}
-    /* Estado */
     .cart-estado-row{display:flex;justify-content:space-between;align-items:center;padding:.55rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
     .cart-estado-row:last-child{border-bottom:none}
     .cart-estado-label{color:var(--muted)}
     .cart-badge-online{background:rgba(34,197,94,.15);color:var(--green);border:1px solid rgba(34,197,94,.3);font-size:.72rem;font-weight:700;padding:.18rem .6rem;border-radius:20px}
     .cart-badge-stock{color:var(--green);font-size:.82rem;font-weight:600}
-    /* Horario */
     .cart-horario-titulo{font-weight:700;font-size:.88rem;margin-bottom:.35rem}
     .cart-horario-sub{font-size:.76rem;color:var(--muted);margin-bottom:.5rem}
     .cart-horario-horas{font-size:.84rem;margin-bottom:.25rem}
@@ -408,7 +383,6 @@
     .cart-cuenta-regresiva strong{color:var(--yellow);font-weight:700}
     .cart-badge-abierto{background:rgba(34,197,94,.15);color:var(--green);border:1px solid rgba(34,197,94,.3);font-size:.72rem;font-weight:700;padding:.22rem .7rem;border-radius:20px;display:inline-block;margin-bottom:.5rem}
     .cart-badge-cerrado{background:rgba(239,68,68,.12);color:var(--red);border:1px solid rgba(239,68,68,.25);font-size:.72rem;font-weight:700;padding:.22rem .7rem;border-radius:20px;display:inline-block;margin-bottom:.5rem}
-    /* Items */
     .carrito-item{display:flex;align-items:center;gap:.65rem;padding:.55rem 0;border-bottom:1px solid var(--border)}
     .carrito-item:last-child{border-bottom:none}
     .ci-emoji{font-size:1.3rem;flex-shrink:0}
@@ -420,21 +394,8 @@
     .btn-rm:hover{color:var(--red)}
     .carrito-empty{text-align:center;padding:3rem 1rem;color:var(--muted)}
     .carrito-empty div{font-size:2.4rem;margin-bottom:.72rem}
-    /* Cupón */
-    .cupon-wrap{display:flex;gap:.5rem}
-    .cupon-input{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'Inter',sans-serif;font-size:.85rem;padding:.55rem .85rem;outline:none;transition:border-color .2s;text-transform:uppercase;letter-spacing:.05em}
-    .cupon-input::placeholder{color:var(--muted);text-transform:none;letter-spacing:0}
-    .cupon-input:focus{border-color:var(--yellow)}
-    .btn-cupon{background:var(--yellow);color:#000;border:none;border-radius:8px;padding:.55rem 1rem;font-family:'Inter',sans-serif;font-size:.82rem;font-weight:700;cursor:pointer;transition:opacity .2s;white-space:nowrap}
-    .btn-cupon:hover{opacity:.85}
-    .cupon-status{font-size:.76rem;margin-top:.4rem;color:var(--muted)}
-    .cupon-status.ok{color:var(--green)}
-    .cupon-status.err{color:var(--red)}
-    /* Totales */
     .cart-total-row{display:flex;justify-content:space-between;align-items:center;font-size:.86rem;padding:.3rem 0;border-bottom:1px solid var(--border)}
     .cart-total-row:last-child{border-bottom:none;font-weight:700;font-size:.95rem;margin-top:.2rem}
-    .cart-total-row.descuento{color:var(--green)}
-    /* Pago */
     .pago-steps{display:flex;flex-direction:column;gap:.4rem;margin-bottom:.75rem}
     .pago-step{font-size:.8rem;color:var(--muted);display:flex;gap:.5rem;line-height:1.5}
     .pago-step span{color:var(--yellow);font-weight:700;flex-shrink:0}
@@ -446,7 +407,6 @@
     .btn-copiar{background:var(--yellow);color:#000;border:none;border-radius:6px;padding:.28rem .7rem;font-family:'Inter',sans-serif;font-size:.72rem;font-weight:700;cursor:pointer;transition:opacity .2s;white-space:nowrap;flex-shrink:0}
     .btn-copiar:hover{opacity:.85}
     .pago-titular{font-size:.8rem;color:var(--muted);margin-bottom:.6rem;display:flex;align-items:center;gap:.35rem}
-    /* Botón finalizar */
     .btn-finalizar{width:100%;background:#25d366;color:#fff;border:none;border-radius:10px;padding:.85rem;font-family:'Inter',sans-serif;font-size:.92rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;transition:opacity .2s;min-height:48px}
     .btn-finalizar:hover{opacity:.88}
     .btn-vaciar{width:100%;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:8px;padding:.46rem;font-family:'Inter',sans-serif;font-size:.76rem;cursor:pointer;margin-top:.42rem;transition:all .2s;min-height:38px}
@@ -495,35 +455,10 @@
       .home-grid{grid-template-columns:1fr}
       .toolbar-right{width:100%;justify-content:flex-end}
     }
-    /* Safe area iOS */
     @supports (padding-bottom: env(safe-area-inset-bottom)) {
-  main {
-    padding-bottom: calc(5rem + env(safe-area-inset-bottom));
-  }
-}
-      .wa-btn{bottom:calc(1.2rem + env(safe-area-inset-bottom))}
       main{padding-bottom:calc(5rem + env(safe-area-inset-bottom))}
+      .wa-btn{bottom:calc(1.2rem + env(safe-area-inset-bottom))}
     }
-  #carrito-items {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.carrito-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  background: rgba(255,255,255,0.05);
-}
-
-.carrito-body {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
   </style>
 </head>
 <body>
@@ -584,29 +519,12 @@
         <small style="color:var(--muted)">Agregá productos desde el catálogo.</small>
       </div>
 
-      <!-- CUPÓN -->
-      <div class="cart-section" id="cart-section-cupon" style="display:none">
-        <div class="cart-section-body">
-          <div class="cart-section-titulo">Cupón de descuento</div>
-          <div style="font-size:.78rem;color:var(--muted);margin-bottom:.65rem">Aplicá o quitá tu cupón antes de confirmar el pedido.</div>
-          <div class="cupon-wrap">
-            <input class="cupon-input" id="cupon-input" type="text" placeholder="Ingresar cupón"/>
-            <button class="btn-cupon" onclick="aplicarCupon()">Aplicar</button>
-          </div>
-          <div class="cupon-status" id="cupon-status">Sin cupón aplicado.</div>
-        </div>
-      </div>
-
       <!-- TOTALES -->
       <div class="cart-section" id="cart-section-total" style="display:none">
         <div class="cart-section-body">
           <div class="cart-total-row">
             <span style="color:var(--muted)">Subtotal</span>
             <span id="cart-subtotal">$0</span>
-          </div>
-          <div class="cart-total-row descuento" id="cart-row-descuento" style="display:none">
-            <span>Descuento</span>
-            <span id="cart-descuento-val"></span>
           </div>
           <div class="cart-total-row">
             <span>Total final</span>
@@ -626,18 +544,18 @@
             <div class="pago-step"><span>4.</span> Activamos tu producto al instante una vez acreditado el pago.</div>
           </div>
           <div class="pago-aviso">⛔ El producto se entrega <strong style="margin-left:.2rem">únicamente cuando el pago se acredita.</strong></div>
-          <div class="pago-titular">👤 <strong>Titular:</strong>&nbsp; TU NOMBRE ACÁ</div>
+          <div class="pago-t    itular">👤 <strong>Titular:</strong>&nbsp; EZEQUIEL FISOGNI</div>
           <div class="pago-dato">
             <div class="pago-dato-label">Alias</div>
             <div class="pago-dato-row">
-              <span class="pago-dato-valor" id="pago-alias">TU.ALIAS.ACÁ</span>
+              <span class="pago-dato-valor" id="pago-alias">zentelstore.nx</span>
               <button class="btn-copiar" onclick="copiarDato('pago-alias')">Copiar</button>
             </div>
           </div>
           <div class="pago-dato">
             <div class="pago-dato-label">CVU/CBU</div>
             <div class="pago-dato-row">
-              <span class="pago-dato-valor" id="pago-cvu">TU CVU ACÁ</span>
+              <span class="pago-dato-valor" id="pago-cvu">4530000800016377379003</span>
               <button class="btn-copiar" onclick="copiarDato('pago-cvu')">Copiar</button>
             </div>
           </div>
@@ -694,19 +612,6 @@
   <span id="horario-texto">Cargando...</span>
 </div>
 
-<!-- ── PWA INSTALL BANNER ── -->
-<div id="pwa-banner">
-  <div class="pwa-icon">📲</div>
-  <div class="pwa-text">
-    <strong>Instalá ZentelStore como app</strong>
-    <span>Accedé al catálogo sin internet, más rápido</span>
-  </div>
-  <div class="pwa-btns">
-    <button class="pwa-install" onclick="instalarPWA()">Instalar</button>
-    <button class="pwa-dismiss" onclick="descartarPWA()">No gracias</button>
-  </div>
-</div>
-
 <!-- ── HEADER ── -->
 <header>
   <div class="header-inner">
@@ -725,7 +630,6 @@
       <button class="carrito-btn" onclick="toggleCarrito()">
         🛒<span id="carrito-badge" class="carrito-badge">0</span>
       </button>
-      <a href="admin.html" title="Panel Admin" style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.38rem .6rem;display:flex;align-items:center;color:var(--muted);font-size:.82rem;text-decoration:none;transition:all .2s;flex-shrink:0" onmouseover="this.style.borderColor='var(--accent2)';this.style.color='#a78bfa'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">⚙️</a>
     </div>
   </div>
 </header>
@@ -770,7 +674,8 @@
   <div class="toolbar-right">
     <div class="stat-pill" id="stat-pill" style="display:none">
       <span class="stat-dot dot-blue"></span><span id="stat-total">0</span>
-      <span class="stat-dot dot-green"></span><span id="stat-disp">0</span>
+      <span class="stat-dot dot-green"></span><span id="stat-disp
+    ">0</span>
     </div>
     <select class="sort-select" id="sort-select" onchange="sortChanged()">
       <option value="default">A → Z</option>
@@ -841,50 +746,50 @@
         <div class="home-card-icon">📺</div>
         <div class="home-card-info"><div class="home-card-titulo">Streaming</div><div class="home-card-desc">Netflix, Disney+, MAX y más.</div><div class="home-card-badge">1 perfil · 30 días</div></div>
       </div>
-        <div class="home-card" style="animation-delay:275ms" onclick="irTab('streaming')">
+      <div class="home-card" style="animation-delay:275ms" onclick="irTab('productividad')">
         <div class="home-card-icon">💼</div>
-        <div class="home-card-info"><div class="home-card-titulo">Productividad</div><div class="home-card-desc">Capcut,Canva,Chatgtp y más.</div><div class="home-card-badge">1 mes o mas </div></div>
+        <div class="home-card-info"><div class="home-card-titulo">Productividad</div><div class="home-card-desc">Capcut, Canva, ChatGPT y más.</div><div class="home-card-badge">1 mes o más</div></div>
       </div>
     </div>
 
-    <a class="home-wa" href="https://wa.me/543518046904?text=Hola!%20Vi%20el%20cat%C3%A1logo%20y%20quiero%20consultar%20%F0%9F%8E%AE" target="_blank" rel="noopener">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <a class="home-wa" href="https://wa.me/5493518046904?text=Hola!%20Vi%20el%20catálogo%20y%20quiero%20consultar%20🎮" target="_blank" rel="noopener">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       <div class="home-wa-text"><strong>¿Dudas? Escribinos por WhatsApp</strong><span>Respondemos rápido · Activación al instante</span></div>
     </a>
   </div>
-
-  <!-- STEAM -->
-  <div class="panel" id="panel-steam">
-    <!-- INFO CARDS -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1rem">
-      <div style="background:rgba(0,229,255,.06);border:1px solid rgba(0,229,255,.18);border-radius:12px;padding:.85rem 1rem;display:flex;align-items:flex-start;gap:.65rem">
-        <span style="font-size:1.5rem;flex-shrink:0">📦</span>
-        <div>
-          <div style="font-family:'Rajdhani',sans-serif;font-size:.95rem;font-weight:700;color:var(--accent);margin-bottom:.2rem">Directo a tu Biblioteca</div>
-          <div style="font-size:.76rem;color:var(--muted);line-height:1.5">Activación e instalación inmediata en tu cuenta de Steam.</div>
-        </div>
-      </div>
-      <div style="background:rgba(124,58,237,.08);border:1px solid rgba(124,58,237,.22);border-radius:12px;padding:.85rem 1rem;display:flex;align-items:flex-start;gap:.65rem">
-        <span style="font-size:1.5rem;flex-shrink:0">🔑</span>
-        <div>
-          <div style="font-family:'Rajdhani',sans-serif;font-size:.95rem;font-weight:700;color:#a78bfa;margin-bottom:.2rem">Entrega de Key Privada</div>
-          <div style="font-size:.76rem;color:var(--muted);line-height:1.5">Sin acceso remoto, garantizando tu seguridad.</div>
-        </div>
+  
+ <!-- STEAM -->
+<div class="panel" id="panel-steam">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1rem">
+    <div style="background:rgba(0,229,255,.06);border:1px solid rgba(0,229,255,.18);border-radius:12px;padding:.85rem 1rem;display:flex;align-items:flex-start;gap:.65rem">
+      <span style="font-size:1.5rem;flex-shrink:0">📦</span>
+      <div>
+        <div style="font-family:'Rajdhani',sans-serif;font-size:.95rem;font-weight:700;color:var(--accent);margin-bottom:.2rem">Directo a tu Biblioteca</div>
+        <div style="font-size:.76rem;color:var(--muted);line-height:1.5">Activación e instalación inmediata en tu cuenta de Steam.</div>
       </div>
     </div>
-
-    <!-- BUSCADOR STEAM -->
-    <div style="position:relative;margin-bottom:1rem">
-      <svg style="position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted)" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-      <input id="steam-buscador" type="text" placeholder="Buscá tu juego de Steam..." oninput="buscarSteam(this.value)"
-        style="width:100%;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'Inter',sans-serif;font-size:.88rem;padding:.55rem .9rem .55rem 2.1rem;outline:none;transition:border-color .2s"
-        onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'"/>
+    <div style="background:rgba(124,58,237,.08);border:1px solid rgba(124,58,237,.22);border-radius:12px;padding:.85rem 1rem;display:flex;align-items:flex-start;gap:.65rem">
+      <span style="font-size:1.5rem;flex-shrink:0">🔑</span>
+      <div>
+        <div style="font-family:'Rajdhani',sans-serif;font-size:.95rem;font-weight:700;color:#a78bfa;margin-bottom:.2rem">Entrega de Key Privada</div>
+        <div style="font-size:.76rem;color:var(--muted);line-height:1.5">Sin acceso remoto, garantizando tu seguridad.</div>
+      </div>
     </div>
+  </div>
 
+  <div style="position:relative;margin-bottom:1rem">
+    <svg style="position:absolute;left:8px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/>
+      <path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input id="steam-buscador" type="text" placeholder="Buscá tu juego de Steam..." oninput="buscarSteam(this.value)"
+      style="width:100%;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'Inter',sans-serif;font-size:.88rem;padding:.55rem .9rem .55rem 2.1rem;outline:none;transition:border-color .2s"
+      onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'"/>
+  </div>
+  
     <!-- RESULTADOS BUSQUEDA -->
     <div id="steam-resultados" style="display:none;margin-bottom:1rem">
       <div id="steam-resultados-grid" class="grid-juegos"></div>
-      <div class="paginacion" id="pag-steam-busq"></div>
     </div>
 
     <!-- OFERTAS DESTACADAS -->
@@ -899,7 +804,7 @@
         <div style="font-size:2rem;margin-bottom:.6rem">🖥️</div>
         <div style="font-family:'Rajdhani',sans-serif;font-size:1.2rem;font-weight:700;margin-bottom:.4rem">¿No encontrás lo que buscás?</div>
         <div style="font-size:.83rem;color:var(--muted);margin-bottom:1rem;line-height:1.5">Tenemos más de 47.000 juegos disponibles.<br>Escribinos y te conseguimos el tuyo.</div>
-        <a href="https://wa.me/543518046904?text=Hola!%20Busco%20un%20juego%20de%20Steam%20%F0%9F%96%A5%EF%B8%8F"
+        <a href="https://wa.me/5493518046904?text=Hola!%20Busco%20un%20juego%20de%20Steam%20🖥️"
            target="_blank" rel="noopener"
            style="display:inline-flex;align-items:center;gap:.5rem;background:#25d366;color:#fff;text-decoration:none;padding:.72rem 1.4rem;border-radius:10px;font-family:'Inter',sans-serif;font-weight:700;font-size:.9rem;transition:opacity .2s"
            onmouseover="this.style.opacity='.88'" onmouseout="this.style.opacity='1'">
@@ -912,7 +817,6 @@
 
   <!-- PS4 -->
   <div class="panel" id="panel-ps4">
-
     <div class="loading-msg" id="loading-ps4"><div class="spinner"></div><span>Cargando PS4...</span></div>
     <div class="grid-juegos" id="grid-ps4"></div>
     <div class="paginacion" id="pag-ps4"></div>
@@ -944,26 +848,23 @@
   <!-- PROMOS -->
   <div class="panel" id="panel-promos">
     <div class="loading-msg" id="loading-promos"><div class="spinner"></div><span>Cargando Promos...</span></div>
-    <div class="promos-grid" id="grid-promos"></div>
   </div>
 
   <!-- PS PLUS -->
   <div class="panel" id="panel-psplus">
     <div class="loading-msg" id="loading-psplus"><div class="spinner"></div><span>Cargando PS Plus...</span></div>
-    <div id="contenido-psplus"></div>
   </div>
 
   <!-- STREAMING -->
   <div class="panel" id="panel-streaming">
     <div class="loading-msg" id="loading-streaming"><div class="spinner"></div><span>Cargando Streaming...</span></div>
-    <div class="streaming-grid" id="grid-streaming"></div>
     <!-- NOTAS STREAMING -->
     <div class="notas-section" id="notas-streaming" style="display:none">
       <div class="notas-titulo">📋 Notas y Condiciones</div>
       <div class="nota-item"><span class="nota-icon">💲</span><span>Precios en <strong>ARS</strong>.</span></div>
       <div class="nota-item"><span class="nota-icon">🛡️</span><span><strong>Garantía:</strong> por el tiempo contratado (en general <strong>30 días</strong> según cada plan).</span></div>
       <div class="nota-item"><span class="nota-icon">🔒</span><span>Disponibilidad sujeta a stock y políticas de cada plataforma.</span></div>
-      <div class="nota-item"><span class="nota-icon">📞</span><span><strong>Contacto:</strong> <a href="https://wa.me/543518046904" target="_blank">WhatsApp +54 9 3518046904</a> (ZENTELSTORE)</span></div>
+      <div class="nota-item"><span class="nota-icon">📞</span><span><strong>Contacto:</strong> <a href="https://wa.me/5493513000000" target="_blank">WhatsApp ZentelStore</a></span></div>
     </div>
   </div>
 
@@ -976,7 +877,7 @@
     <div style="font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.85rem">📋 Pasos para comprar</div>
     <div class="steps-grid">
       <div class="step-card" style="animation-delay:0ms"><div class="step-num">01</div><div class="step-icon">🔍</div><div class="step-titulo">Elegí tu juego</div><div class="step-desc">Explorá el catálogo, usá el buscador o consultanos directamente por WhatsApp qué estás buscando.</div></div>
-      <div class="step-card" style="animation-delay:80ms"><div class="step-num">02</div><div class="step-icon">💬</div><div class="step-titulo">Consultá por WhatsApp</div><div class="step-desc">Tocá el botón "Consultar por WhatsApp" en el juego que querés. Te respondemos en minutos.</div></div>
+      <div class="step-card" style="animation-delay:80ms"><div class="step-num">02</div><div class="step-icon">💬</div><div class="step-titulo">Consultá por WhatsApp</div><div class="step-desc">Tocá el botón "Consultar por WhatsApp" en el juego que querés. Te respondemos en mi    nutos.</div></div>
       <div class="step-card" style="animation-delay:160ms"><div class="step-num">03</div><div class="step-icon">💳</div><div class="step-titulo">Realizá el pago</div><div class="step-desc">Aceptamos transferencia bancaria, Mercado Pago y efectivo. Te damos todos los datos por chat.</div></div>
       <div class="step-card" style="animation-delay:240ms"><div class="step-num">04</div><div class="step-icon">⚡</div><div class="step-titulo">Activación inmediata</div><div class="step-desc">Una vez confirmado el pago, te enviamos los datos de acceso o activamos la cuenta en el momento.</div></div>
     </div>
@@ -993,132 +894,24 @@
     <div id="faq-list"></div>
 
     <div style="text-align:center;margin-top:1.8rem">
-      <a href="https://wa.me/543518046904?text=Hola!%20Quiero%20consultar%20antes%20de%20comprar%20%F0%9F%8E%AE" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;background:#25d366;color:#fff;text-decoration:none;padding:.75rem 1.5rem;border-radius:10px;font-weight:700;font-size:.92rem">
+      <a href="https://wa.me/5493518046904?text=Hola!%20Quiero%20consultar%20antes%20de%20comprar%20🎮" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;background:#25d366;color:#fff;text-decoration:none;padding:.75rem 1.5rem;border-radius:10px;font-weight:700;font-size:.92rem">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Consultá antes de comprar
       </a>
     </div>
   </div>
-
+  
   <!-- PRODUCTIVIDAD -->
-  <div class="panel" id="panel-productividad">
-    <div class="prod-grid">
-
-      <!-- CANVA PRO -->
-      <div class="prod-card">
-        <div class="prod-header">
-          <div class="prod-header-icon" style="background:rgba(124,58,237,.15);border-color:rgba(124,58,237,.3)">🎨</div>
-          <div class="prod-header-nombre">Canva Pro</div>
-        </div>
-        <div class="prod-body">
-          <div class="prod-regalo">🎁 Con cualquier compra de Canva Pro, <strong>curso de regalo.</strong></div>
-          <div class="prod-plan">
-            <div class="prod-plan-titulo">PLAN 1 — Canva Económico</div>
-            <select class="prod-select" onchange="seleccionarPlan(this,'Canva Pro')">
-              <option value="">Seleccioná un plan</option>
-              <option value="2400">1 Mes — $2.400</option>
-              <option value="3200">2 Meses — $3.200</option>
-              <option value="4000">3 Meses — $4.000</option>
-              <option value="4600">4 Meses — $4.600</option>
-              <option value="6000">6 Meses — $6.000</option>
-              <option value="10000">12 Meses — $10.000</option>
-            </select>
-            <button class="btn-add-cart" id="btn-canva" onclick="addProd('btn-canva','Canva Pro','🎨')">Añadir al Carrito 🛒</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- CHATGPT -->
-      <div class="prod-card">
-        <div class="prod-header">
-          <div class="prod-header-icon" style="background:rgba(16,163,127,.15);border-color:rgba(16,163,127,.3)">🤖</div>
-          <div class="prod-header-nombre">Chat GPT Plus</div>
-        </div>
-        <div class="prod-body">
-          <div class="prod-plan">
-            <div class="prod-plan-titulo">Planes Disponibles</div>
-            <div class="prod-garantia">
-              <div class="prod-garantia-titulo">Garantía de Activación</div>
-              <div class="prod-garantia-item">Garantía solo de activación.</div>
-              <div class="prod-garantia-item">CHAT GPT PLUS se envía por invitación a tu correo.</div>
-            </div>
-            <select class="prod-select" onchange="seleccionarPlan(this,'ChatGPT Plus')">
-              <option value="">Seleccioná un plan</option>
-              <option value="8000">1 Mes — $8.000</option>
-            </select>
-            <button class="btn-add-cart" id="btn-chatgpt" onclick="addProd('btn-chatgpt','ChatGPT Plus','🤖')">Añadir al Carrito 🛒</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- CAPCUT -->
-      <div class="prod-card">
-        <div class="prod-header">
-          <div class="prod-header-icon" style="background:rgba(0,0,0,.3);border-color:rgba(255,255,255,.15)">✂️</div>
-          <div class="prod-header-nombre">CapCut Pro</div>
-        </div>
-        <div class="prod-body">
-          <div class="prod-plan">
-            <div class="prod-plan-titulo">Cuenta Completa (PC, Celular, Tablet)</div>
-            <select class="prod-select" onchange="seleccionarPlan(this,'CapCut Pro')">
-              <option value="">Seleccioná un plan</option>
-              <option value="8000">30 Días — $8.000</option>
-            </select>
-            <button class="btn-add-cart" id="btn-capcut" onclick="addProd('btn-capcut','CapCut Pro','✂️')">Añadir al Carrito 🛒</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- PERPLEXITY -->
-      <div class="prod-card">
-        <div class="prod-header">
-          <div class="prod-header-icon" style="background:rgba(99,102,241,.15);border-color:rgba(99,102,241,.3)">🔍</div>
-          <div class="prod-header-nombre">Perplexity Premium</div>
-        </div>
-        <div class="prod-body">
-          <div class="prod-plan">
-            <div class="prod-plan-titulo">Cuenta Compartida (30 días)</div>
-            <div class="prod-plan-desc">Funciones: <strong>DeepSearch</strong>, análisis de imágenes, modelos avanzados, respuesta rápida.</div>
-            <select class="prod-select" onchange="seleccionarPlan(this,'Perplexity Premium')">
-              <option value="">Seleccioná un plan</option>
-              <option value="8000">30 Días — $8.000</option>
-            </select>
-            <button class="btn-add-cart" id="btn-perplexity" onclick="addProd('btn-perplexity','Perplexity Premium','🔍')">Añadir al Carrito 🛒</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- GEMINI -->
-      <div class="prod-card">
-        <div class="prod-header">
-          <div class="prod-header-icon" style="background:rgba(59,130,246,.15);border-color:rgba(59,130,246,.3)">✨</div>
-          <div class="prod-header-nombre">Gemini Advanced</div>
-        </div>
-        <div class="prod-body">
-          <div class="prod-plan">
-            <div class="prod-plan-titulo">Plan Anual</div>
-            <div class="prod-garantia">
-              <div class="prod-garantia-titulo">Garantía de Activación</div>
-              <div class="prod-garantia-item">Garantía de activación incluida.</div>
-            </div>
-            <select class="prod-select" onchange="seleccionarPlan(this,'Gemini Advanced')">
-              <option value="">Seleccioná un plan</option>
-              <option value="14000">12 Meses — $14.000</option>
-            </select>
-            <button class="btn-add-cart" id="btn-gemini" onclick="addProd('btn-gemini','Gemini Advanced','✨')">Añadir al Carrito 🛒</button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
+ <div class="panel" id="panel-productividad">
+  <div class="prod-grid"></div>
+ </div>
     <!-- NOTAS Y CONDICIONES -->
     <div class="notas-section">
       <div class="notas-titulo">📋 Notas y Condiciones</div>
       <div class="nota-item"><span class="nota-icon">💲</span><span>Precios en <strong>ARS</strong> salvo donde se indique USDT.</span></div>
       <div class="nota-item"><span class="nota-icon">🛡️</span><span><strong>Garantía:</strong> por el tiempo contratado (en general <strong>30 días</strong> según cada plan).</span></div>
       <div class="nota-item"><span class="nota-icon">🔒</span><span>Disponibilidad sujeta a stock y políticas de cada plataforma.</span></div>
-      <div class="nota-item"><span class="nota-icon">📞</span><span><strong>Contacto:</strong> <a href="https://wa.me/543518046904" target="_blank">WhatsApp +54 9 3518046904</a> (ZENTELSTORE)</span></div>
+      <div class="nota-item"><span class="nota-icon">📞</span><span><strong>Contacto:</strong> <a href="https://wa.me/5493518046904" target="_blank">WhatsApp ZentelStore</a></span></div>
     </div>
   </div>
 
@@ -1151,7 +944,7 @@
         </button>
       </div>
       <div class="contacto-alt">
-        <a class="contacto-alt-btn" href="https://wa.me/543518046904" target="_blank" rel="noopener">
+        <a class="contacto-alt-btn" href="https://wa.me/5493518046904" target="_blank" rel="noopener">
           <span>💬</span><strong>WhatsApp directo</strong><small>Chat inmediato</small>
         </a>
         <a class="contacto-alt-btn" href="#" onclick="irTab('como');return false">
@@ -1167,7 +960,7 @@
   <strong>ZentelStore</strong> © 2026 — Activación vía Steam / PlayStation
 </footer>
 
-<a class="wa-btn" href="https://wa.me/543518046904?text=Hola!%20Vi%20el%20cat%C3%A1logo%20%F0%9F%8E%AE" target="_blank" rel="noopener">
+<a class="wa-btn" href="https://wa.me/5493518046904?text=Hola!%20Vi%20el%20catálogo%20🎮" target="_blank" rel="noopener">
   <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   Consultar
 </a>
@@ -1176,895 +969,14 @@
    style="position:fixed;bottom:4.8rem;right:1.2rem;z-index:400;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;border:none;border-radius:50px;padding:.6rem 1rem;display:flex;align-items:center;gap:.48rem;font-family:'Inter',sans-serif;font-size:.82rem;font-weight:600;text-decoration:none;box-shadow:0 4px 18px rgba(220,39,67,.4);transition:transform .2s,box-shadow .2s"
    onmouseover="this.style.transform='translateY(-3px) scale(1.03)';this.style.boxShadow='0 6px 26px rgba(220,39,67,.55)'"
    onmouseout="this.style.transform='';this.style.boxShadow='0 4px 18px rgba(220,39,67,.4)'">
-  <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+  <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-    .069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
   Instagram
 </a>
 
-<script>
-// ═══════════════════════════════════════════
-//  CONFIG
-// ═══════════════════════════════════════════
-const WA='543518046904';
-const POR_PAGINA=50;
-const HORA_AP=9,HORA_CI=22;
-const TABS_FILTRO=['steam','ps4','ps5'];
-const ARCHIVOS={steam_disponibles:'juegos_disponibles.json',steam_drm:'juegos_drm.json',ps4:'ps4.json',ps5:'ps5.json',promos:'promos.json',psplus:'psplus.json',streaming:'streaming.json'};
-// Cotización USD — cambiar manualmente o via admin
-let COTIZ_USD=parseInt(localStorage.getItem('zs_cotiz')||'1500');
+<footer>
+  <strong>ZentelStore</strong> · Activación inmediata · Todos los derechos reservados
+</footer>
 
-// ═══════════════════════════════════════════
-//  STATE
-// ═══════════════════════════════════════════
-const S={
-  tab:'home',subSteam:'disponibles',filtro:'todos',orden:'default',vista:'grid',
-  paginas:{steam:1,ps4:1,ps5:1},
-  datos:{steam_disponibles:null,steam_drm:null,ps4:null,ps5:null,promos:null,psplus:null,streaming:null},
-  carrito:[],
-  favoritos:JSON.parse(localStorage.getItem('zs_favs')||'[]'),
-  vistos:JSON.parse(localStorage.getItem('zs_vistos')||'[]'),
-  modalActual:null,
-  modoUSD:false
-};
-
-// ═══════════════════════════════════════════
-//  UTILS
-// ═══════════════════════════════════════════
-function fmt(n){
-  if(!n) return null;
-  if(S.modoUSD) return 'U$D '+(n/COTIZ_USD).toFixed(2);
-  return '$'+Number(n).toLocaleString('es-AR');
-}
-const waLink=t=>`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
-function showToast(m,d=2200){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),d);}
-
-// ═══════════════════════════════════════════
-//  USD TOGGLE
-// ═══════════════════════════════════════════
-function toggleUSD(){
-  if(!S.modoUSD){
-    const c=prompt(`Cotización USD actual: $${COTIZ_USD}\nIngresá la cotización (ej: 1300) o dejala igual:`);
-    if(c&&!isNaN(c)&&parseInt(c)>0){COTIZ_USD=parseInt(c);localStorage.setItem('zs_cotiz',COTIZ_USD);}
-  }
-  S.modoUSD=!S.modoUSD;
-  document.getElementById('usd-btn').classList.toggle('on',S.modoUSD);
-  document.getElementById('usd-label').textContent=S.modoUSD?'🇺🇸 USD':'🇦🇷 ARS';
-  if(TABS_FILTRO.includes(S.tab)) filtrarActual();
-  showToast(S.modoUSD?`💵 Mostrando precios en USD (1 USD = $${COTIZ_USD})`:'🇦🇷 Mostrando precios en ARS');
-}
-
-// ═══════════════════════════════════════════
-//  BANNER ANUNCIO
-// ═══════════════════════════════════════════
-(function(){
-  const dismissido=sessionStorage.getItem('zs_banner');
-  const texto=localStorage.getItem('zs_banner_texto');
-  if(texto) document.getElementById('banner-texto').textContent=texto;
-  if(!dismissido) document.getElementById('banner-anuncio').classList.add('show');
-})();
-function cerrarBanner(){document.getElementById('banner-anuncio').classList.remove('show');sessionStorage.setItem('zs_banner','1');}
-
-// ═══════════════════════════════════════════
-//  HORARIO
-// ═══════════════════════════════════════════
-function actualizarHorario(){
-  const h=new Date().getHours();
-  const abierto=h>=HORA_AP&&h<HORA_CI;
-  const b=document.getElementById('horario-banner');
-  const t=document.getElementById('horario-texto');
-  b.className=abierto?'':'cerrado';
-  t.textContent=abierto?`Atendemos de ${HORA_AP}:00 a ${HORA_CI}:00 hs · Respondemos en minutos`:`Fuera de horario · Abrimos a las ${HORA_AP}:00 hs — Podés dejarnos tu consulta`;
-}
-actualizarHorario();
-
-// ═══════════════════════════════════════════
-//  PWA
-// ═══════════════════════════════════════════
-let deferredPrompt=null;
-window.addEventListener('beforeinstallprompt',e=>{
-  e.preventDefault();deferredPrompt=e;
-  if(!localStorage.getItem('zs_pwa_dismissed'))
-    document.getElementById('pwa-banner').classList.add('show');
-});
-function instalarPWA(){
-  if(!deferredPrompt) return;
-  deferredPrompt.prompt();
-  deferredPrompt.userChoice.then(r=>{
-    if(r.outcome==='accepted') showToast('📲 ¡ZentelStore instalada!');
-    deferredPrompt=null;document.getElementById('pwa-banner').classList.remove('show');
-  });
-}
-function descartarPWA(){document.getElementById('pwa-banner').classList.remove('show');localStorage.setItem('zs_pwa_dismissed','1');}
-if('serviceWorker' in navigator){
-  window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').then(()=>console.log('SW registrado')).catch(()=>{}));
-}
-
-// ═══════════════════════════════════════════
-//  TABS
-// ═══════════════════════════════════════════
-document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>irTab(b.dataset.tab)));
-function irTab(tab){
-  document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));
-  document.getElementById('tab-select').value=tab;
-  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
-  document.getElementById('panel-'+tab).classList.add('active');
-  S.tab=tab;
-  const cf=TABS_FILTRO.includes(tab);
-  document.getElementById('toolbar').style.display=cf?'flex':'none';
-  document.getElementById('search-wrap').style.display=cf?'':'none';
-  if(cf) actualizarStats();
-  if(tab==='home') renderHome();
-  else if(tab==='como') renderFAQ();
-  else if(tab==='steam'){ renderSteamOfertas(); }
-  else cargarTab(tab);
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-
-// Sub tabs Steam
-// subtabs removed — steam now uses search + ofertas
-
-// ═══════════════════════════════════════════
-//  SORT / VIEW
-// ═══════════════════════════════════════════
-function sortChanged(){S.orden=document.getElementById('sort-select').value;S.paginas[S.tab]=1;filtrarActual();}
-function setView(v){
-  S.vista=v;
-  document.getElementById('btn-grid').classList.toggle('active',v==='grid');
-  document.getElementById('btn-lista').classList.toggle('active',v==='lista');
-  ['steam','ps4','ps5'].forEach(t=>{const g=document.getElementById('grid-'+t);if(g)g.classList.toggle('view-lista',v==='lista');});
-}
-
-// Filtros
-document.querySelectorAll('.btn-filtro').forEach(b=>b.addEventListener('click',()=>{
-  document.querySelectorAll('.btn-filtro').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active');S.filtro=b.dataset.filtro;S.paginas[S.tab]=1;filtrarActual();
-}));
-let dbTimer;
-document.getElementById('buscador').addEventListener('input',()=>{clearTimeout(dbTimer);dbTimer=setTimeout(()=>{S.paginas[S.tab]=1;filtrarActual();},300);});
-function filtrarActual(){
-  const t=S.tab;if(!TABS_FILTRO.includes(t))return;
-  const key=t==='steam'?'steam_'+S.subSteam:t;
-  if(!S.datos[key])return;
-  renderJuegos(t,S.datos[key],t==='steam');
-}
-
-// ═══════════════════════════════════════════
-//  CACHÉ + FETCH
-// ═══════════════════════════════════════════
-const cache={};
-async function fetchConCache(key){
-  if(cache[key])return cache[key];
-  try{const g=sessionStorage.getItem('zs_'+key);if(g){cache[key]=JSON.parse(g);return cache[key];}}catch(e){}
-  const r=await fetch(ARCHIVOS[key]);const d=await r.json();cache[key]=d;
-  try{sessionStorage.setItem('zs_'+key,JSON.stringify(d));}catch(e){}
-  return d;
-}
-// ══════════════════════════════
-//  STEAM SIMPLIFICADO
-// ══════════════════════════════
-// Juegos destacados que mostramos sin cargar todo el JSON
-const STEAM_OFERTAS = [
-  {nombre:'GTA V',precio:8000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg',disponible:true},
-  {nombre:'Red Dead Redemption 2',precio:12000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg',disponible:true},
-  {nombre:'Cyberpunk 2077',precio:10000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg',disponible:true},
-  {nombre:'Elden Ring',precio:14000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg',disponible:true},
-  {nombre:'The Witcher 3',precio:7000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg',disponible:true},
-  {nombre:'FIFA 23',precio:9000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1811260/header.jpg',disponible:true},
-  {nombre:'Hogwarts Legacy',precio:11000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/header.jpg',disponible:true},
-  {nombre:'Call of Duty: Modern Warfare II',precio:15000,imagen:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1938090/header.jpg',disponible:true},
-];
-
-function renderSteamOfertas(){
-  const grid = document.getElementById('steam-ofertas-grid');
-  if(!grid) return;
-  grid.innerHTML = '';
-  STEAM_OFERTAS.forEach((j,i)=>{
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.style.animationDelay = `${i*40}ms`;
-    card.dataset.nombre = j.nombre;
-    card.dataset.precio = j.precio;
-    card.dataset.tipo = 'Steam';
-    card.dataset.emoji = '🖥️';
-    card.innerHTML = `
-      <img class="card-img" src="${j.imagen}" alt="${j.nombre}" loading="lazy" onerror="this.src='https://placehold.co/460x215/1a1a26/64748b?text=+'"/>
-      <div class="card-body">
-        <div class="card-nombre" title="${j.nombre}">${j.nombre}</div>
-        <div class="card-footer">
-          <span class="precio-steam">${fmt(j.precio)}</span>
-          <span class="badge badge-ok">✓</span>
-        </div>
-      </div>`;
-    card.addEventListener('click',()=>openModal({
-      nombre:j.nombre,imagen:j.imagen,
-      desc:'✅ Disponible en Steam. Activación inmediata.',
-      precios:[{label:'Precio',valor:fmt(j.precio),_val:j.precio}],
-      waMsg:`Hola! Quiero consultar por *${j.nombre}* (Steam) 🖥️`,
-      disponible:true,obj:{...j,_tag:'Steam',_icono:'🖥️'}
-    }));
-    grid.appendChild(card);
-  });
-}
-
-let steamBusqPag = 1;
-let steamBusqResultados = [];
-let busqTimer;
-
-function buscarSteam(q){
-  clearTimeout(busqTimer);
-  q = q.trim().toLowerCase();
-  const secOfertas = document.getElementById('steam-ofertas-section');
-  const secResultados = document.getElementById('steam-resultados');
-  if(q.length < 2){
-    secOfertas.style.display = 'block';
-    secResultados.style.display = 'none';
-    return;
-  }
-  busqTimer = setTimeout(async ()=>{
-    // Cargar datos si no están
-    if(!S.datos.steam_disponibles){
-      document.getElementById('steam-resultados-grid').innerHTML = '<div class="empty"><div class="spinner"></div></div>';
-      secOfertas.style.display = 'none';
-      secResultados.style.display = 'block';
-      try{ S.datos.steam_disponibles = await fetchConCache('steam_disponibles'); }
-      catch{ document.getElementById('steam-resultados-grid').innerHTML = '<div class="empty"><p>Error al cargar</p></div>'; return; }
-    }
-    steamBusqResultados = S.datos.steam_disponibles.filter(j=>j.nombre.toLowerCase().includes(q));
-    steamBusqPag = 1;
-    secOfertas.style.display = 'none';
-    secResultados.style.display = 'block';
-    renderSteamBusqueda();
-  }, 350);
-}
-
-function renderSteamBusqueda(){
-  const grid = document.getElementById('steam-resultados-grid');
-  const pagCont = document.getElementById('pag-steam-busq');
-  grid.innerHTML = ''; pagCont.innerHTML = '';
-  if(!steamBusqResultados.length){
-    grid.innerHTML = '<div class="empty"><p>Sin resultados</p></div>';
-    return;
-  }
-  const total = steamBusqResultados.length;
-  const ini = (steamBusqPag-1)*50;
-  const fin = Math.min(ini+50, total);
-  steamBusqResultados.slice(ini,fin).forEach((j,i)=>{
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.style.animationDelay = `${Math.min(i*12,280)}ms`;
-    card.dataset.nombre = j.nombre;
-    card.dataset.precio = j.precio||0;
-    card.dataset.tipo = 'Steam';
-    card.dataset.emoji = '🖥️';
-    card.innerHTML = `
-      <img class="card-img" src="${j.imagen||''}" alt="${j.nombre}" loading="lazy" onerror="this.src='https://placehold.co/460x215/1a1a26/64748b?text=+'"/>
-      <div class="card-body">
-        <div class="card-nombre" title="${j.nombre}">${j.nombre}</div>
-        <div class="card-footer">
-          ${j.precio?`<span class="precio-steam">${fmt(j.precio)}</span>`:`<span class="precio-consultar">Consultar</span>`}
-          <span class="badge ${j.disponible?'badge-ok':'badge-no'}">${j.disponible?'✓':'DRM'}</span>
-        </div>
-      </div>`;
-    card.addEventListener('click',()=>openModal({
-      nombre:j.nombre,imagen:j.imagen,
-      desc:j.disponible?'✅ Disponible en Steam.':'⚠️ Requiere DRM.',
-      precios:j.precio?[{label:'Precio',valor:fmt(j.precio),_val:j.precio}]:[{label:'Precio',valor:'Consultar',clase:'consultar',_val:0}],
-      waMsg:`Hola! Quiero consultar por *${j.nombre}* (Steam) 🖥️`,
-      disponible:j.disponible,obj:{...j,_tag:'Steam',_icono:'🖥️'}
-    }));
-    grid.appendChild(card);
-  });
-  // Paginación
-  if(total>50){
-    const mk=(txt,dis,fn)=>{const b=document.createElement('button');b.className='btn-pag';b.textContent=txt;b.disabled=dis;if(!dis)b.onclick=fn;return b;};
-    pagCont.appendChild(mk('←',steamBusqPag===1,()=>{steamBusqPag--;renderSteamBusqueda();window.scrollTo({top:0,behavior:'smooth'});}));
-    const info=document.createElement('span');info.className='pag-info';info.textContent=`${ini+1}–${fin} de ${total}`;pagCont.appendChild(info);
-    pagCont.appendChild(mk('→',fin>=total,()=>{steamBusqPag++;renderSteamBusqueda();window.scrollTo({top:0,behavior:'smooth'});}));
-  }
-}
-
-async function cargarTab(tab){
-  if(tab==='steam'){
-    const key='steam_'+S.subSteam;
-    if(!S.datos[key]){try{S.datos[key]=await fetchConCache(key);}catch{document.getElementById('loading-steam').innerHTML='<p style="color:var(--red)">⚠️ Error</p>';return;}}
-    document.getElementById('loading-steam').style.display='none';
-    renderJuegos('steam',S.datos[key],true);mostrarNovedades(S.datos[key]);return;
-  }
-  if(S.datos[tab]){renderTab(tab);return;}
-  try{S.datos[tab]=await fetchConCache(tab);renderTab(tab);}
-  catch{document.getElementById('loading-'+tab).innerHTML='<p style="color:var(--red)">⚠️ Error al cargar</p>';}
-}
-function renderTab(tab){
-  document.getElementById('loading-'+tab).style.display='none';
-  if(tab==='ps4')renderJuegos('ps4',S.datos.ps4,false);
-  else if(tab==='ps5')renderJuegos('ps5',S.datos.ps5,false);
-  else if(tab==='promos')renderPromos();
-  else if(tab==='psplus')renderPsplus();
-  else if(tab==='streaming')renderStreaming();
-}
-
-// ═══════════════════════════════════════════
-//  HOME
-// ═══════════════════════════════════════════
-function renderHome(){renderVistos();renderFavsHome();}
-
-// Buscador global
-let hsTimer;
-document.getElementById('home-buscador').addEventListener('input',function(){
-  clearTimeout(hsTimer);const q=this.value.trim().toLowerCase();
-  const res=document.getElementById('home-search-results');
-  if(q.length<2){res.classList.remove('show');return;}
-  hsTimer=setTimeout(()=>buscarGlobal(q),280);
-});
-document.addEventListener('click',e=>{if(!e.target.closest('#home-search-wrap'))document.getElementById('home-search-results').classList.remove('show');});
-function buscarGlobal(q){
-  const res=document.getElementById('home-search-results');
-  const fuentes=[{key:'steam_disponibles',tag:'Steam',icono:'🖥️'},{key:'ps4',tag:'PS4',icono:'🎮'},{key:'ps5',tag:'PS5',icono:'🎮'}];
-  let resultados=[];
-  fuentes.forEach(f=>{const d=S.datos[f.key];if(!d)return;d.filter(j=>j.nombre.toLowerCase().includes(q)).slice(0,4).forEach(j=>resultados.push({...j,_tag:f.tag,_icono:f.icono,_key:f.key}));});
-  if(S.datos.streaming){S.datos.streaming.forEach(cat=>{cat.servicios.filter(s=>s.servicio.toLowerCase().includes(q)).forEach(s=>{resultados.push({nombre:s.servicio,_tag:'Streaming',_icono:'📺',_key:'streaming',precio:s.items[0]?.precio,disponible:true,_stream:s,_cat:cat.categoria});});});}
-  resultados=resultados.slice(0,12);
-  if(!resultados.length){res.innerHTML='<div class="hsr-empty">Sin resultados</div>';res.classList.add('show');return;}
-  res.innerHTML=resultados.map((j,i)=>`<div class="hsr-item" data-i="${i}"><span style="font-size:.95rem;flex-shrink:0">${j._icono}</span><span class="hsr-nombre">${j.nombre}</span><span class="hsr-tag">${j._tag}</span><span class="hsr-precio">${j.precio?fmt(j.precio):(j.primario?fmt(j.primario):'Consultar')}</span></div>`).join('');
-  res.querySelectorAll('.hsr-item').forEach((el,i)=>el.addEventListener('click',()=>{document.getElementById('home-buscador').value='';res.classList.remove('show');abrirModalObj(resultados[i]);}));
-  res.classList.add('show');
-}
-function abrirModalObj(j){
-  if(j._stream){const it=j._stream.items[0];openModal({nombre:j.nombre,imagen:null,desc:`${j._stream.emoji} ${j._cat} · ${it.tipo}`,precios:[{label:'Precio',valor:fmt(it.precio),_val:it.precio}],waMsg:`Hola! Quiero consultar por *${j.nombre}* (Streaming) 📺`,disponible:true,obj:j});}
-  else if(j._key==='steam_disponibles'||j._key==='steam_drm'){openModal({nombre:j.nombre,imagen:j.imagen,desc:j.disponible?'✅ Disponible en Steam.':'⚠️ Requiere DRM.',precios:j.precio?[{label:'Precio',valor:fmt(j.precio),_val:j.precio}]:[{label:'Precio',valor:'Consultar',clase:'consultar',_val:0}],waMsg:`Hola! Quiero consultar por *${j.nombre}* (Steam) 🖥️`,disponible:j.disponible,obj:j});}
-  else{const plat=j._tag||'PS';const precios=[];if(j.primario)precios.push({label:'Primaria',valor:fmt(j.primario),_val:j.primario});if(j.secundario)precios.push({label:'Secundaria',valor:fmt(j.secundario),clase:'sec',_val:j.secundario});if(!precios.length)precios.push({label:'Precio',valor:'Sin stock',clase:'consultar',_val:0});openModal({nombre:j.nombre,imagen:null,desc:`🎮 ${plat}. ${j.disponible?'Disponible.':'Sin stock.'}`,precios,waMsg:`Hola! Quiero consultar por *${j.nombre}* (${plat}) 🎮`,disponible:j.disponible,obj:j});}
-}
-
-// Novedades
-function mostrarNovedades(datos){
-  if(!datos||!datos.length)return;
-  const muestra=[...datos].filter(j=>j.disponible).slice(-8).reverse();
-  if(!muestra.length)return;
-  document.getElementById('novedades-section').style.display='block';
-  const grid=document.getElementById('novedades-grid');grid.innerHTML='';
-  muestra.forEach((j,i)=>{
-    const div=document.createElement('div');div.className='nov-card';div.style.animationDelay=`${i*40}ms`;
-    div.innerHTML=`${j.imagen?`<img class="nov-img" src="${j.imagen}" alt="${j.nombre}" loading="lazy" onerror="this.style.display='none'">`:''}
-      <div class="nov-body"><div class="nov-nombre" title="${j.nombre}">${j.nombre}<span class="nov-tag">Steam</span></div>
-      <div class="nov-precio">${j.precio?fmt(j.precio):'Consultar'}</div></div>`;
-    div.addEventListener('click',()=>openModal({nombre:j.nombre,imagen:j.imagen,desc:'✅ Disponible en Steam.',precios:j.precio?[{label:'Precio',valor:fmt(j.precio),_val:j.precio}]:[{label:'Precio',valor:'Consultar',clase:'consultar',_val:0}],waMsg:`Hola! Quiero consultar por *${j.nombre}* (Steam) 🖥️`,disponible:true,obj:j}));
-    grid.appendChild(div);
-  });
-}
-
-// Vistos
-function agregarVisto(obj){
-  S.vistos=S.vistos.filter(v=>v.nombre!==obj.nombre);
-  S.vistos.unshift({nombre:obj.nombre,imagen:obj.imagen||null,precio:obj.precio||obj.primario||null,tag:obj._tag||'Juego'});
-  if(S.vistos.length>6)S.vistos.pop();
-  try{localStorage.setItem('zs_vistos',JSON.stringify(S.vistos));}catch(e){}
-  if(S.tab==='home')renderVistos();
-}
-function renderVistos(){
-  const sec=document.getElementById('vistos-section'),grid=document.getElementById('vistos-grid');
-  if(!S.vistos.length){sec.style.display='none';return;}
-  sec.style.display='block';grid.innerHTML='';
-  S.vistos.forEach((j,i)=>{
-    const div=document.createElement('div');div.className='nov-card';div.style.animationDelay=`${i*40}ms`;
-    div.innerHTML=`${j.imagen?`<img class="nov-img" src="${j.imagen}" alt="${j.nombre}" loading="lazy" onerror="this.style.display='none'">`:''}
-      <div class="nov-body"><div class="nov-nombre" title="${j.nombre}">${j.nombre}<span class="nov-tag">${j.tag}</span></div>
-      <div class="nov-precio">${j.precio?fmt(j.precio):'Consultar'}</div></div>`;
-    div.addEventListener('click',()=>openModal({nombre:j.nombre,imagen:j.imagen,desc:'',precios:j.precio?[{label:'Precio',valor:fmt(j.precio),_val:j.precio}]:[{label:'Precio',valor:'Consultar',clase:'consultar',_val:0}],waMsg:`Hola! Quiero consultar por *${j.nombre}* 🎮`,disponible:true,obj:j}));
-    grid.appendChild(div);
-  });
-}
-
-// Favoritos
-function toggleFavorito(obj,btn){
-  const idx=S.favoritos.findIndex(f=>f.nombre===obj.nombre);
-  if(idx===-1){S.favoritos.push({nombre:obj.nombre,imagen:obj.imagen||null,precio:obj.precio||obj.primario||null,tag:obj._tag||'Juego',obj});btn.classList.add('active');btn.textContent='❤️';showToast('❤️ Guardado en favoritos');}
-  else{S.favoritos.splice(idx,1);btn.classList.remove('active');btn.textContent='🤍';showToast('Eliminado de favoritos');}
-  try{localStorage.setItem('zs_favs',JSON.stringify(S.favoritos));}catch(e){}
-  if(S.tab==='home')renderFavsHome();
-}
-function renderFavsHome(){
-  const sec=document.getElementById('favs-section'),grid=document.getElementById('favs-grid');
-  if(!S.favoritos.length){sec.style.display='none';return;}
-  sec.style.display='block';grid.innerHTML='';
-  S.favoritos.forEach((j,i)=>{
-    const div=document.createElement('div');div.className='card';div.style.animationDelay=`${i*40}ms`;
-    div.innerHTML=`${j.imagen?`<img class="card-img" src="${j.imagen}" alt="${j.nombre}" loading="lazy" onerror="this.style.display='none'">`:''}
-      <div class="card-body"><div class="card-nombre" title="${j.nombre}">${j.nombre}</div>
-      <div class="card-footer"><span class="precio-steam">${j.precio?fmt(j.precio):'Consultar'}</span><span class="badge badge-ok">${j.tag||'Juego'}</span></div></div>`;
-    div.addEventListener('click',()=>abrirModalObj({...j,...(j.obj||{})}));
-    grid.appendChild(div);
-  });
-}
-
-// ═══════════════════════════════════════════
-//  CARRITO
-// ═══════════════════════════════════════════
-// DATOS DE PAGO — Cambiá estos valores cuando tengas el alias
-const PAGO_TITULAR = 'Ezequiel Fisogni';
-const PAGO_ALIAS   = 'zentelstore.nx';
-const PAGO_CVU     = '4530000800016377379003';
-
-// CUPONES — Agregá tus cupones acá: { 'CODIGO': porcentaje }
-  const CUPONES = {
-  'ZENTEL10': { descuento: 10, activo: true }
-  };
-let cuponAplicado = null;
-
-function toggleCarrito(){
-  document.getElementById('carrito-overlay').classList.toggle('open');
-  actualizarHorarioCarrito();
-}
-function cerrarCarrito(e){if(e.target===document.getElementById('carrito-overlay'))toggleCarrito();}
-
-function actualizarHorarioCarrito(){
-  const ahora = new Date();
-  const h = ahora.getHours(), m = ahora.getMinutes(), s = ahora.getSeconds();
-  const abierto = h >= HORA_AP && h < HORA_CI;
-  const badge = document.getElementById('cart-badge-horario');
-  const countdown = document.getElementById('cart-countdown');
-  const msg = document.getElementById('cart-horario-msg');
-  const horaEl = document.getElementById('cart-hora-arg');
-  if(horaEl) horaEl.textContent = `Hora Argentina: ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-  if(abierto){
-    if(badge){badge.className='cart-badge-abierto';badge.textContent='ABIERTO AHORA';}
-    const restH = HORA_CI - h - 1;
-    const restM = 59 - m;
-    const restS = 59 - s;
-    if(countdown) countdown.innerHTML = `Cerramos en: <strong>${restH}h ${restM}m ${restS}s</strong>`;
-    if(msg) msg.textContent = `Hoy atendemos hasta las ${HORA_CI}:00 hs.`;
-  } else {
-    if(badge){badge.className='cart-badge-cerrado';badge.textContent='CERRADO AHORA';}
-    if(countdown) countdown.innerHTML = '';
-    if(msg) msg.textContent = `Abrimos a las ${HORA_AP}:00 hs. Podés dejarnos tu pedido igual.`;
-  }
-}
-setInterval(()=>{if(document.getElementById('carrito-overlay').classList.contains('open'))actualizarHorarioCarrito();},1000);
-
-function aplicarCupon(){
-  const codigo = document.getElementById('cupon-input').value.trim().toUpperCase();
-  const status = document.getElementById('cupon-status');
-  if(!codigo){status.className='cupon-status';status.textContent='Sin cupón aplicado.';return;}
-  if(CUPONES[codigo] && CUPONES[codigo].activo){
-    cuponAplicado = {codigo, pct: CUPONES[codigo].descuento};
-    status.className='cupon-status ok';
-    status.textContent=`✅ Cupón "${codigo}" aplicado — ${CUPONES[codigo]}% de descuento`;
-    actualizarCarritoUI();showToast(`🎟️ Cupón aplicado: ${CUPONES[codigo]}% off`);
-  } else {
-    cuponAplicado=null;
-    status.className='cupon-status err';
-    status.textContent='❌ Cupón inválido o expirado.';
-    actualizarCarritoUI();
-  }
-}
-
-function copiarDato(id){
-  const val = document.getElementById(id)?.textContent;
-  if(!val) return;
-  if(navigator.clipboard) navigator.clipboard.writeText(val).then(()=>showToast('📋 Copiado al portapapeles'));
-  else showToast('📋 '+val);
-}
-
-function agregarAlCarrito(nombre,precio,tipo,emoji){
-  S.carrito.push({nombre,precio,tipo,emoji:emoji||'🎮',id:Date.now()});
-  actualizarCarritoUI();showToast('🛒 Agregado al carrito');
-}
-function quitarDelCarrito(id){S.carrito=S.carrito.filter(i=>i.id!==id);cuponAplicado=null;actualizarCarritoUI();}
-function vaciarCarrito(){S.carrito=[];cuponAplicado=null;document.getElementById('cupon-input').value='';document.getElementById('cupon-status').textContent='Sin cupón aplicado.';document.getElementById('cupon-status').className='cupon-status';actualizarCarritoUI();showToast('🗑️ Carrito vaciado');}
-
-function actualizarCarritoUI(){
-  const count = S.carrito.length;
-  const badge = document.getElementById('carrito-badge');
-  badge.textContent=count; badge.classList.toggle('show',count>0);
-  const empty = document.getElementById('carrito-empty');
-  const secItems = document.getElementById('cart-section-items');
-  const secCupon = document.getElementById('cart-section-cupon');
-  const secTotal = document.getElementById('cart-section-total');
-  const secPago  = document.getElementById('cart-section-pago');
-  const secBtn   = document.getElementById('cart-section-btn');
-  // Update pago data
-  const aliasEl = document.getElementById('pago-alias');
-  const cvuEl   = document.getElementById('pago-cvu');
-  if(aliasEl) aliasEl.textContent = PAGO_ALIAS;
-  if(cvuEl)   cvuEl.textContent   = PAGO_CVU;
-  const titularEl = document.querySelector('.pago-titular');
-  if(titularEl) titularEl.innerHTML = `👤 <strong>Titular:</strong>&nbsp; ${PAGO_TITULAR}`;
-  if(!count){
-    empty.style.display='block';
-    [secItems,secCupon,secTotal,secPago,secBtn].forEach(el=>{if(el)el.style.display='none';});
-    return;
-  }
-  empty.style.display='none';
-  [secItems,secCupon,secTotal,secPago,secBtn].forEach(el=>{if(el)el.style.display='';});
-  // Items
-  const cont = document.getElementById('carrito-items');
-  cont.innerHTML = S.carrito.map(item=>`
-    <div class="carrito-item">
-      <span class="ci-emoji">${item.emoji}</span>
-      <div class="ci-info">
-        <div class="ci-nombre">${item.nombre}</div>
-        <div class="ci-tipo">${item.tipo}</div>
-      </div>
-      <span class="ci-precio">${item.precio?fmt(item.precio):'Consultar'}</span>
-      <button class="btn-rm" onclick="quitarDelCarrito(${item.id})">✕</button>
-    </div>`).join('');
-  // Totales
-  const subtotal = S.carrito.reduce((a,i)=>a+(i.precio||0),0);
-  const descuento = cuponAplicado ? Math.round(subtotal * cuponAplicado.pct / 100) : 0;
-  const total = subtotal - descuento;
-  document.getElementById('cart-subtotal').textContent = fmt(subtotal)||'A consultar';
-  document.getElementById('cart-total-final').textContent = fmt(total)||'A consultar';
-  const rowDesc = document.getElementById('cart-row-descuento');
-  if(descuento){
-    rowDesc.style.display='flex';
-    document.getElementById('cart-descuento-val').textContent = '-'+fmt(descuento);
-  } else {
-    rowDesc.style.display='none';
-  }
-}
-
-function finalizarPedido(){
-  if(!S.carrito.length)return;
-  const subtotal = S.carrito.reduce((a,i)=>a+(i.precio||0),0);
-  const descuento = cuponAplicado ? Math.round(subtotal * cuponAplicado.pct / 100) : 0;
-  const total = subtotal - descuento;
-  const lista = S.carrito.map(i=>`• ${i.nombre} (${i.tipo})${i.precio?' — '+fmt(i.precio):''}`).join('\n');
-  let msg = `Hola! Quiero hacer el siguiente pedido:
-
-${lista}
-
-`;
-  if(cuponAplicado) msg += `Cupón aplicado: ${cuponAplicado.codigo} (-${cuponAplicado.pct}%)
-`;
-  msg += `Total: ${fmt(total)||'A consultar'}
-
-Ya realicé la transferencia. ¡Gracias! 🎮`;
-  window.open(waLink(msg),'_blank');
-}
-
-function agregarDesdeModal(){
-  if(!S.modalActual)return;
-  const m=S.modalActual;
-  const precio=m.precios&&m.precios[0]?m.precios[0]._val:null;
-  agregarAlCarrito(m.nombre,precio,m.tipo||m.precios?.[0]?.label||'',m.emoji||'🎮');
-  closeModal();setTimeout(()=>toggleCarrito(),300);
-}
-
-// ═══════════════════════════════════════════
-//  MODAL (bottom sheet mobile)
-// ═══════════════════════════════════════════
-// Swipe to close
-let touchY=0;
-document.getElementById('modal-panel').addEventListener('touchstart',e=>{touchY=e.touches[0].clientY;},{passive:true});
-document.getElementById('modal-panel').addEventListener('touchmove',e=>{
-  const dy=e.touches[0].clientY-touchY;
-  if(dy>80) closeModal();
-},{passive:true});
-
-function openModal({nombre,imagen,desc,precios,waMsg,disponible,obj}){
-  agregarVisto(obj||{nombre,imagen,precio:precios?.[0]?._val,_tag:'Juego'});
-  S.modalActual={nombre,imagen,desc,precios,waMsg,disponible,obj,tipo:precios?.[0]?.label||'',emoji:obj?._icono||'🎮'};
-  const iw=document.getElementById('modal-img-wrap');
-  iw.innerHTML=imagen?`<img class="modal-img" src="${imagen}" alt="${nombre}" onerror="this.parentElement.innerHTML='<div class=modal-img-placeholder>🎮</div>'">`:`<div class="modal-img-placeholder">🎮</div>`;
-  document.getElementById('modal-nombre').textContent=nombre;
-  document.getElementById('modal-desc').textContent=desc||'';
-  document.getElementById('modal-precios').innerHTML=(precios||[]).map(p=>`<div class="modal-precio-bloque"><span class="modal-precio-label">${p.label}</span><span class="modal-precio-valor ${p.clase||''}">${p.valor}</span></div>`).join('');
-  document.getElementById('modal-wa').href=waLink(waMsg);
-  document.getElementById('modal-avisame').style.display=(!disponible)?'block':'none';
-  document.getElementById('modal-overlay').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeModal(e){
-  if(e&&e.target!==document.getElementById('modal-overlay'))return;
-  document.getElementById('modal-overlay').classList.remove('open');
-  document.body.style.overflow='';S.modalActual=null;
-}
-document.addEventListener('keydown',e=>{
-  if(e.key==='Escape'){
-    closeModal();
-    if(document.getElementById('carrito-overlay').classList.contains('open'))toggleCarrito();
-  }
-});
-function compartirJuego(){
-  if(!S.modalActual)return;
-  const url=`${location.href.split('?')[0]}?q=${encodeURIComponent(S.modalActual.nombre)}`;
-  if(navigator.share){navigator.share({title:'ZentelStore — '+S.modalActual.nombre,url}).catch(()=>{});}
-  else if(navigator.clipboard){navigator.clipboard.writeText(url).then(()=>showToast('🔗 Link copiado'));}
-  else showToast('🔗 '+url);
-}
-function avisameDisponible(){
-  if(!S.modalActual)return;
-  window.open(waLink(`Hola! Quiero que me avisen cuando *${S.modalActual.nombre}* esté disponible 🔔`),'_blank');
-}
-
-// ═══════════════════════════════════════════
-//  RENDER JUEGOS
-// ═══════════════════════════════════════════
-function renderJuegos(tipo,datos,esSteam){
-  const cont=document.getElementById('grid-'+tipo),pagCont=document.getElementById('pag-'+tipo);
-  cont.innerHTML='';pagCont.innerHTML='';
-  cont.classList.toggle('view-lista',S.vista==='lista');
-  const texto=document.getElementById('buscador').value.toLowerCase().trim();
-  let lista=datos.filter(j=>{
-    const mT=j.nombre.toLowerCase().includes(texto);
-    const mF=S.filtro==='todos'||(S.filtro==='disponible'&&j.disponible)||(S.filtro==='no-disponible'&&!j.disponible);
-    return mT&&mF;
-  });
-  if(S.orden==='precio-asc')lista=[...lista].sort((a,b)=>(esSteam?(a.precio||0):(a.primario||0))-(esSteam?(b.precio||0):(b.primario||0)));
-  else if(S.orden==='precio-desc')lista=[...lista].sort((a,b)=>(esSteam?(b.precio||0):(b.primario||0))-(esSteam?(a.precio||0):(a.primario||0)));
-  if(!lista.length){cont.innerHTML='<div class="empty"><p>Sin resultados</p></div>';actualizarStats();return;}
-  const pag=S.paginas[tipo]||1,total=lista.length,totalPags=Math.ceil(total/POR_PAGINA)||1;
-  const inicio=(pag-1)*POR_PAGINA,fin=Math.min(inicio+POR_PAGINA,total);
-  lista.slice(inicio,fin).forEach((j,i)=>{
-    const card=document.createElement('div');card.className='card';card.style.animationDelay=`${Math.min(i*12,280)}ms`;
-    const isFav=S.favoritos.some(f=>f.nombre===j.nombre);
-    const tag=esSteam?'Steam':tipo.toUpperCase();
-    const objConTag={...j,_tag:tag,_icono:esSteam?'🖥️':'🎮'};
-    if(esSteam){
-      card.innerHTML=`<img class="card-img" src="${j.imagen||''}" alt="${j.nombre}" loading="lazy" onerror="this.src='https://placehold.co/460x215/1a1a26/64748b?text=+'"/>
-        <div class="card-actions">
-          <button class="btn-fav ${isFav?'active':''}" onclick="event.stopPropagation();toggleFavorito(this.closest('.card').__obj,this)">${isFav?'❤️':'🤍'}</button>
-          <button class="btn-cart-card" onclick="event.stopPropagation();agregarAlCarrito(''+j.nombre.replace(/'/g,''),${j.precio||0},'Steam','🖥️')">🛒</button>
-        </div>
-        <div class="card-body"><div class="card-nombre" title="${j.nombre}">${j.nombre}</div>
-        <div class="card-footer">${j.precio?`<span class="precio-steam">${fmt(j.precio)}</span>`:`<span class="precio-consultar">Consultar</span>`}
-        <span class="badge ${j.disponible?'badge-ok':'badge-no'}">${j.disponible?'✓':'DRM'}</span></div></div>`;
-    } else {
-      const p1=fmt(j.primario),p2=fmt(j.secundario),plat=tipo.toUpperCase();
-      card.innerHTML=`<div class="card-actions">
-          <button class="btn-fav ${isFav?'active':''}" onclick="event.stopPropagation();toggleFavorito(this.closest('.card').__obj,this)">${isFav?'❤️':'🤍'}</button>
-          <button class="btn-cart-card" onclick="event.stopPropagation();agregarAlCarrito(''+j.nombre.replace(/'/g,''),${j.primario||0},'${plat} Primaria','🎮')">🛒</button>
-        </div>
-        <div class="card-body"><div class="card-nombre" title="${j.nombre}">${j.nombre}</div>
-        <div class="precios-row">
-          <div class="precio-bloque"><span class="precio-label">Primaria</span>${p1?`<span class="precio-valor">${p1}</span>`:`<span class="precio-consultar">Sin stock</span>`}</div>
-          <div class="precio-bloque" style="text-align:right"><span class="precio-label">Secundaria</span>${p2?`<span class="precio-valor sec">${p2}</span>`:`<span class="precio-consultar">—</span>`}</div>
-          <span class="badge ${j.disponible?'badge-ok':'badge-no'}" style="align-self:flex-end">${j.disponible?'✓':'Agot.'}</span>
-        </div></div>`;
-    }
-    card.__obj=objConTag;
-    card.addEventListener('click',()=>{
-      const precios=esSteam
-        ?(j.precio?[{label:'Precio',valor:fmt(j.precio),_val:j.precio}]:[{label:'Precio',valor:'Consultar',clase:'consultar',_val:0}])
-        :(()=>{const pr=[];if(j.primario)pr.push({label:'👑 Primaria — tu cuenta',valor:fmt(j.primario),_val:j.primario});if(j.secundario)pr.push({label:'🎮 Secundaria — cuenta nuestra',valor:fmt(j.secundario),clase:'sec',_val:j.secundario});return pr.length?pr:[{label:'Precio',valor:'Sin stock',clase:'consultar',_val:0}];})();
-      const plat=tipo.toUpperCase();
-      openModal({nombre:j.nombre,imagen:j.imagen||null,
-        desc:esSteam?(j.disponible?'✅ Disponible en Steam. Se activa directo en tu biblioteca.':'⚠️ Requiere DRM.'):`🎮 ${plat}. ${j.disponible?'Disponible.':'Sin stock.'}`,
-        precios,waMsg:esSteam?`Hola! Quiero consultar por *${j.nombre}* (Steam) 🖥️`:`Hola! Quiero consultar por *${j.nombre}* para ${plat} 🎮`,
-        disponible:j.disponible,obj:objConTag});
-    });
-    cont.appendChild(card);
-  });
-  // Paginación
-  if(totalPags>1){
-    const mk=(txt,dis,fn)=>{const b=document.createElement('button');b.className='btn-pag';b.textContent=txt;b.disabled=dis;if(!dis)b.onclick=fn;return b;};
-    pagCont.appendChild(mk('←',pag===1,()=>{S.paginas[tipo]=pag-1;renderJuegos(tipo,datos,esSteam);window.scrollTo({top:0,behavior:'smooth'});}));
-    const ds=Math.max(1,pag-2),ht=Math.min(totalPags,ds+4);
-    for(let p=ds;p<=ht;p++){const pp=p;const b=mk(p,false,()=>{S.paginas[tipo]=pp;renderJuegos(tipo,datos,esSteam);window.scrollTo({top:0,behavior:'smooth'});});if(p===pag)b.classList.add('active');pagCont.appendChild(b);}
-    const info=document.createElement('span');info.className='pag-info';info.textContent=`${inicio+1}–${fin} de ${total}`;pagCont.appendChild(info);
-    pagCont.appendChild(mk('→',pag===totalPags,()=>{S.paginas[tipo]=pag+1;renderJuegos(tipo,datos,esSteam);window.scrollTo({top:0,behavior:'smooth'});}));
-  }
-  actualizarStats();
-}
-function actualizarStats(){
-  const key=S.tab==='steam'?'steam_'+S.subSteam:S.tab;const d=S.datos[key];if(!d)return;
-  document.getElementById('stat-pill').style.display='flex';
-  document.getElementById('stat-total').textContent=d.length.toLocaleString('es-AR');
-  document.getElementById('stat-disp').textContent=d.filter(j=>j.disponible).length.toLocaleString('es-AR');
-}
-
-// ═══════════════════════════════════════════
-//  PROMOS
-// ═══════════════════════════════════════════
-function renderPromos(){
-  const cont=document.getElementById('grid-promos');
-  cont.innerHTML='';
-
-  if(!S.datos.promos){
-    console.error('Promos no cargadas');
-    return;
-  }
-
-  S.datos.promos.forEach((promo,i)=>{
-    const div=document.createElement('div');
-    div.className='promo-card';
-    div.style.animationDelay=`${i*100}ms`;
-
-    div.innerHTML=`<div class="promo-header">
-      <div class="promo-titulo ${promo.color}">${promo.titulo}</div>
-      ${promo.subtitulo?`<div class="promo-subtitulo">${promo.subtitulo}</div>`:''}
-      <div class="promo-vigencia">⏰ ${promo.vigencia}</div>
-    </div>
-    <div class="promo-lista">
-      ${promo.juegos.map(j=>`<div class="promo-item" data-j="${j}" data-p="${promo.titulo}">${j}</div>`).join('')}
-    </div>`;
-
-    cont.appendChild(div);
-  });
-}
-
-// ═══════════════════════════════════════════
-//  PS PLUS
-// ═══════════════════════════════════════════
-function renderPsplus(){
-  const d=S.datos.psplus,cont=document.getElementById('contenido-psplus');
-  const colores=['#3b82f6','#8b5cf6','#06b6d4'];
-  const emojis={'Free Fire':'🔥','Clash Royale':'⚔️','Fortnite (Pavos)':'🪂','Robux':'🟥'};
-  let h=`<div class="section-label">PlayStation Plus</div><div class="psplus-grid">`;
-  d.psplus.forEach((plan,i)=>{h+=`<div class="service-card" style="animation-delay:${i*80}ms"><div class="service-header"><span class="service-emoji">🏆</span><span class="service-nombre" style="color:${colores[i]}">${plan.plan}</span></div><div class="service-items">${plan.opciones.map(o=>`<div class="service-item" data-n="${plan.plan} - ${o.duracion}" data-p="${o.precio}"><span class="service-item-nombre">${o.duracion}</span><span class="service-item-precio">${fmt(o.precio)}</span></div>`).join('')}</div></div>`;});
-  h+=`</div><div class="section-label" style="margin-top:1.3rem">Tarjetas PSN</div><div class="psplus-grid">`;
-  d.tarjetas_psn.forEach((t,i)=>{h+=`<div class="service-card" style="animation-delay:${i*80}ms"><div class="service-header"><span class="service-emoji">💳</span><span class="service-nombre">${t.tipo}</span></div><div class="service-items">${t.items.map(it=>`<div class="service-item" data-n="Tarjeta PSN ${t.tipo} ${it.valor}" data-p="0"><span class="service-item-nombre">${it.valor}</span><span class="service-item-precio prox">${it.precio}</span></div>`).join('')}</div></div>`;});
-  h+=`</div><div class="section-label" style="margin-top:1.3rem">Monedas de Juegos</div><div class="psplus-grid">`;
-  d.monedas.forEach((m,i)=>{h+=`<div class="service-card" style="animation-delay:${i*80}ms"><div class="service-header"><span class="service-emoji">${emojis[m.juego]||'💰'}</span><span class="service-nombre">${m.juego}</span></div><div class="service-items">${m.items.map(it=>`<div class="service-item" data-n="${m.juego} - ${it.cantidad}" data-p="${it.precio||0}"><span class="service-item-nombre">${it.cantidad}</span><span class="service-item-precio ${it.precio==null?'consultar':''}">${it.precio!=null?fmt(it.precio):'Consultar'}</span></div>`).join('')}</div></div>`;});
-  h+=`</div><div class="section-label" style="margin-top:1.3rem">Xbox Game Pass</div><div class="psplus-grid"><div class="service-card"><div class="service-header"><span class="service-emoji">🎮</span><span class="service-nombre" style="color:#22c55e">Game Pass</span></div><div class="service-items">${d.gamepass.map(g=>`<div class="service-item" data-n="Game Pass - ${g.nombre}" data-p="${g.precio}"><span class="service-item-nombre">${g.nombre}</span><span class="service-item-precio">${fmt(g.precio)}</span></div>`).join('')}</div></div></div>`;
-  cont.innerHTML=h;
-  cont.querySelectorAll('.service-item[data-n]').forEach(el=>el.addEventListener('click',()=>{
-    const nombre=el.dataset.n,precio=parseInt(el.dataset.p)||0;
-    const txt=el.querySelector('.service-item-precio')?.textContent.trim()||'Consultar';
-    if(txt==='Próximamente')return;
-    openModal({nombre,imagen:null,desc:'✅ Activación inmediata.',precios:[{label:'Precio',valor:precio?fmt(precio):txt,clase:precio?'':'consultar',_val:precio}],waMsg:`Hola! Quiero consultar por *${nombre}* 🏆`,disponible:true,obj:{nombre,_tag:'PS Plus',_icono:'🏆'}});
-  }));
-}
-
-// ═══════════════════════════════════════════
-//  STREAMING
-// ═══════════════════════════════════════════
-function renderStreaming(){
-  const cont=document.getElementById('grid-streaming');cont.innerHTML='';
-  // Mostrar notas al final
-  setTimeout(()=>{const notas=document.getElementById('notas-streaming');if(notas)notas.style.display='block';},100);
-  const av=document.createElement('div');av.style.cssText='grid-column:1/-1;background:rgba(0,229,255,.07);border:1px solid rgba(0,229,255,.2);border-radius:10px;padding:.65rem 1rem;font-size:.8rem;color:var(--accent);margin-bottom:.1rem;display:flex;align-items:center;gap:.45rem';
-  av.innerHTML='🍿 <strong>Todos incluyen:</strong>&nbsp;1 Perfil · 30 días de garantía';cont.appendChild(av);
-  let idx=0;
-  S.datos.streaming.forEach(cat=>{
-    const lbl=document.createElement('div');lbl.style.cssText='grid-column:1/-1;font-family:"Rajdhani",sans-serif;font-size:.88rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;padding-bottom:.32rem;border-bottom:1px solid var(--border);margin-top:.35rem';lbl.textContent=cat.categoria;cont.appendChild(lbl);
-    cat.servicios.forEach(s=>{
-      const div=document.createElement('div');div.className='stream-card';div.style.animationDelay=`${idx*52}ms`;
-      div.innerHTML=`<div class="stream-header"><span class="stream-emoji">${s.emoji}</span><span class="stream-nombre">${s.servicio}</span></div>
-        <div class="stream-items">${s.items.map(it=>`<div class="stream-item"><span class="stream-tipo">${it.tipo}</span><span class="stream-precio">${fmt(it.precio)}</span></div>`).join('')}</div>`;
-      div.addEventListener('click',()=>{const it=s.items[0];openModal({nombre:s.servicio,imagen:null,desc:`${s.emoji} ${cat.categoria} · ${it.tipo}`,precios:[{label:'Precio',valor:fmt(it.precio),_val:it.precio}],waMsg:`Hola! Quiero consultar por *${s.servicio}* (Streaming) 📺`,disponible:true,obj:{nombre:s.servicio,_tag:'Streaming',_icono:s.emoji}});});
-      cont.appendChild(div);idx++;
-    });
-  });
-}
-
-// ═══════════════════════════════════════════
-//  FAQ
-// ═══════════════════════════════════════════
-const FAQS=[
-  {q:'¿Los juegos son originales?',a:'Sí, todos los juegos son licencias originales que activás en tu cuenta de Steam o PlayStation. No son cracks ni copias.'},
-  {q:'¿Cuánto tarda la activación?',a:'La activación es inmediata una vez confirmado el pago. En horario de atención (9 a 22 hs) te respondemos en minutos.'},
-  {q:'¿Qué pasa si el juego no activa?',a:'Garantizamos la activación. Si hay algún problema, lo solucionamos sin costo adicional o te devolvemos el dinero.'},
-  {q:'¿Qué métodos de pago aceptan?',a:'Aceptamos transferencia bancaria, Mercado Pago y efectivo. Consultanos por WhatsApp para más detalles.'},
-  {q:'¿Puedo pedir un juego que no está en el catálogo?',a:'¡Sí! Escribinos por WhatsApp con el nombre del juego y lo conseguimos. El catálogo se actualiza constantemente.'},
-  {q:'¿Funciona en cualquier región?',a:'Los juegos de Steam y PlayStation pueden tener restricciones regionales. Consultanos antes de comprar si tenés dudas.'},
-  {q:'¿Qué es cuenta primaria y secundaria en PS?',a:'La cuenta primaria te da acceso al juego en tu propia cuenta de PlayStation, sin restricciones. La cuenta secundaria solo te permite jugar usando la cuenta que nosotros te proporcionamos. La primaria es más cara por ser completamente tuya.'},
-];
-function renderFAQ(){
-  const list=document.getElementById('faq-list');if(!list||list.children.length)return;
-  FAQS.forEach((f,i)=>{
-    const item=document.createElement('div');item.className='faq-item';
-    item.innerHTML=`<div class="faq-q" onclick="toggleFaq(this)"><span>${f.q}</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div><div class="faq-a">${f.a}</div>`;
-    list.appendChild(item);
-  });
-}
-function toggleFaq(btn){
-  btn.classList.toggle('open');
-  const a=btn.nextElementSibling;a.classList.toggle('open');
-}
-
-// ═══════════════════════════════════════════
-//  CONTACTO
-// ═══════════════════════════════════════════
-function enviarContacto(){
-  const nombre=document.getElementById('c-nombre').value.trim();
-  const cat=document.getElementById('c-categoria').value;
-  const juego=document.getElementById('c-juego').value.trim();
-  const msg=document.getElementById('c-mensaje').value.trim();
-  if(!nombre||!cat||!msg){showToast('⚠️ Completá los campos obligatorios');return;}
-  let texto=`Hola! Soy *${nombre}*.\n\nEstoy interesado en: *${cat}*`;
-  if(juego) texto+=`\nJuego/Servicio: *${juego}*`;
-  texto+=`\n\nMensaje: ${msg}\n\n¡Gracias! 🎮`;
-  window.open(waLink(texto),'_blank');
-  document.getElementById('c-nombre').value='';document.getElementById('c-categoria').value='';document.getElementById('c-juego').value='';document.getElementById('c-mensaje').value='';
-  showToast('✅ Abriendo WhatsApp...');
-}
-
-
-
-// ═══════════════════════════════════════════
-//  PRODUCTIVIDAD
-// ═══════════════════════════════════════════
-const prodSelects = {}; // guardamos el precio seleccionado por botón
-
-function seleccionarPlan(sel, nombre){
-  const btnId = sel.closest('.prod-plan').querySelector('.btn-add-cart').id;
-  const val = parseInt(sel.value)||0;
-  const btn = document.getElementById(btnId);
-  if(!btn) return;
-  prodSelects[btnId] = {precio: val, nombre};
-  if(val){
-    btn.classList.add('activo');
-    btn.textContent = `Añadir al Carrito 🛒`;
-  } else {
-    btn.classList.remove('activo');
-    btn.textContent = 'Añadir al Carrito 🛒';
-  }
-}
-
-function addProd(btnId, nombre, emoji){
-  const data = prodSelects[btnId];
-  if(!data || !data.precio){
-    showToast('⚠️ Seleccioná un plan primero');
-    return;
-  }
-  // Get the selected option text for tipo
-  const btn = document.getElementById(btnId);
-  const sel = btn?.closest('.prod-plan')?.querySelector('.prod-select');
-  const tipo = sel?.options[sel.selectedIndex]?.text || '';
-  agregarAlCarrito(nombre, data.precio, tipo, emoji);
-}
-
-// Mostrar notas streaming cuando carga
-// notas streaming se muestran dentro de renderStreaming directamente
-
-// ═══════════════════════════════════════════
-//  HELPERS
-// ═══════════════════════════════════════════
-function addToCartSafe(card){
-  const nombre = card.dataset.nombre||'Producto';
-  const precio = parseInt(card.dataset.precio)||0;
-  const tipo   = card.dataset.tipo||'';
-  const emoji  = card.dataset.emoji||'🎮';
-  agregarAlCarrito(nombre, precio, tipo, emoji);
-}
-
-// ═══════════════════════════════════════════
-//  INIT
-// ═══════════════════════════════════════════
-actualizarCarritoUI();
-renderHome();
-// Pre-carga background
-window.addEventListener('load',()=>{
-  setTimeout(()=>{
-
-    // 🔥 PROMOS (IMPORTANTE)
-    fetchConCache('promos').then(d=>{
-      S.datos.promos = d;
-      renderPromos();
-    }).catch(()=>{});
-
-    // 🎮 STEAM
-    fetchConCache('steam_disponibles').then(d=>{
-      S.datos.steam_disponibles = d;
-      mostrarNovedades(d);
-    }).catch(()=>{});
-
-    // 🎬 STREAMING
-    setTimeout(()=>{
-      fetchConCache('streaming').then(d=>S.datos.streaming=d).catch(()=>{});
-    },2000);
-
-    // 🎮 PS4
-    setTimeout(()=>{
-      fetchConCache('ps4').then(d=>S.datos.ps4=d).catch(()=>{});
-    },3500);
-
-    // 🎮 PS5
-    setTimeout(()=>{
-      fetchConCache('ps5').then(d=>S.datos.ps5=d).catch(()=>{});
-    },5000);
-
-    // ⭐ PS PLUS
-    setTimeout(()=>{
-      fetchConCache('psplus').then(d=>S.datos.psplus=d).catch(()=>{});
-    },6500);
-
-    // 🔒 STEAM DRM
-    setTimeout(()=>{
-      fetchConCache('steam_drm').then(d=>S.datos.steam_drm=d).catch(()=>{});
-    },8000);
-
-  },1500);
-});
-</script>
+<script src="app.js"></script>
 </body>
-</html>
+</html>      
