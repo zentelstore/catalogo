@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -1371,21 +1372,6 @@ function renderSteamOfertas(){
         <div class="card-footer">
           <span class="precio-steam">${fmt(j.precio)}</span>
           <span class="badge badge-ok">✓</span>
-            // CTA WhatsApp
-  const section = grid.parentElement;
-  if(!section.querySelector('.cta-whatsapp')){
-    const cta = document.createElement('div');
-    cta.className = 'cta-whatsapp text-center';
-    cta.style.marginTop = '2rem';
-    cta.innerHTML = `
-      <div class="home-wa">
-        <span class="home-wa-text">
-          <strong>🖥️ Más de 10.000 juegos Steam disponibles</strong>
-          <span>Consultá cualquier título por WhatsApp</span>
-        </div>
-      </div>`;
-    section.appendChild(cta);
-  }
         </div>
       </div>`;
     card.addEventListener('click',()=>openModal({
@@ -1397,6 +1383,76 @@ function renderSteamOfertas(){
     }));
     grid.appendChild(card);
   });
+}
+
+let steamBusqPag = 1;
+let steamBusqResultados = [];
+let busqTimer;
+
+function buscarSteam(q){
+  clearTimeout(busqTimer);
+  q = q.trim().toLowerCase();
+  const secOfertas = document.getElementById('steam-ofertas-section');
+  const secResultados = document.getElementById('steam-resultados');
+  if(q.length < 2){
+    secOfertas.style.display = 'block';
+    secResultados.style.display = 'none';
+    return;
+  }
+  busqTimer = setTimeout(async ()=>{
+    // Cargar datos si no están
+    if(!S.datos.steam_disponibles){
+      document.getElementById('steam-resultados-grid').innerHTML = '<div class="empty"><div class="spinner"></div></div>';
+      secOfertas.style.display = 'none';
+      secResultados.style.display = 'block';
+      try{ S.datos.steam_disponibles = await fetchConCache('steam_disponibles'); }
+      catch{ document.getElementById('steam-resultados-grid').innerHTML = '<div class="empty"><p>Error al cargar</p></div>'; return; }
+    }
+    steamBusqResultados = S.datos.steam_disponibles.filter(j=>j.nombre.toLowerCase().includes(q));
+    steamBusqPag = 1;
+    secOfertas.style.display = 'none';
+    secResultados.style.display = 'block';
+    renderSteamBusqueda();
+  }, 350);
+}
+
+function renderSteamBusqueda(){
+  const grid = document.getElementById('steam-resultados-grid');
+  const pagCont = document.getElementById('pag-steam-busq');
+  grid.innerHTML = ''; pagCont.innerHTML = '';
+  if(!steamBusqResultados.length){
+    grid.innerHTML = '<div class="empty"><p>Sin resultados</p></div>';
+    return;
+  }
+  const total = steamBusqResultados.length;
+  const ini = (steamBusqPag-1)*50;
+  const fin = Math.min(ini+50, total);
+  steamBusqResultados.slice(ini,fin).forEach((j,i)=>{
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.style.animationDelay = `${Math.min(i*12,280)}ms`;
+    card.dataset.nombre = j.nombre;
+    card.dataset.precio = j.precio||0;
+    card.dataset.tipo = 'Steam';
+    card.dataset.emoji = '🖥️';
+    card.innerHTML = `
+      <img class="card-img" src="${j.imagen||''}" alt="${j.nombre}" loading="lazy" onerror="this.src='https://placehold.co/460x215/1a1a26/64748b?text=+'"/>
+      <div class="card-body">
+        <div class="card-nombre" title="${j.nombre}">${j.nombre}</div>
+        <div class="card-footer">
+          ${j.precio?`<span class="precio-steam">${fmt(j.precio)}</span>`:`<span class="precio-consultar">Consultar</span>`}
+          <span class="badge ${j.disponible?'badge-ok':'badge-no'}">${j.disponible?'✓':'DRM'}</span>
+        </div>
+      </div>`;
+    card.addEventListener('click',()=>openModal({
+      nombre:j.nombre,imagen:j.imagen,
+      desc:j.disponible?'✅ Disponible en Steam.':'⚠️ Requiere DRM.',
+      precios:j.precio?[{label:'Precio',valor:fmt(j.precio),_val:j.precio}]:[{label:'Precio',valor:'Consultar',clase:'consultar',_val:0}],
+      waMsg:`Hola! Quiero consultar por *${j.nombre}* (Steam) 🖥️`,
+      disponible:j.disponible,obj:{...j,_tag:'Steam',_icono:'🖥️'}
+    }));
+    grid.appendChild(card);
+  });
   // Paginación
   if(total>50){
     const mk=(txt,dis,fn)=>{const b=document.createElement('button');b.className='btn-pag';b.textContent=txt;b.disabled=dis;if(!dis)b.onclick=fn;return b;};
@@ -1405,16 +1461,13 @@ function renderSteamOfertas(){
     pagCont.appendChild(mk('→',fin>=total,()=>{steamBusqPag++;renderSteamBusqueda();window.scrollTo({top:0,behavior:'smooth'});}));
   }
 }
+
 async function cargarTab(tab){
   if(tab==='steam'){
-    renderSteamOfertas();  // ← SOLO LAS 8 OFERTAS
-    document.getElementById('loading-steam')?.style.display='none';
-    return;
-  }
-  if(S.datos[tab]){renderTab(tab);return;}
-  try{S.datos[tab]=await fetchConCache(tab);renderTab(tab);}
-  catch{document.getElementById('loading-'+tab).innerHTML='<p style="color:var(--red)">⚠️ Error al cargar</p>';}
-}
+    const key='steam_'+S.subSteam;
+    if(!S.datos[key]){try{S.datos[key]=await fetchConCache(key);}catch{document.getElementById('loading-steam').innerHTML='<p style="color:var(--red)">⚠️ Error</p>';return;}}
+    document.getElementById('loading-steam').style.display='none';
+    renderJuegos('steam',S.datos[key],true);mostrarNovedades(S.datos[key]);return;
   }
   if(S.datos[tab]){renderTab(tab);return;}
   try{S.datos[tab]=await fetchConCache(tab);renderTab(tab);}
