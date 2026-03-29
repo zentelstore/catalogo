@@ -1,0 +1,82 @@
+[
+  {
+    "nombre": "Microsoft 365",
+    "emoji": "📊",
+    "color": "blue",
+    "planes": [
+      {
+        "titulo": "Personal — 1 mes",
+        "desc": "1 usuario · Word, Excel, PowerPoint, OneDrive 1TB",
+        "precio": 6000
+      },
+      {
+        "titulo": "Personal — 3 meses",
+        "desc": "1 usuario · Word, Excel, PowerPoint, OneDrive 1TB",
+        "precio": 15000
+      },
+      {
+        "titulo": "Familiar — 1 mes",
+        "desc": "Hasta 6 usuarios · Word, Excel, PowerPoint, OneDrive 1TB c/u",
+        "precio": 9000
+      }
+    ]
+  },
+  {
+    "nombre": "Adobe Creative Cloud",
+    "emoji": "🎨",
+    "color": "red",
+    "planes": [
+      {
+        "titulo": "All Apps — 1 mes",
+        "desc": "Photoshop, Illustrator, Premiere, After Effects y más",
+        "precio": 8000
+      },
+      {
+        "titulo": "All Apps — 3 meses",
+        "desc": "Photoshop, Illustrator, Premiere, After Effects y más",
+        "precio": 22000
+      }
+    ]
+  },
+  {
+    "nombre": "Canva Pro",
+    "emoji": "✏️",
+    "color": "purple",
+    "planes": [
+      {
+        "titulo": "1 mes",
+        "desc": "Diseño ilimitado, assets premium, remover fondo y más",
+        "precio": 5000
+      },
+      {
+        "titulo": "3 meses",
+        "desc": "Diseño ilimitado, assets premium, remover fondo y más",
+        "precio": 13000
+      }
+    ]
+  },
+  {
+    "nombre": "CapCut Pro",
+    "emoji": "🎬",
+    "color": "green",
+    "planes": [
+      {
+        "titulo": "1 mes",
+        "desc": "Editor de video premium, sin marca de agua, templates exclusivos",
+        "precio": 4500
+      }
+    ]
+  },
+  {
+    "nombre": "ChatGPT Plus",
+    "emoji": "🤖",
+    "color": "green",
+    "planes": [
+      {
+        "titulo": "1 mes",
+        "desc": "Acceso a GPT-4o, generación de imágenes DALL·E y más",
+        "precio": 9000
+      }
+    ]
+  }
+]
