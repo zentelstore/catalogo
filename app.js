@@ -436,7 +436,7 @@ function renderPSPlus() {
           </div>
           <div class="service-items">
             ${s.items.map(it => `
-              <div class="service-item" onclick="consultarServicio('${it.nombre}','${s.nombre}')">
+              <div class="service-item"onclick="consultarServicio('${it.nombre}','${s.nombre}', ${it.precio})"
                 <span class="service-item-nombre">${it.nombre}</span>
                 <span class="service-item-precio">${fmt(it.precio)}</span>
               </div>`).join('')}
@@ -445,9 +445,8 @@ function renderPSPlus() {
     </div>`;
 }
 
-function consultarServicio(item, servicio) {
-  const msg = encodeURIComponent(`Hola! Quiero consultar por *${item}* de *${servicio}* 🎮`);
-  window.open(`https://wa.me/${WA_NUMBER}?text=${msg}`, '_blank');
+function consultarServicio(item, servicio, precio) {
+  agregarAlCarrito({ nombre: `${servicio} — ${item}`, precio, _tag: 'PS Plus', disponible: true, emoji: '🏆' });
 }
 
 // ── STREAMING ────────────────────────────────────────────────
@@ -459,7 +458,7 @@ function renderStreaming() {
     <div class="section-label">${cat.categoria}</div>
     <div class="streaming-grid" style="margin-bottom:1.2rem">
       ${cat.servicios.map((s,i) => `
-        <div class="stream-card" style="animation-delay:${i*60}ms" onclick="consultarStreaming('${s.servicio}')">
+        <div class="stream-card" style="animation-delay:${i*60}ms"onclick="consultarStreaming('${s.servicio}', ${it.precio})"
           <div class="stream-header">
             <span class="stream-emoji">${s.emoji}</span>
             <span class="stream-nombre">${s.servicio}</span>
@@ -474,10 +473,9 @@ function renderStreaming() {
         </div>`).join('')}
     </div>`).join('');
 }
-
-function consultarStreaming(servicio) {
-  const msg = encodeURIComponent(`Hola! Quiero consultar por *${servicio}* 📺`);
-  window.open(`https://wa.me/${WA_NUMBER}?text=${msg}`, '_blank');
+// ✅ DESPUÉS
+function consultarStreaming(servicio, precio) {
+  agregarAlCarrito({ nombre: servicio, precio, _tag: 'Streaming', disponible: true, emoji: '📺' });
 }
 
 // ── PRODUCTIVIDAD ────────────────────────────────────────────
