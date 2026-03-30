@@ -348,25 +348,25 @@
     .btn-avisame{width:100%;background:rgba(239,68,68,.1);color:var(--red);border:1px solid rgba(239,68,68,.25);border-radius:8px;padding:.5rem;font-family:'Inter',sans-serif;font-size:.8rem;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:.38rem;min-height:42px}
     .btn-avisame:hover{background:rgba(239,68,68,.18)}
 
-    /* ── CARRITO PANEL ── */
-    .carrito-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:600;opacity:0;pointer-events:none;transition:opacity .22s}
-    .carrito-overlay.open{opacity:1;pointer-events:all}
-    .carrito-panel{position:fixed;top:0;right:0;height:100%;width:min(430px,100%);background:var(--bg);border-left:1px solid var(--border);z-index:601;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
-    .carrito-overlay.open .carrito-panel{transform:translateX(0)}
-    @media(max-width:768px){
-      .carrito-panel{top:auto;bottom:0;right:0;left:0;width:100%;height:92vh;border-left:none;border-top:1px solid var(--border);border-radius:20px 20px 0 0;transform:translateY(100%)}
-      .carrito-overlay.open .carrito-panel{transform:translateY(0)}
-      .carrito-handle{display:block !important}
-      .carrito-head{padding:.75rem 1rem}
-      .carrito-body{padding:.65rem .88rem}
-    }
-    .carrito-head{padding:1rem 1.2rem;border-bottom:2px solid var(--yellow);display:flex;align-items:center;justify-content:space-between;background:var(--card)}
-    .carrito-titulo{font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;display:flex;align-items:center;gap:.5rem}
-    .btn-cerrar-carrito{background:transparent;border:none;color:var(--muted);font-size:1.3rem;cursor:pointer;padding:.2rem .5rem;transition:color .2s;min-height:38px}
-    .btn-cerrar-carrito:hover{color:var(--text)}
-    .carrito-body{flex:1;overflow-y:auto;padding:.85rem 1.1rem;display:flex;flex-direction:column;gap:.75rem}
-    .carrito-body::-webkit-scrollbar{width:4px}
-    .carrito-body::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+  /* ── CARRITO PANEL ── */
+.carrito-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:600;opacity:0;pointer-events:none;transition:opacity .22s}
+.carrito-overlay.open{opacity:1;pointer-events:all}
+.carrito-panel{position:fixed;top:0;right:0;height:100%;max-height:100vh;overflow:hidden;width:min(430px,100%);background:var(--bg);border-left:1px solid var(--border);z-index:601;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+.carrito-overlay.open .carrito-panel{transform:translateX(0)}
+@media(max-width:768px){
+  .carrito-panel{top:auto;bottom:0;right:0;left:0;width:100%;height:92vh;max-height:92vh;border-left:none;border-top:1px solid var(--border);border-radius:20px 20px 0 0;transform:translateY(100%)}
+  .carrito-overlay.open .carrito-panel{transform:translateY(0)}
+  .carrito-handle{display:block !important}
+  .carrito-head{padding:.75rem 1rem}
+  .carrito-body{padding:.65rem .88rem}
+}
+.carrito-head{padding:1rem 1.2rem;border-bottom:2px solid var(--yellow);display:flex;align-items:center;justify-content:space-between;background:var(--card)}
+.carrito-titulo{font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;display:flex;align-items:center;gap:.5rem}
+.btn-cerrar-carrito{background:transparent;border:none;color:var(--muted);font-size:1.3rem;cursor:pointer;padding:.2rem .5rem;transition:color .2s;min-height:38px}
+.btn-cerrar-carrito:hover{color:var(--text)}
+.carrito-body{flex:1;overflow-y:auto;min-height:0;padding:.85rem 1.1rem;display:flex;flex-direction:column;gap:.75rem}
+.carrito-body::-webkit-scrollbar{width:4px}
+.carrito-body::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
     .cart-section{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
     .cart-section-body{padding:.85rem 1rem}
     .cart-section-titulo{font-weight:700;font-size:.88rem;margin-bottom:.6rem;color:var(--text)}
