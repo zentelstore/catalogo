@@ -1,86 +1,5 @@
 [
   {
-    "nombre": "Microsoft 365",
-    "emoji": "📊",
-    "color": "blue",
-    "planes": [
-      {
-        "titulo": "Personal — 1 mes",
-        "desc": "1 usuario · Word, Excel, PowerPoint, OneDrive 1TB",
-        "precio": 6000
-      },
-      {
-        "titulo": "Personal — 3 meses",
-        "desc": "1 usuario · Word, Excel, PowerPoint, OneDrive 1TB",
-        "precio": 15000
-      },
-      {
-        "titulo": "Familiar — 1 mes",
-        "desc": "Hasta 6 usuarios · Word, Excel, PowerPoint, OneDrive 1TB c/u",
-        "precio": 9000
-      }
-    ]
-  },
-  {
-    "nombre": "Adobe Creative Cloud",
-    "emoji": "🎨",
-    "color": "red",
-    "planes": [
-      {
-        "titulo": "All Apps — 1 mes",
-        "desc": "Photoshop, Illustrator, Premiere, After Effects y más",
-        "precio": 8000
-      },
-      {
-        "titulo": "All Apps — 3 meses",
-        "desc": "Photoshop, Illustrator, Premiere, After Effects y más",
-        "precio": 22000
-      }
-    ]
-  },
-  {
-    "nombre": "Canva Pro",
-    "emoji": "✏️",
-    "color": "purple",
-    "planes": [
-      {
-        "titulo": "1 mes",
-        "desc": "Diseño ilimitado, assets premium, remover fondo y más",
-        "precio": 5000
-      },
-      {
-        "titulo": "3 meses",
-        "desc": "Diseño ilimitado, assets premium, remover fondo y más",
-        "precio": 13000
-      }
-    ]
-  },
-  {
-    "nombre": "CapCut Pro",
-    "emoji": "🎬",
-    "color": "green",
-    "planes": [
-      {
-        "titulo": "1 mes",
-        "desc": "Editor de video premium, sin marca de agua, templates exclusivos",
-        "precio": 4500
-      }
-    ]
-  },
-  {
-    "nombre": "ChatGPT Plus",
-    "emoji": "🤖",
-    "color": "green",
-    "planes": [
-      {
-        "titulo": "1 mes",
-        "desc": "Acceso a GPT-4o, generación de imágenes DALL·E y más",
-        "precio": 9000
-      }
-    ]
-  },
-  [
-  {
     "id": "canva",
     "nombre": "Canva Pro",
     "emoji": "🎨",
@@ -88,12 +7,12 @@
     "borderColor": "rgba(124,58,237,.3)",
     "regalo": "🎁 Con cualquier compra de Canva Pro, <strong>curso de regalo.</strong>",
     "planes": [
-      { "label": "1 Mes", "valor": 2400 },
-      { "label": "2 Meses", "valor": 3200 },
-      { "label": "3 Meses", "valor": 4000 },
-      { "label": "4 Meses", "valor": 4600 },
-      { "label": "6 Meses", "valor": 6000 },
-      { "label": "12 Meses", "valor": 10000 }
+      { "titulo": "1 Mes", "precio": 4000 },
+      { "titulo": "2 Meses", "precio": 6000 },
+      { "titulo": "3 Meses", "precio": 8000 },
+      { "titulo": "4 Meses", "precio": 10000 },
+      { "titulo": "6 Meses", "precio": 12000 },
+      { "titulo": "12 Meses", "precio": 16000 }
     ]
   },
   {
@@ -107,18 +26,18 @@
       "ChatGPT Plus se envía por invitación a tu correo."
     ],
     "planes": [
-      { "label": "1 Mes", "valor": 8000 }
+      { "titulo": "1 Mes", "precio": 8000 }
     ]
   },
   {
     "id": "capcut",
     "nombre": "CapCut Pro",
-    "emoji": "✂️",
+    "emoji": "🎬",
     "color": "rgba(0,0,0,.3)",
     "borderColor": "rgba(255,255,255,.15)",
     "planTitulo": "Cuenta Completa (PC, Celular, Tablet)",
     "planes": [
-      { "label": "30 Días", "valor": 8000 }
+      { "titulo": "30 Días", "precio": 8000 }
     ]
   },
   {
@@ -130,7 +49,7 @@
     "planTitulo": "Cuenta Compartida (30 días)",
     "planDesc": "Funciones: <strong>DeepSearch</strong>, análisis de imágenes, modelos avanzados, respuesta rápida.",
     "planes": [
-      { "label": "30 Días", "valor": 8000 }
+      { "titulo": "30 Días", "precio": 8000 }
     ]
   },
   {
@@ -144,8 +63,7 @@
       "Garantía de activación incluida."
     ],
     "planes": [
-      { "label": "12 Meses", "valor": 14000 }
+      { "titulo": "12 Meses", "precio": 16000 }
     ]
   }
-]
 ]
