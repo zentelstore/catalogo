@@ -351,7 +351,7 @@ function renderSteam() {
           <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;display:flex;align-items:center;justify-content:space-between;animation:fadeUp .35s ease ${i*60}ms both;cursor:pointer;transition:border-color .2s,box-shadow .2s"
                onmouseover="this.style.borderColor='var(--accent)';this.style.boxShadow='0 0 18px rgba(0,229,255,.1)'"
                onmouseout="this.style.borderColor='var(--border)';this.style.boxShadow='none'"
-               onclick="agregarSteamAlCarrito('${p.cant}', ${p.ars})">
+               onclick="consultarStreaming('${s.servicio} — ${it.tipo}', ${it.precio})"
             <div>
               <div style="font-family:'Rajdhani',sans-serif;font-size:1.15rem;font-weight:700">${p.cant}</div>
               <div style="font-size:.75rem;color:var(--muted);margin-top:.15rem">Cualquier título disponible</div>
@@ -481,8 +481,8 @@ function consultarStreaming(servicio, precio) {
 // ── PRODUCTIVIDAD ────────────────────────────────────────────
 function renderProductividad() {
   const panel = $('panel-productividad');
-  const datos = S.datos.productividad;
-  if (!datos.length) { panel.innerHTML = '<div class="loading-msg"><div class="spinner"></div></div>'; return; }
+const datos = S.datos.productividad || [];
+if (!datos.length) { panel.innerHTML = '<div class="loading-msg"><div class="spinner"></div></div>'; return; }
   panel.innerHTML = `<div class="prod-grid">
     ${datos.map((p, i) => `
       <div class="prod-card" style="animation-delay:${i*70}ms">
