@@ -1,5 +1,19 @@
 [
   {
+    "nombre": "60 Seconds! Reatomized",
+    "primario": 14000,
+    "secundario": 10000,
+    "disponible": true,
+    "img":
+  },
+   {
+    "nombre": "7 days to die",
+    "primario": 36000,
+    "secundario": 32400,
+    "disponible": true,
+    "img":
+  },
+  {
     "nombre": "8 Bits Hordes!",
     "primario": 8000,
     "secundario": 6400,
@@ -14,8 +28,8 @@
   },
   {
     "nombre": "A Plague Tale: Innocence",
-    "primario": 16000,
-    "secundario": 12800,
+    "primario": 48000,
+    "secundario": 43200,
     "disponible": true
   },
   {
