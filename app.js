@@ -656,7 +656,6 @@ function actualizarCarritoUI() {
   $('cart-section-items').style.display = count ? 'block' : 'none';
   $('carrito-empty').style.display      = count ? 'none'  : 'block';
   $('cart-section-total').style.display = count ? 'block' : 'none';
-  $('cart-section-pago').style.display  = count ? 'block' : 'none';
   $('cart-section-btn').style.display   = count ? 'block' : 'none';
 
   const cont = $('carrito-items'); cont.innerHTML = '';
@@ -721,10 +720,9 @@ function finalizarPedido() {
   if (!S.carrito.length) { showToast('El carrito está vacío'); return; }
   const lineas   = S.carrito.map(it => `• ${it.nombre} — ${it.precio ? fmt(it.precio) : 'Consultar'}`).join('\n');
   const subtotal = S.carrito.reduce((a, b) => a + (b.precio || 0), 0);
-  const msg = `Hola! Quiero hacer el siguiente pedido:\n\n${lineas}\n\n*Total: ${fmt(subtotal)}*\n\nYa hice la transferencia. 💳`;
+  const msg = `Hola! Quiero hacer el siguiente pedido:\n\n${lineas}\n\n*Total: ${fmt(subtotal)}*`;
   window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
 }
-
 function copiarDato(id) {
   const val = $(id)?.textContent;
   if (!val) return;
