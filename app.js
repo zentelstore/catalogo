@@ -229,8 +229,8 @@ function renderPS(consola) {
   const statPill = $('stat-pill');
   if (statPill) {
     statPill.style.display = 'flex';
-    $('stat-total').textContent = filtrados.length;
-    $('stat-disp').textContent  = filtrados.filter(j => j.disponible).length;
+  if ($('stat-total')) $('stat-total').textContent = filtrados.length;
+if ($('stat-disp'))  $('stat-disp').textContent  = filtrados.filter(j => j.disponible).length;
   }
 
   const total     = filtrados.length;
