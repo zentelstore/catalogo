@@ -210,6 +210,8 @@ function getSubcategorias(datos) {
 
 function renderPS(consola) {
   const datos  = S.datos[consola];
+    const loading = $('loading-' + consola);
+  if (loading) loading.style.display = 'none';
   const key    = consola === 'ps4' ? 'subPS4' : 'subPS5';
   const pagKey = consola === 'ps4' ? 'pagPS4' : 'pagPS5';
   const gridId = `grid-${consola}`;
@@ -335,6 +337,11 @@ function renderPaginacion(consola, pagActual, totalPags, pagKey, renderFn) {
 // ── STEAM ────────────────────────────────────────────────────
 function renderSteam() {
   const panel = $('panel-steam');
+  const precios = [
+    { cant: '1 juego',   ars: 6000,  usd: 4  },
+    { cant: '5 juegos',  ars: 12000, usd: 8  },
+    { cant: '10 juegos', ars: 20000, usd: 12 }
+  ];
   panel.innerHTML = `
     <div style="max-width:600px;margin:2rem auto;padding:0 1rem">
       <div style="text-align:center;margin-bottom:1.8rem;animation:fadeUp .4s ease">
@@ -343,15 +350,11 @@ function renderSteam() {
         <p style="color:var(--muted);font-size:.88rem;line-height:1.6">Más de 47.000 títulos disponibles. Elegís el juego, nosotros lo activamos.</p>
       </div>
       <div style="display:flex;flex-direction:column;gap:.75rem;margin-bottom:1.5rem">
-        ${[
-          { cant:'1 juego',   ars: 6000,  usd: 4  },
-          { cant:'5 juegos',  ars: 12000, usd: 8  },
-          { cant:'10 juegos', ars: 20000, usd: 12 }
-        ].map((p,i) => `
+        ${precios.map((p, i) => `
           <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;display:flex;align-items:center;justify-content:space-between;animation:fadeUp .35s ease ${i*60}ms both;cursor:pointer;transition:border-color .2s,box-shadow .2s"
                onmouseover="this.style.borderColor='var(--accent)';this.style.boxShadow='0 0 18px rgba(0,229,255,.1)'"
                onmouseout="this.style.borderColor='var(--border)';this.style.boxShadow='none'"
-               onclick="consultarStreaming('${s.servicio} — ${it.tipo}', ${it.precio})"
+               onclick="agregarSteamAlCarrito('${p.cant}', ${p.ars})">
             <div>
               <div style="font-family:'Rajdhani',sans-serif;font-size:1.15rem;font-weight:700">${p.cant}</div>
               <div style="font-size:.75rem;color:var(--muted);margin-top:.15rem">Cualquier título disponible</div>
@@ -364,7 +367,7 @@ function renderSteam() {
       </div>
       <div style="background:var(--card);border:1px solid rgba(37,211,102,.25);border-radius:12px;padding:1rem 1.2rem;display:flex;align-items:center;gap:.75rem;animation:fadeUp .5s ease .2s both">
         <span style="font-size:1.5rem">💬</span>
-        <div>
+        <div style="flex:1">
           <div style="font-size:.88rem;font-weight:600;margin-bottom:.2rem">¿Tenés un juego en mente?</div>
           <div style="font-size:.78rem;color:var(--muted)">Consultanos por WhatsApp la disponibilidad de cualquier título.</div>
         </div>
@@ -375,7 +378,6 @@ function renderSteam() {
       </div>
     </div>`;
 }
-
 function agregarSteamAlCarrito(cant, precio) {
   agregarAlCarrito({ nombre: `Steam — ${cant}`, precio, _tag: 'Steam', disponible: true });
 }
@@ -457,15 +459,15 @@ function renderStreaming() {
   panel.innerHTML = datos.map(cat => `
     <div class="section-label">${cat.categoria}</div>
     <div class="streaming-grid" style="margin-bottom:1.2rem">
-      ${cat.servicios.map((s,i) => `
-        <div class="stream-card" style="animation-delay:${i*60}ms"onclick="consultarStreaming('${s.servicio}', ${it.precio})"
+      ${cat.servicios.map((s, i) => `
+        <div class="stream-card" style="animation-delay:${i*60}ms">
           <div class="stream-header">
             <span class="stream-emoji">${s.emoji}</span>
             <span class="stream-nombre">${s.servicio}</span>
           </div>
           <div class="stream-items">
             ${s.items.map(it => `
-              <div class="stream-item">
+              <div class="stream-item" onclick="consultarStreaming('${s.servicio} — ${it.tipo}', ${it.precio})">
                 <span class="stream-tipo">${it.tipo}</span>
                 <span class="stream-precio">${fmt(it.precio)}</span>
               </div>`).join('')}
@@ -473,7 +475,7 @@ function renderStreaming() {
         </div>`).join('')}
     </div>`).join('');
 }
-// ✅ DESPUÉS
+
 function consultarStreaming(servicio, precio) {
   agregarAlCarrito({ nombre: servicio, precio, _tag: 'Streaming', disponible: true, emoji: '📺' });
 }
@@ -481,26 +483,29 @@ function consultarStreaming(servicio, precio) {
 // ── PRODUCTIVIDAD ────────────────────────────────────────────
 function renderProductividad() {
   const panel = $('panel-productividad');
-const datos = S.datos.productividad || [];
-if (!datos.length) { panel.innerHTML = '<div class="loading-msg"><div class="spinner"></div></div>'; return; }
-  panel.innerHTML = `<div class="prod-grid">
+  const datos = S.datos.productividad || [];
+  if (!datos.length) { panel.innerHTML = '<div class="loading-msg"><div class="spinner"></div></div>'; return; }
+  panel.innerHTML = `<div class="streaming-grid" style="margin-bottom:1.2rem">
     ${datos.map((p, i) => `
-      <div class="prod-card" style="animation-delay:${i*70}ms">
-        <div class="prod-header">
-          <div class="prod-header-icon">${p.emoji}</div>
-          <div class="prod-header-nombre">${p.nombre}</div>
+      <div class="stream-card" style="animation-delay:${i*60}ms">
+        <div class="stream-header">
+          <span class="stream-emoji">${p.emoji}</span>
+          <span class="stream-nombre">${p.nombre}</span>
         </div>
-        <div class="prod-body">
+        <div class="stream-items">
           ${p.planes.map(pl => `
-            <div class="prod-plan">
-              <div class="prod-plan-titulo">${pl.titulo}</div>
-              ${pl.desc ? `<div class="prod-plan-desc">${pl.desc}</div>` : ''}
-              <div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-top:.4rem">
-                <span style="font-family:'Rajdhani',sans-serif;font-size:1.2rem;font-weight:700;color:var(--yellow)">${fmt(pl.precio)}</span>
-                <button class="btn-add-cart activo" onclick="agregarProductividadAlCarrito('${p.nombre} — ${pl.titulo}', ${pl.precio})">
-                  🛒 Agregar
-                </button>
+            <div class="stream-item" style="flex-direction:column;align-items:flex-start;gap:.3rem;padding:.5rem .32rem;border-bottom:1px solid var(--border)">
+              <div style="display:flex;justify-content:space-between;width:100%;align-items:center">
+                <span class="stream-tipo">${pl.titulo}</span>
+                <span class="stream-precio">${fmt(pl.precio)}</span>
               </div>
+              ${pl.desc ? `<div style="font-size:.7rem;color:var(--muted);line-height:1.4">${pl.desc}</div>` : ''}
+              <button onclick="agregarProductividadAlCarrito('${p.nombre} — ${pl.titulo}', ${pl.precio})"
+                style="width:100%;margin-top:.3rem;background:rgba(0,229,255,.1);color:var(--accent);border:1px solid rgba(0,229,255,.2);border-radius:6px;padding:.38rem;font-family:'Inter',sans-serif;font-size:.78rem;font-weight:600;cursor:pointer;transition:all .2s"
+                onmouseover="this.style.background='rgba(0,229,255,.2)'"
+                onmouseout="this.style.background='rgba(0,229,255,.1)'">
+                🛒 Agregar al carrito
+              </button>
             </div>`).join('')}
         </div>
       </div>`).join('')}
