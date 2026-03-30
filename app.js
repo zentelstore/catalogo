@@ -65,7 +65,7 @@ async function cargarTodo() {
       fetchJSON('ps5.json'),
       fetchJSON('streaming.json'),
       fetchJSON('promos.json'),
-      fetchJSON('productividad.json')
+      fetchJSON('productividad.json').catch(() => [])
     ]);
     S.datos.ps4           = ps4;
     S.datos.ps5           = ps5;
