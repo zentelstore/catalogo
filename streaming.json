@@ -15,7 +15,7 @@
     "servicios": [
       {"servicio":"VIX Premium","emoji":"⚽️","imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/ViX_logo.svg/1280px-ViX_logo.svg.png","items":[{"tipo":"1 Perfil / 30 días","precio":6000}]},
       {"servicio":"PowerSignal","emoji":"📊","imagen":"","items":[{"tipo":"1 Perfil / 30 días","precio":6000}]},
-      {"servicio":"Flujo TV","emoji":"🟧","imagen":"","items":[{"tipo":"1 Perfil / 30 días","precio":10.000}]}
+      {"servicio":"Flujo TV","emoji":"🟧","imagen":"","items":[{"tipo":"1 Perfil / 30 días","precio":10000}]}
     ]
   }
 ]
